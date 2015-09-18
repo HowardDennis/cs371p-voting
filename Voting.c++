@@ -49,7 +49,12 @@ void voting_print (ostream& w, int i, int j, int v) {
 // -------------
 
 void voting_solve (istream& r, ostream& w) {
+    int numCases;
     string s;
+    getline(r, numCases);
+    getline(r, s);
+    while(numCases > 0) {
+    --numCases;}
     while (getline(r, s)) {
         w << s << endl;}}
 
