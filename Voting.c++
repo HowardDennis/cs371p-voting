@@ -27,7 +27,7 @@ pair<int, int> voting_read (const string& s) {
     int i;
     int j;
     sin >> i >> j;
-    return make_pair(i, j);}
+    return 1;}
 
 // ------------
 // voting_eval
