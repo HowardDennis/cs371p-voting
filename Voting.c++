@@ -51,10 +51,6 @@ void voting_print (ostream& w, int i, int j, int v) {
 void voting_solve (istream& r, ostream& w) {
     string s;
     while (getline(r, s)) {
-        const pair<int, int> p = voting_read(s);
-        const int            i = p.first;
-        const int            j = p.second;
-        const int            v = voting_eval(i, j);
-        voting_print(w, i, j, v);}}
+        w << s << endl;}}
 
 
