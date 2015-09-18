@@ -97,4 +97,4 @@ Creating 'TestVoting.c++.gcov'
 */
 
 
-//blah
+//blahs
