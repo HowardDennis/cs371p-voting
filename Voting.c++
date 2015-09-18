@@ -1,5 +1,5 @@
 // ----------------------------
-// projects/collatz/Collatz.c++
+// projects/voting/Voting.c++
 // Copyright (C) 2015
 // Glenn P. Downing
 // ----------------------------
@@ -14,15 +14,15 @@
 #include <string>   // getline, string
 #include <utility>  // make_pair, pair
 
-#include "Collatz.h"
+#include "Voting.h"
 
 using namespace std;
 
 // ------------
-// collatz_read
+// voting_read
 // ------------
 
-pair<int, int> collatz_read (const string& s) {
+pair<int, int> voting_read (const string& s) {
     istringstream sin(s);
     int i;
     int j;
@@ -30,29 +30,31 @@ pair<int, int> collatz_read (const string& s) {
     return make_pair(i, j);}
 
 // ------------
-// collatz_eval
+// voting_eval
 // ------------
 
-int collatz_eval (int i, int j) {
+int voting_eval (int i, int j) {
     // <your code>
     return 1;}
 
 // -------------
-// collatz_print
+// voting_print
 // -------------
 
-void collatz_print (ostream& w, int i, int j, int v) {
+void voting_print (ostream& w, int i, int j, int v) {
     w << i << " " << j << " " << v << endl;}
 
 // -------------
-// collatz_solve
+// voting_solve
 // -------------
 
-void collatz_solve (istream& r, ostream& w) {
+void voting_solve (istream& r, ostream& w) {
     string s;
     while (getline(r, s)) {
-        const pair<int, int> p = collatz_read(s);
+        const pair<int, int> p = voting_read(s);
         const int            i = p.first;
         const int            j = p.second;
-        const int            v = collatz_eval(i, j);
-        collatz_print(w, i, j, v);}}
+        const int            v = voting_eval(i, j);
+        voting_print(w, i, j, v);}}
+
+
