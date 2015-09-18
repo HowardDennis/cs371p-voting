@@ -1,5 +1,5 @@
 // -------------------------------
-// projects/collatz/RunCollatz.c++
+// projects/voting/RunVoting.c++
 // Copyright (C) 2015
 // Glenn P. Downing
 // -------------------------------
@@ -10,7 +10,7 @@
 
 #include <iostream> // cin, cout
 
-#include "Collatz.h"
+#include "Voting.h"
 
 // ----
 // main
@@ -18,15 +18,15 @@
 
 int main () {
     using namespace std;
-    collatz_solve(cin, cout);
+    voting_solve(cin, cout);
     return 0;}
 
 /*
-% g++ -pedantic -std=c++11 -Wall Collatz.c++ RunCollatz.c++ -o RunCollatz
+% g++ -pedantic -std=c++11 -Wall Voting.c++ RunVoting.c++ -o RunVoting
 
 
 
-% cat RunCollatz.in
+% cat RunVoting.in
 1 10
 100 200
 201 210
@@ -34,11 +34,11 @@ int main () {
 
 
 
-% RunCollatz < RunCollatz.in > RunCollatz.out
+% RunVoting < RunVoting.in > RunVoting.out
 
 
 
-% cat RunCollatz.out
+% cat RunVoting.out
 1 10 1
 100 200 1
 201 210 1
@@ -58,3 +58,6 @@ int main () {
 % doxygen Doxyfile
 // That creates the directory html/.
 */
+
+
+
