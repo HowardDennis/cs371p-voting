@@ -28,7 +28,7 @@ using namespace std;
  */
 pair<int, int> voting_read (const string& s);
 
-string* voting_read_names (istream& r);
+void voting_read_names (istream& r, int numNames, string names[]);
 
 // ------------
 // voting_eval
