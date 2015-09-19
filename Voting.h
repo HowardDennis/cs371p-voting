@@ -28,6 +28,8 @@ using namespace std;
  */
 pair<int, int> voting_read (const string& s);
 
+string* voting_read_names (istream& r);
+
 // ------------
 // voting_eval
 // ------------

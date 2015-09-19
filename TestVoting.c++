@@ -29,7 +29,23 @@ using namespace std;
 // read
 // ----
 
-TEST(VotingFixture, read) {}
+TEST(VotingFixture, read_names_1) {
+    string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n");
+    istringstream str(s);
+    string* names = voting_read_names(str);
+    ASSERT_EQ("John Doe", names[0]);
+    ASSERT_EQ("Jane Smith", names[1]);
+    ASSERT_EQ("Sirhan Sirhan", names[2]);
+}
+
+TEST(VotingFixture, read_names_2) {
+    string s("3\nHannah Perry\nJane Smith\nSirhan Sirhan\n");
+    istringstream str(s);
+    string* names = voting_read_names(str);
+    ASSERT_EQ("Hannah Perry", names[0]);
+    ASSERT_EQ("Jane Smith", names[1]);
+    ASSERT_EQ("Sirhan Sirhan", names[2]);
+}
 
 
 

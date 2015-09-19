@@ -29,6 +29,21 @@ pair<int, int> voting_read (const string& s) {
     sin >> i >> j;
     return make_pair(i, j);}
 
+// Read the names for a case
+string* voting_read_names (istream& r) {
+    string s;
+    int numNames;
+    getline(r, s);
+    istringstream (s) >> numNames;
+    string names[numNames];
+    int i = 0;
+    while(numNames > i) {
+        getline(r, names[i]);
+        ++i;
+    }
+    return names;
+}
+
 // ------------
 // voting_eval
 // ------------
@@ -51,11 +66,14 @@ void voting_print (ostream& w, int i, int j, int v) {
 void voting_solve (istream& r, ostream& w) {
     int numCases;
     string s;
-    getline(r, numCases);
     getline(r, s);
+    istringstream (s) >> numCases;
+    getline(r, s);
+    string* names;
     while(numCases > 0) {
-    --numCases;}
-    while (getline(r, s)) {
-        w << s << endl;}}
+        names = voting_read_names(r);
+        --numCases;}
+        
+    }
 
 
