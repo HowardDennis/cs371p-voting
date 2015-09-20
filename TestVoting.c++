@@ -50,7 +50,7 @@ TEST(VotingFixture, read_names_2) {
     string str;
     getline(test_stream, str);
     istringstream (str) >> numNames;
-    string names[numNames];
+    vector<string> names;
     voting_read_names(test_stream, numNames, names);
     ASSERT_EQ("Hannah Perry", names[0]);
     ASSERT_EQ("Jane Smith", names[1]);
