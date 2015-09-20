@@ -40,6 +40,20 @@ void get_ballots (istream& r, vector<string>& ballots) {
     }
 }
 
+void get_ballots2 (istream& r, vector< vector<int> >& ballots) {
+    string s;
+    while(getline(r, s) && !s.empty()) {
+        stringstream stream(s);
+        vector<int> temp;
+        while(stream) {
+            int n;
+            stream>>n;
+            temp.push_back(n);
+        }
+        ballots.push_back(temp);
+    }
+}
+
 // -------------
 // voting_solve
 // -------------
