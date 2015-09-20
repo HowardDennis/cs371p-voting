@@ -57,6 +57,14 @@ TEST(VotingFixture, read_names_2) {
     ASSERT_EQ("Sirhan Sirhan", names[2]);
 }
 
+TEST(VotingFixture, get_ballots_1) {
+    string s("1 2 3\n2 1 3\n");
+    istringstream test_stream(s);
+    vector<string> names;
+    get_ballots(test_stream, names);
+    ASSERT_EQ("1 2 3", names[0]);
+    ASSERT_EQ("2 1 3", names[1]);
+}
 
 
 /*
