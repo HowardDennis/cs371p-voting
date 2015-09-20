@@ -11,59 +11,48 @@
 // includes
 // --------
 
-#include <iostream> // istream, ostream
-#include <string>   // string
-#include <utility>  // pair
+#include <cassert>  // assert
+#include <iostream> // endl, istream, ostream
+#include <sstream>  // istringstream
+#include <string>   // getline, string
 
 using namespace std;
 
-// ------------
-// voting_read
-// ------------
-
-/**
- * read two ints
- * @param s a string
- * @return a pair of ints, representing the beginning and end of a range, [i, j]
- */
-pair<int, int> voting_read (const string& s);
-
-void voting_read_names (istream& r, int numNames, string names[]);
+void voting_read_names (istream& r, int numNames, string names[]) {
+    int i = 0;
+    while(numNames > i) {
+        getline(r, names[i]);
+        ++i;
+    }
+}
 
 // ------------
 // voting_eval
 // ------------
 
-/**
- * @param i the beginning of the range, inclusive
- * @param j the end       of the range, inclusive
- * @return the max cycle length of the range [i, j]
- */
-int voting_eval (int i, int j);
-
-// -------------
-// voting_print
-// -------------
-
-/**
- * print three ints
- * @param w an ostream
- * @param i the beginning of the range, inclusive
- * @param j the end       of the range, inclusive
- * @param v the max cycle length
- */
-void voting_print (ostream& w, int i, int j, int v);
+int voting_eval (int i, int j) {
+    // <your code>
+    return 1;}
 
 // -------------
 // voting_solve
 // -------------
 
-/**
- * @param r an istream
- * @param w an ostream
- */
-void voting_solve (istream& r, ostream& w);
-
+void voting_solve (istream& r, ostream& w) {
+    int numCases;
+    int numNames;
+    string s;
+    getline(r, s);
+    istringstream (s) >> numCases;
+    getline(r, s);
+    while(numCases > 0) {
+        getline(r, s);
+        istringstream (s) >> numNames;
+        string names[numNames];
+        voting_read_names(r, numNames, names);
+        --numCases;}
+        
+    }
 #endif // Voting_h
 
 
