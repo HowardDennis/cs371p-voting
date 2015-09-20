@@ -78,6 +78,17 @@ TEST(VotingFixture, get_ballots_2) {
     ASSERT_EQ("1", n[0]);
 }
 
+TEST(VotingFixture, get_ballots2_1) {
+    string s("1 2 3\n2 1 3\n1");
+    istringstream test_stream(s);
+    vector< vector<int> > ballots;
+    get_ballots(test_stream, ballots);
+    ASSERT_EQ(1, ballots[0][0]);
+    ASSERT_EQ(2, ballots[0][1]);
+    ASSERT_EQ(3, ballots[0][2]);
+}
+
+
 /*
 % g++ -fprofile-arcs -ftest-coverage -pedantic -std=c++11 -Wall Voting.c++ TestVoting.c++ -o TestVoting -lgtest -lgtest_main -lpthread
 
