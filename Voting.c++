@@ -33,9 +33,12 @@ void voting_read_names (istream& r, int numNames, vector<string>& names) {
 // voting_eval
 // ------------
 
-int voting_eval (int i, int j) {
-    // <your code>
-    return 1;}
+void get_ballots (istream& r, vector<string>& ballots) {
+    string s;
+    while(getline(r, s) && !s.empty()) {
+        ballots.push_back(s);
+    }
+}
 
 // -------------
 // voting_solve
