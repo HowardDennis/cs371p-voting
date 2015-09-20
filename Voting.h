@@ -18,7 +18,7 @@
 
 using namespace std;
 
-void voting_read_names (istream& r, int numNames, string names[]);
+void voting_read_names (istream& r, int numNames, vector<string> names);
 
 // ------------
 // voting_eval
