@@ -75,7 +75,7 @@ TEST(VotingFixture, get_ballots_2) {
     get_ballots(test_stream, n);
     ASSERT_EQ("1 2 3", names[0]);
     ASSERT_EQ("2 1 3", names[1]);
-    ASSERT_EQ("1", names[0]);
+    ASSERT_EQ("1", n[0]);
 }
 
 /*
