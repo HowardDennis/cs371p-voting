@@ -18,41 +18,19 @@
 
 using namespace std;
 
-void voting_read_names (istream& r, int numNames, string names[]) {
-    int i = 0;
-    while(numNames > i) {
-        getline(r, names[i]);
-        ++i;
-    }
-}
+void voting_read_names (istream& r, int numNames, string names[]);
 
 // ------------
 // voting_eval
 // ------------
 
-int voting_eval (int i, int j) {
-    // <your code>
-    return 1;}
+int voting_eval (int i, int j);
 
 // -------------
 // voting_solve
 // -------------
 
-void voting_solve (istream& r, ostream& w) {
-    int numCases;
-    int numNames;
-    string s;
-    getline(r, s);
-    istringstream (s) >> numCases;
-    getline(r, s);
-    while(numCases > 0) {
-        getline(r, s);
-        istringstream (s) >> numNames;
-        string names[numNames];
-        voting_read_names(r, numNames, names);
-        --numCases;}
-        
-    }
+void voting_solve (istream& r, ostream& w);
 #endif // Voting_h
 
 
