@@ -82,7 +82,7 @@ TEST(VotingFixture, get_ballots2_1) {
     string s("1 2 3\n2 1 3\n1");
     istringstream test_stream(s);
     vector< vector<int> > ballots;
-    get_ballots(test_stream, ballots);
+    get_ballots2(test_stream, ballots);
     ASSERT_EQ(1, ballots[0][0]);
     ASSERT_EQ(2, ballots[0][1]);
     ASSERT_EQ(3, ballots[0][2]);
