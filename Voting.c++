@@ -83,7 +83,6 @@ void voting_solve (istream& r, ostream& w) {
         }
 
         --numCases;}
-        
     }
 
 
