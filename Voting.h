@@ -19,13 +19,15 @@
 
 using namespace std;
 
-void voting_read_names (istream& r, int numNames, vector< vector<int> >& names);
+void voting_read_names (istream& r, int numNames, vector<string>& names);
 
 // ------------
 // voting_eval
 // ------------
 
 void get_ballots (istream& r, vector<string>& ballots);
+
+void get_ballots2 (istream& r, vector< vector<int> >& ballots);
 
 // -------------
 // voting_solve
