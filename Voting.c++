@@ -48,6 +48,12 @@ void get_ballots (istream& r, vector< vector<int> >& ballots) {
     }
 }
 
+void count_votes (vector< vector<int> >& ballots, vector< vector<int> >& votes, int column) {
+    for (int i = 0; i < ballots.size(); ++i) {
+        votes[ballots[i][column]-1].push_back(ballots[i]);
+    }
+}
+
 // -------------
 // voting_solve
 // -------------
@@ -66,10 +72,17 @@ void voting_solve (istream& r, ostream& w) {
         // Names on the ballot
         vector<string> names;
         voting_read_names(r, numNames, names);
+        vector< vector<int> > votes;
 
         // All of the ballot rankings.
         vector< vector<int> > ballots;
         get_ballots(r, ballots);
+        for (int i = 0; i < numNames; i++) {
+            vector<int> temp;
+            votes.push_back(temp);
+        }
+
+        for ()
 
         --numCases;}
         
