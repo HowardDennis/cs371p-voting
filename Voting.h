@@ -27,6 +27,8 @@ void voting_read_names (istream& r, int numNames, vector<string>& names);
 
 void get_ballots (istream& r, vector< vector<int> >& ballots);
 
+void count_votes (vector< vector<int> >& ballots, vector< vector<int> >& votes, int column);
+
 // -------------
 // voting_solve
 // -------------
