@@ -66,7 +66,7 @@ TEST(VotingFixture, get_ballots_1) {
     ASSERT_EQ("2 1 3", names[1]);
 }
 
-TEST(VotingFixture, get_ballots_1) {
+TEST(VotingFixture, get_ballots_2) {
     string s("1 2 3\n2 1 3\n\n1");
     istringstream test_stream(s);
     vector<string> names;
