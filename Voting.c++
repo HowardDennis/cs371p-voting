@@ -82,10 +82,7 @@ void voting_solve (istream& r, ostream& w) {
             votes.push_back(temp);
         }
 
-        for ()
-
         --numCases;}
-        
     }
 
 
