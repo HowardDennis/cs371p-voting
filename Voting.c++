@@ -62,8 +62,15 @@ void voting_solve (istream& r, ostream& w) {
     while(numCases > 0) {
         getline(r, s);
         istringstream (s) >> numNames;
+
+        // Names on the ballot
         vector<string> names;
         voting_read_names(r, numNames, names);
+
+        // All of the ballot rankings.
+        vector< vector<int> > ballots;
+        get_ballots(r, ballots);
+
         --numCases;}
         
     }
