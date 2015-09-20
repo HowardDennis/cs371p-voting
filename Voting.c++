@@ -12,28 +12,19 @@
 #include <iostream> // endl, istream, ostream
 #include <sstream>  // istringstream
 #include <string>   // getline, string
-#include <utility>  // make_pair, pair
+#include <vector>   // vector
 
 #include "Voting.h"
 
 using namespace std;
 
-// ------------
-// voting_read
-// ------------
-
-pair<int, int> voting_read (const string& s) {
-    istringstream sin(s);
-    int i;
-    int j;
-    sin >> i >> j;
-    return make_pair(i, j);}
-
 // Read the names for a case
-void voting_read_names (istream& r, int numNames, string names[]) {
+void voting_read_names (istream& r, int numNames, vector<string>& names) {
     int i = 0;
+    string s;
     while(numNames > i) {
-        getline(r, names[i]);
+        getline(r, s);
+        names.push_back(s);
         ++i;
     }
 }
@@ -45,13 +36,6 @@ void voting_read_names (istream& r, int numNames, string names[]) {
 int voting_eval (int i, int j) {
     // <your code>
     return 1;}
-
-// -------------
-// voting_print
-// -------------
-
-void voting_print (ostream& w, int i, int j, int v) {
-    w << i << " " << j << " " << v << endl;}
 
 // -------------
 // voting_solve
@@ -67,7 +51,7 @@ void voting_solve (istream& r, ostream& w) {
     while(numCases > 0) {
         getline(r, s);
         istringstream (s) >> numNames;
-        string names[numNames];
+        vector<string> names;
         voting_read_names(r, numNames, names);
         --numCases;}
         
