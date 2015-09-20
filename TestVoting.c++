@@ -13,7 +13,7 @@
 #include <iostream> // cout, endl
 #include <sstream>  // istringtstream, ostringstream
 #include <string>   // string
-#include <utility>  // pair
+#include <vector>   // vector
 
 #include "gtest/gtest.h"
 
@@ -36,7 +36,7 @@ TEST(VotingFixture, read_names_1) {
     string str;
     getline(test_stream, str);
     istringstream (str) >> numNames;
-    string names[numNames];
+    vector<string> names;
     voting_read_names(test_stream, numNames, names);
     ASSERT_EQ("John Doe", names[0]);
     ASSERT_EQ("Jane Smith", names[1]);
