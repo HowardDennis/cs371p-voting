@@ -58,13 +58,31 @@ TEST(VotingFixture, read_names_2) {
 }
 
 TEST(VotingFixture, get_ballots_1) {
-    string s("1 2 3\n2 1 3\n1");
+    string s("1 2 3");
     istringstream test_stream(s);
     vector< vector<int> > ballots;
     get_ballots(test_stream, ballots);
     ASSERT_EQ(1, ballots[0][0]);
     ASSERT_EQ(2, ballots[0][1]);
     ASSERT_EQ(3, ballots[0][2]);
+}
+
+TEST(VotingFixture, get_ballots_2) {
+    string s("1 2 3\n2 1 3\n3 2 1");
+    istringstream test_stream(s);
+    vector< vector<int> > ballots;
+    get_ballots(test_stream, ballots);
+    ASSERT_EQ(1, ballots[0][0]);
+    ASSERT_EQ(2, ballots[0][1]);
+    ASSERT_EQ(3, ballots[0][2]);
+
+    ASSERT_EQ(2, ballots[1][0]);
+    ASSERT_EQ(1, ballots[1][1]);
+    ASSERT_EQ(3, ballots[1][2]);
+
+    ASSERT_EQ(3, ballots[2][0]);
+    ASSERT_EQ(2, ballots[2][1]);
+    ASSERT_EQ(1, ballots[2][2]);
 }
 
 
