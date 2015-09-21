@@ -15,16 +15,19 @@
 #include <iostream> // endl, istream, ostream
 #include <sstream>  // istringstream
 #include <string>   // getline, string
+#include <vector>
 
 using namespace std;
 
-void voting_read_names (istream& r, int numNames, string names[]);
+void voting_read_names (istream& r, int numNames, vector<string>& names);
 
 // ------------
 // voting_eval
 // ------------
 
-int voting_eval (int i, int j);
+void get_ballots (istream& r, vector< vector<int> >& ballots);
+
+void count_votes (vector< vector<int> >& ballots, vector< vector<int> >& votes, int column);
 
 // -------------
 // voting_solve
