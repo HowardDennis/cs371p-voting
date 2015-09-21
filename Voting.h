@@ -28,9 +28,6 @@ struct Candidate
     Candidate():name(""), eliminated(false){}
 };
 
-void get_candidates (istream& r, int numNames, vector<Candidate>& cand) {
-    
-}
 void voting_read_names (istream& r, int numNames, vector<string>& names);
 
 // ------------
