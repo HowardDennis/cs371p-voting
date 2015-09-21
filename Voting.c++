@@ -18,6 +18,15 @@
 
 using namespace std;
 
+struct Candidate
+{
+    string name;
+    vector< vector<int> > votes;
+    bool eliminated;
+
+    Candidate():name(""), eliminated(false){}
+};
+
 // Read the names for a case
 void voting_read_names (istream& r, int numNames, vector<string>& names) {
     int i = 0;
