@@ -49,9 +49,7 @@ void get_ballots (istream& r, vector< vector<int> >& ballots) {
 }
 
 void count_votes (vector< vector<int> >& ballots, vector< vector<int> >& votes, int column) {
-    for (int i = 0; i < ballots.size(); ++i) {
-        votes[ballots[i][column]-1].push_back(ballots[i]);
-    }
+    
 }
 
 // -------------
