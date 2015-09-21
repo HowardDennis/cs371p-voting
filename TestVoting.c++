@@ -85,7 +85,19 @@ TEST(VotingFixture, get_ballots_2) {
     ASSERT_EQ(1, ballots[2][2]);
 }
 
-
+TEST(VotingFixture, get candidates_1) {
+    string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n");
+    istringstream test_stream(s);
+    int numNames;
+    string str;
+    getline(test_stream, str);
+    istringstream (str) >> numNames;
+    vector<Candidate> cans;
+    voting_read_names(test_stream, numNames, cans);
+    ASSERT_EQ("John Doe", cans[0].name);
+    ASSERT_EQ("Jane Smith", cans[1].name);
+    ASSERT_EQ("Sirhan Sirhan", cans[2].name);
+}
 /*
 % g++ -fprofile-arcs -ftest-coverage -pedantic -std=c++11 -Wall Voting.c++ TestVoting.c++ -o TestVoting -lgtest -lgtest_main -lpthread
 
