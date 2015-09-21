@@ -29,15 +29,7 @@ struct Candidate
 };
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cand) {
-    int i = 0;
-    string s;
-    while(numNames > i) {
-        getline(r, s);
-        Candidate can;
-        can.name = s;
-        cand.push_back(can);
-        ++i;
-    }
+    
 }
 void voting_read_names (istream& r, int numNames, vector<string>& names);
 
