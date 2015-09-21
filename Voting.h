@@ -28,7 +28,7 @@ struct Candidate
     Candidate():name(""), eliminated(false){}
 };
 
-void get_candidates (istream& r, int numNames, vector<Candidates>& cand) {
+void get_candidates (istream& r, int numNames, vector<Candidate>& cand) {
     int i = 0;
     string s;
     while(numNames > i) {
