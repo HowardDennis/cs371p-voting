@@ -21,6 +21,15 @@
 
 using namespace std;
 
+struct Candidate
+{
+    string name;
+    vector< vector<int> > votes;
+    bool eliminated;
+
+    Candidate():name(""), eliminated(false){}
+};
+
 // -----------
 // TestVoting
 // -----------
