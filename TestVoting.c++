@@ -85,7 +85,7 @@ TEST(VotingFixture, get_ballots_2) {
     ASSERT_EQ(1, ballots[2][2]);
 }
 
-TEST(VotingFixture, get candidates_1) {
+TEST(VotingFixture, get_candidates_1) {
     string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n");
     istringstream test_stream(s);
     int numNames;
