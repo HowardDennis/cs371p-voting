@@ -18,6 +18,10 @@
 
 using namespace std;
 
+void get_candidates (istream& r, int numNames, vector<Candidate>& cans) {
+    
+}
+
 // Read the names for a case
 void voting_read_names (istream& r, int numNames, vector<string>& names) {
     int i = 0;
