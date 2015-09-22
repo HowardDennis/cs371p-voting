@@ -20,13 +20,14 @@ using namespace std;
 
 int numVotes = 0;
 
-string determine_winner (vector<Candidate>& cans) {
+bool winner (vector<Candidate>& cans) {
     for (int i = 0; i < cans.size(); ++i) {
         if (double(cans[i].votes.size()) > numVotes/2.0) {
-            return cans[i].name;
+            cout << cans[i].name << endl;
+            return true;
         }
     }
-    return "";
+    return false;
 }
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans) {
@@ -111,7 +112,7 @@ void voting_solve (istream& r, ostream& w) {
         vector<Candidate> candidates;
         get_candidates(r, numNames, candidates);
         get_ballots2(r, candidates);
-        string win = determine_winner(candidates);
+        bool win = winner(candidates);
         cout << win << endl;
         --numCases;}
     }
