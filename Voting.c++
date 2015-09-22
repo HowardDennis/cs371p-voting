@@ -80,8 +80,8 @@ void voting_solve (istream& r, ostream& w) {
         istringstream (s) >> numNames;
 
         // Names on the ballot
-        vector<string> names;
-        voting_read_names(r, numNames, names);
+        vector<Candidate> candidates;
+        get_candidates(r, numNames, candidates);
         vector< vector<int> > votes;
 
         // All of the ballot rankings.
