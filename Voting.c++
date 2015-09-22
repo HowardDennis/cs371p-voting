@@ -112,6 +112,7 @@ void voting_solve (istream& r, ostream& w) {
         get_candidates(r, numNames, candidates);
         get_ballots2(r, candidates);
         print_vector(candidates[0].votes[0]);
+        print_vector(candidates[0].votes[1]);
         string win = determine_winner(candidates);
         --numCases;}
     }
