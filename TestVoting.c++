@@ -138,3 +138,23 @@ TEST(VotingFixture, assign_ballot_1) {
     ASSERT_EQ(candidates[2].votes[1][1], 3);
     ASSERT_EQ(candidates[2].votes[1][2], 1);
 }
+
+TEST(VotingFixture, determine_winner_1) {
+    Candidate can_1;
+    can_1.name = "John Doe";
+    Candidate can_2;
+    can_2.name = "Jane Smith";
+    Candidate can_3;
+    can_3.name = "Sihran Sihran";
+    vector<Candidate> candidates = {can_1, can_2, can_3};
+    vector<int> ballot_1 = {3, 1, 2};
+    vector<int> ballot_2 = {3, 2, 1};
+    vector<int> ballot_3 = {1, 2, 3};
+    vector<int> ballot_4 = {3, 1, 2)};
+    assign_ballot(candidates, 0, ballot_1);
+    assign_ballot(candidates, 0, ballot_2);
+    assign_ballot(candidates, 0, ballot_3);
+    assign_ballot(candidates, 0, ballot_4);
+    string winner = determine_winner(candidates);
+    ASSERT_EQ(winner, "Sihran Sihran");\
+}
