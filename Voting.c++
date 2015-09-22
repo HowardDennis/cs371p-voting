@@ -26,7 +26,7 @@ string determine_winner (vector<Candidate>& cans) {
             return cans[i].name;
         }
     }
-    return "nada";
+    return "";
 }
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans) {
