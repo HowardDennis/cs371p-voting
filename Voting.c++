@@ -99,7 +99,7 @@ void count_votes (vector< vector<int> >& ballots, vector< vector<int> >& votes, 
 // voting_solve
 // -------------
 
-void voting_solve (istream& r, ostream& w) {
+string voting_solve (istream& r, ostream& w) {
     int numCases;
     int numNames;
     string s;
@@ -113,16 +113,9 @@ void voting_solve (istream& r, ostream& w) {
         // Names on the ballot
         vector<Candidate> candidates;
         get_candidates(r, numNames, candidates);
-        vector< vector<int> > votes;
-
-        // All of the ballot rankings.
-        vector< vector<int> > ballots;
-        get_ballots(r, ballots);
-        for (int i = 0; i < numNames; i++) {
-            vector<int> temp;
-            votes.push_back(temp);
-        }
-
+        get_ballots2(r, candidates);
+        string win = determine_winner(candidates);
+        return win;
         --numCases;}
     }
 
