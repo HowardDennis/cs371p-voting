@@ -86,21 +86,16 @@ TEST(VotingFixture, get_ballots_2) {
 }
 
 TEST(VotingFixture, get_ballots_proper) {
-    string s("1 2 3\n2 1 3\n3 2 1");
+    string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n1 2 3\n2 1 3\n3 2 1");
     istringstream test_stream(s);
     vector<Candidate> ballots;
+    int numNames;
+    string str;
+    getline(test_stream, str);
+    istringstream (str) >> numNames;
+    get_candidates(test_stream, numNames, ballots);
     get_ballots2(test_stream, ballots);
-    ASSERT_EQ(1, ballots[0].votes[0]);
-    ASSERT_EQ(2, ballots[0].votes[1]);
-    ASSERT_EQ(3, ballots[0].votes[2]);
-
-    ASSERT_EQ(2, ballots[1].votes[0]);
-    ASSERT_EQ(1, ballots[1].votes[1]);
-    ASSERT_EQ(3, ballots[1].votes[2]);
-
-    ASSERT_EQ(3, ballots[2].votes[0]);
-    ASSERT_EQ(2, ballots[2].votes[1]);
-    ASSERT_EQ(1, ballots[2].votes[2]);
+    ASSERT_EQ(1, ballots[0].votes[0][0]);
 }
 
 TEST(VotingFixture, get_candidates_1) {
