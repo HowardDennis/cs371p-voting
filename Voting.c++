@@ -116,7 +116,7 @@ void voting_solve (istream& r, ostream& w) {
         --numCases;}
     }
     
-void print_all vector<Candidate>& v) {
+void print_all (vector<Candidate>& v) {
     for(int i = 0; i < v.size(); ++i) {
         cout << v[i].name << endl;
         for(int j = 0; j < v[i].votes.size(); ++j) {
