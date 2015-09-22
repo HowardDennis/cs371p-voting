@@ -73,6 +73,8 @@ void get_ballots2 (istream& r, vector<Candidate>& candidates) {
             temp.push_back(n);
         }
         assign_ballot (candidates, 0, temp);
+        ++numVotes;
+        cout << numVotes << endl;
     }
 }
 
