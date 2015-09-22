@@ -52,7 +52,7 @@ void count_votes (vector< vector<int> >& ballots, vector< vector<int> >& votes, 
 // voting_solve
 // -------------
 
-void voting_solve (istream& r, ostream& w);
+string voting_solve (istream& r, ostream& w);
 #endif // Voting_h
 
 
