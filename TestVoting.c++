@@ -162,5 +162,12 @@ TEST(VotingFixture, determine_winner_1) {
 TEST(VotingFixture, determine_winner_2) {
     string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n1 2 3\n2 1 3\n3 2 1");
     istringstream test_stream(s);
-    ASSERT_EQ(voting_solve(test_stream, cout), "");
+    vector<Candidate> candidates;
+    int numNames;
+    string str;
+    getline(test_stream, str);
+    istringstream (str) >> numNames;
+    get_candidates(test_stream, numNames, candidates);
+    get_ballots2(test_stream, candidates);
+    ASSERT_EQ("".compare(determine_winner(candidates)), 0)
 }
