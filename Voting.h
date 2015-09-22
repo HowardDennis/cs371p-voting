@@ -28,7 +28,7 @@ struct Candidate
     Candidate():name(""), eliminated(false){}
 };
 
-void calculate (vector<Candidate>& cans)
+void calculate (vector<Candidate>& cans);
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans);
 
