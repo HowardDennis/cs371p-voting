@@ -60,7 +60,7 @@ void get_ballots (istream& r, vector< vector<int> >& ballots) {
     }
 }
 
-void get_ballots2 (istream& r, vector<Candidates>& candidates) {
+void get_ballots2 (istream& r, vector<Candidate>& candidates) {
     string s;
     while(getline(r, s) && !s.empty()) {
         stringstream stream(s);
