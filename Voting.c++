@@ -111,8 +111,7 @@ void voting_solve (istream& r, ostream& w) {
         vector<Candidate> candidates;
         get_candidates(r, numNames, candidates);
         get_ballots2(r, candidates);
-        print_vector(candidates[0].votes[0]);
-        print_vector(candidates[0].votes[1]);
+        cout << candidates[0].votes.size(); << endl;
         string win = determine_winner(candidates);
         --numCases;}
     }
