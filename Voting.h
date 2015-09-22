@@ -38,6 +38,10 @@ void voting_read_names (istream& r, int numNames, vector<string>& names);
 
 void get_ballots (istream& r, vector< vector<int> >& ballots);
 
+void get_ballots2 (istream& r, vector<Candidate>& candidates);
+
+void assign_ballot (vector<Candidate>& candidates, int column, vector<int> ballots);
+
 void count_votes (vector< vector<int> >& ballots, vector< vector<int> >& votes, int column);
 
 // -------------
