@@ -30,7 +30,7 @@ struct Candidate
     Candidate():name(""), eliminated(false){}
 };
 
-void determine_winner (vector<Candidate>& cans);
+string determine_winner (vector<Candidate>& cans);
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans);
 
