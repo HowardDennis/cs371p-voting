@@ -114,7 +114,7 @@ void voting_solve (istream& r, ostream& w) {
         get_ballots2(r, candidates);
         cout << candidates[0].votes[0] << endl;
         string win = determine_winner(candidates);
-        cout << winner.compare("") << endl;
+        cout << win.compare("") << endl;
         --numCases;}
     }
 
