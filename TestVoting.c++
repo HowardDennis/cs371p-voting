@@ -169,5 +169,6 @@ TEST(VotingFixture, determine_winner_2) {
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
     get_ballots2(test_stream, candidates);
-    ASSERT_EQ("".compare(determine_winner(candidates)), 0)
+    string winner = determine_winner(candidates);
+    ASSERT_EQ(winner.compare(""), 0);
 }
