@@ -115,5 +115,12 @@ void voting_solve (istream& r, ostream& w) {
         string win = determine_winner(candidates);
         --numCases;}
     }
+    
+void print_vector (vector<int> v) {
+    for(i = 0; i < v.size(); ++i) {
+    cout <<v[i] << " ";
+    }
+    endl;
+}
 
 
