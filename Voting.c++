@@ -117,7 +117,7 @@ void voting_solve (istream& r, ostream& w) {
     }
     
 void print_vector (vector<int> v) {
-    for(i = 0; i < v.size(); ++i) {
+    for(int i = 0; i < v.size(); ++i) {
     cout <<v[i] << " ";
     }
     endl (cout);
