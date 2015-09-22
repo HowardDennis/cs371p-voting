@@ -120,7 +120,7 @@ void print_all (vector<Candidate>& v) {
     for(int i = 0; i < v.size(); ++i) {
         cout << v[i].name << endl;
         for(int j = 0; j < v[i].votes.size(); ++j) {
-            for(int q = 0; q < v[i].votes.size(); ++q) {
+            for(int q = 0; q < v[i].votes[j].size(); ++q) {
                 cout << v[i].votes[j][q] << " ";
             }
             endl (cout);
