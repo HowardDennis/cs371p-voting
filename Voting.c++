@@ -20,6 +20,15 @@ using namespace std;
 
 int numVotes = 0;
 
+string determine_winner (vector<Candidate>& cans) {
+    for (int i = 0, i < cans.size, ++i;) {
+        if (double(cans[i].votes.size()) > double(numVotes)/2.0) {
+            return cans[i].name;
+        }
+    }
+    return "";
+}
+
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans) {
     int i = 0;
     string s;
