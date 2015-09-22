@@ -19,6 +19,8 @@
 
 using namespace std;
 
+extern int numVotes;
+
 struct Candidate
 {
     string name;
