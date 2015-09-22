@@ -26,7 +26,7 @@ string determine_winner (vector<Candidate>& cans) {
             return cans[i].name;
         }
     }
-    return "";
+    return "nada";
 }
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans) {
@@ -83,7 +83,6 @@ void get_ballots2 (istream& r, vector<Candidate>& candidates) {
         }
         assign_ballot (candidates, 0, temp);
         ++numVotes;
-        cout << numVotes << endl;
     }
 }
 
