@@ -159,7 +159,7 @@ TEST(VotingFixture, determine_winner_1) {
     ASSERT_EQ(winner.compare("Sihran Sihran"), 0);
 }
 
-TEST(VotingFixture, get_candidates_proper) {
+TEST(VotingFixture, determine_winner_2) {
     string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n1 2 3\n2 1 3\n3 2 1");
     istringstream test_stream(s);
     ASSERT_EQ(voting_solve(test_stream, cout), "");
