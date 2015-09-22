@@ -111,17 +111,18 @@ void voting_solve (istream& r, ostream& w) {
         vector<Candidate> candidates;
         get_candidates(r, numNames, candidates);
         get_ballots2(r, candidates);
-        print_vector(candidates[1].votes[0]);
-        cout << candidates.size() << endl;
+        print_all(candidates);
         string win = determine_winner(candidates);
         --numCases;}
     }
     
-void print_vector (vector<int> v) {
+void print_all vector<Candidate>& v) {
     for(int i = 0; i < v.size(); ++i) {
-    cout <<v[i] << " ";
+        cout << v[i].name << endl;
+        for(int j = 0; j < v[i].votes.size(); ++j) {
+            cout << v[i].votes[j] << endl;
+        }
     }
-    endl (cout);
 }
 
 
