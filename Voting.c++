@@ -22,7 +22,7 @@ int numVotes = 0;
 
 string determine_winner (vector<Candidate>& cans) {
     for (int i = 0; i < cans.size(); ++i) {
-        if (double(cans[i].votes.size()) > double(numVotes)/2.0) {
+        if (double(cans[i].votes.size()) > numVotes/2.0) {
             return cans[i].name;
         }
     }
