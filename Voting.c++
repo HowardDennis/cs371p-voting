@@ -20,6 +20,10 @@ using namespace std;
 
 int numVotes = 0;
 
+// --------
+// determines if there is a winner
+// --------
+
 bool winner (vector<Candidate>& cans) {
     for (int i = 0; i < cans.size(); ++i) {
         if (double(cans[i].votes.size()) > numVotes/2.0) {
