@@ -150,11 +150,11 @@ TEST(VotingFixture, determine_winner_1) {
     vector<int> ballot_1 = {3, 1, 2};
     vector<int> ballot_2 = {3, 2, 1};
     vector<int> ballot_3 = {1, 2, 3};
-    vector<int> ballot_4 = {3, 1, 2)};
+    vector<int> ballot_4 = {3, 1, 2};
     assign_ballot(candidates, 0, ballot_1);
     assign_ballot(candidates, 0, ballot_2);
     assign_ballot(candidates, 0, ballot_3);
     assign_ballot(candidates, 0, ballot_4);
     string winner = determine_winner(candidates);
-    ASSERT_EQ(winner, "Sihran Sihran");\
+    ASSERT_EQ(winner.compare("Sihran Sihran"), 0);
 }
