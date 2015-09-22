@@ -76,7 +76,7 @@ void get_ballots2 (istream& r, vector<Candidate>& candidates) {
     while(getline(r, s) && !s.empty()) {
         stringstream stream(s);
         vector<int> temp;
-        while(stream) {
+        while(!stream.eof()) {
             int n;
             stream>>n;
             temp.push_back(n);
