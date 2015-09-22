@@ -171,5 +171,6 @@ TEST(VotingFixture, determine_winner_2) {
     get_ballots2(test_stream, candidates);
     string winner = determine_winner(candidates);
     cout << winner << endl;
+    print_all(candidates);
     ASSERT_EQ(winner.compare(""), 0);
 }
