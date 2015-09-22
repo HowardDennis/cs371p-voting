@@ -19,6 +19,8 @@
 
 using namespace std;
 
+extern int numVotes;
+
 struct Candidate
 {
     string name;
@@ -27,6 +29,8 @@ struct Candidate
 
     Candidate():name(""), eliminated(false){}
 };
+
+void winner (vector<Candidate> can);
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans);
 
