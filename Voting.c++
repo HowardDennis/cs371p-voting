@@ -98,23 +98,23 @@ void count_votes (vector< vector<int> >& ballots, vector< vector<int> >& votes, 
 // voting_solve
 // -------------
 
-string voting_solve (istream& r, ostream& w) {
+void voting_solve (istream& r, ostream& w) {
     int numCases;
     int numNames;
     string s;
     getline(r, s);
     istringstream (s) >> numCases;
-    cout << numCases << endl;
     getline(r, s);
     while(numCases > 0) {
         getline(r, s);
         istringstream (s) >> numNames;
-        cout << numNames << endl;
         vector<Candidate> candidates;
         get_candidates(r, numNames, candidates);
+        cout << candidates[0].name << endl;
         get_ballots2(r, candidates);
+        cout << candidates[0].votes[0] << endl;
         string win = determine_winner(candidates);
-        return win;
+        cout << winner.compare("") << endl;
         --numCases;}
     }
 
