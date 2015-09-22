@@ -36,10 +36,6 @@ void get_candidates (istream& r, int numNames, vector<Candidate>& cans);
 
 void voting_read_names (istream& r, int numNames, vector<string>& names);
 
-// ------------
-// voting_eval
-// ------------
-
 void get_ballots (istream& r, vector< vector<int> >& ballots);
 
 void get_ballots2 (istream& r, vector<Candidate>& candidates);
@@ -48,11 +44,10 @@ void assign_ballot (vector<Candidate>& candidates, int column, vector<int> ballo
 
 void count_votes (vector< vector<int> >& ballots, vector< vector<int> >& votes, int column);
 
-// -------------
-// voting_solve
-// -------------
-
 void voting_solve (istream& r, ostream& w);
+
+void print_vector (vector<int> v);
+
 #endif // Voting_h
 
 
