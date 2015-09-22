@@ -60,6 +60,24 @@ void get_ballots (istream& r, vector< vector<int> >& ballots) {
     }
 }
 
+void get_ballots2 (istream& r, vector<Candidates>& candidates) {
+    string s;
+    while(getline(r, s) && !s.empty()) {
+        stringstream stream(s);
+        vector<int> temp;
+        while(stream) {
+            int n;
+            stream>>n;
+            temp.push_back(n);
+        }
+        
+    }
+}
+
+void assign_ballot (vector<Candidate>& candidates, int column, vector<int> ballot) {
+    candidates[ballot[column] -1].votes.push_back(ballot);
+}
+
 void count_votes (vector< vector<int> >& ballots, vector< vector<int> >& votes, int column) {
     
 }
