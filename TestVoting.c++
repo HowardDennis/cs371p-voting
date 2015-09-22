@@ -96,6 +96,14 @@ TEST(VotingFixture, get_ballots_proper) {
     get_candidates(test_stream, numNames, ballots);
     get_ballots2(test_stream, ballots);
     ASSERT_EQ(1, ballots[0].votes[0][0]);
+    ASSERT_EQ(2, ballots[0].votes[0][1]);
+    ASSERT_EQ(3, ballots[0].votes[0][2]);
+    ASSERT_EQ(2, ballots[1].votes[0][0]);
+    ASSERT_EQ(1, ballots[1].votes[0][1]);
+    ASSERT_EQ(3, ballots[1].votes[0][2]);
+    ASSERT_EQ(3, ballots[2].votes[0][0]);
+    ASSERT_EQ(2, ballots[2].votes[0][1]);
+    ASSERT_EQ(1, ballots[2].votes[0][2]);
 }
 
 TEST(VotingFixture, get_candidates_1) {
