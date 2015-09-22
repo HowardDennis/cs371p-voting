@@ -46,7 +46,7 @@ void count_votes (vector< vector<int> >& ballots, vector< vector<int> >& votes, 
 
 void voting_solve (istream& r, ostream& w);
 
-void print_all (vector<Candidates> v);
+void print_all (vector<Candidates>& v);
 
 #endif // Voting_h
 
