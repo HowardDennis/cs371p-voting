@@ -76,6 +76,10 @@ void get_ballots (istream& r, vector< vector<int> >& ballots) {
     }
 }
 
+// --------
+// makes the string of numbers into vectors
+// --------
+
 void get_ballots2 (istream& r, vector<Candidate>& candidates) {
     string s;
     while(getline(r, s) && !s.empty()) {
@@ -90,6 +94,10 @@ void get_ballots2 (istream& r, vector<Candidate>& candidates) {
         ++numVotes;
     }
 }
+
+// --------
+// assigns ballot to the candidate
+// --------
 
 void assign_ballot (vector<Candidate>& candidates, int column, vector<int> ballot) {
     candidates[ballot[column] -1].votes.push_back(ballot);
