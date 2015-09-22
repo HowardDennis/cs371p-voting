@@ -121,8 +121,9 @@ void print_all (vector<Candidate>& v) {
         cout << v[i].name << endl;
         for(int j = 0; j < v[i].votes.size(); ++j) {
             for(int q = 0; q < v[i].votes.size(); ++q) {
-                cout << v[i].votes[j][q] << endl;
+                cout << v[i].votes[j][q] << " ";
             }
+            endl (cout);
         }
     }
 }
