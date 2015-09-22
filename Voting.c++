@@ -104,12 +104,12 @@ string voting_solve (istream& r, ostream& w) {
     string s;
     getline(r, s);
     istringstream (s) >> numCases;
+    cout << numCases << endl;
     getline(r, s);
     while(numCases > 0) {
         getline(r, s);
         istringstream (s) >> numNames;
-
-        // Names on the ballot
+        cout << numNames << endl;
         vector<Candidate> candidates;
         get_candidates(r, numNames, candidates);
         get_ballots2(r, candidates);
