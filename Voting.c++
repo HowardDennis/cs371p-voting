@@ -18,6 +18,12 @@
 
 using namespace std;
 
+int numVotes = 0;
+
+void winner (vector<Candidate> can) {
+    
+}
+
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans) {
     int i = 0;
     string s;
