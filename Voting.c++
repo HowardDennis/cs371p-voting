@@ -20,6 +20,20 @@ using namespace std;
 
 int numVotes = 0;
 
+void eliminate (vector<Candidate> can) {
+    int min = 1001;
+    for (unsigned int i = 0; i < can.size(); ++i) {
+        if (!can[i].elim && min > can[i].votes.size()) {
+            min = can[i].votes.size();
+        }
+    }
+    for (unsigned int i = 0; i < can.size(); ++i) {
+        if (min == can[i].votes.size()) {
+            can[i].elim = true;
+        }
+    }
+}
+
 void voting_solve (istream& r, ostream& w) {
     int numCases;
     int numNames;
