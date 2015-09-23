@@ -90,6 +90,7 @@ void assign_ballot (vector<Candidate>& candidates, int column, vector<int> ballo
 bool winner (vector<Candidate>& cans) {
     for (unsigned int i = 0; i < cans.size(); ++i) {
         if (double(cans[i].votes.size()) > numVotes/2.0) {
+            cout << cans[i].name << endl;
             return true;
         }
     }
