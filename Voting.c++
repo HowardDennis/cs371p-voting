@@ -27,9 +27,8 @@ void voting_solve (istream& r, ostream& w) {
     getline(r, s);
     istringstream (s) >> numCases;
     assert(numCases > 0);
-    
+    getline(r, s);
     while(numCases > 0) {
-        getline(r, s);
         getline(r, s);
         cout << s << endl;
         istringstream (s) >> numNames;
