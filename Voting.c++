@@ -89,7 +89,7 @@ void voting_solve (istream& r, ostream& w) {
         istringstream (s) >> numNames;
         vector<Candidate> candidates;
         get_candidates(r, numNames, candidates);
-        get_ballots2(r, candidates);
+        get_ballots(r, candidates);
         bool win = winner(candidates);
         cout << win << endl;
         --numCases;}
