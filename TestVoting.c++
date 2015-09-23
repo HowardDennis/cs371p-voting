@@ -124,7 +124,7 @@ TEST(VotingFixture, tie_1) {
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates, numNames);
     ostringstream w;
-    bool c = tie(candidates, w);
+    bool c = is_tie(candidates, w);
     ASSERT_TRUE(c);
 }
 
@@ -139,7 +139,7 @@ TEST(VotingFixture, tie_2) {
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates, numNames);
     ostringstream w;
-    bool c = tie(candidates, w);
+    bool c = is_tie(candidates, w);
     ASSERT_FALSE(c);
 }
 
@@ -154,7 +154,7 @@ TEST(VotingFixture, tie_3) {
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates, numNames);
     ostringstream w;
-    bool c = tie(candidates, w);
+    bool c = is_tie(candidates, w);
     ASSERT_FALSE(c);
 }
 
