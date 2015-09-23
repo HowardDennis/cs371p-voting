@@ -37,7 +37,6 @@ void voting_solve (istream& r, ostream& w) {
         assert(candidates.size() == (unsigned)numNames);
         get_ballots(r, candidates);
         vector<Candidate> losers;
-        bool win = winner(candidates);
         --numCases;}
     }
 
