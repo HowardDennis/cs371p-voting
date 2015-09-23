@@ -30,6 +30,7 @@ void voting_solve (istream& r, ostream& w) {
     
     while(numCases > 0) {
         getline(r, s);
+        getline(r, s);
         cout << s << endl;
         istringstream (s) >> numNames;
         assert(numNames >= 0 && numNames < 21);
