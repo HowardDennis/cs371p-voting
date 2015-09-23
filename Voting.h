@@ -25,7 +25,7 @@ struct Candidate
 {
     string name;
     vector< vector<int> > votes;
-    bool eliminated;
+    bool elim;
 
     Candidate():name(""), eliminated(false){}
 };
