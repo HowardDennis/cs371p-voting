@@ -27,29 +27,18 @@ void voting_solve (istream& r, ostream& w) {
     getline(r, s);
     istringstream (s) >> numCases;
     assert(numCases > 0);
-    getline(r, s);
+    getline(r, s); //skips line
+    case_eval (r, w, s);
     while(numCases > 0) {
-        getline(r, s);
-        istringstream (s) >> numNames;
-        assert(numNames >= 0 && numNames < 21);
-        vector<Candidate> candidates;
-        get_candidates(r, numNames, candidates);
-        assert(candidates.size() == (unsigned)numNames);
-        get_ballots(r, candidates, numNames);
-        assert(numVotes <= 1000);
-        bool win = winner(candidates);
-        bool draw = tie(candidates);
-        vector<Candidate> losers;
-        int i = 1;
-        while(!win && !draw && i < numNames) {
-            
-            ++i;
-        }
+        w << "" << endl;
+        case_eval (r, w);
+        numVotes = 0;
         --numCases;}
     }
     
 void case_eval (istream& r, ostream& w) {
     string s;
+    getline(r, s);
     int numNames;
     istringstream (s) >> numNames;
     assert(numNames >= 0 && numNames < 21);
