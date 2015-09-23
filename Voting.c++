@@ -47,7 +47,7 @@ void case_eval (istream& r, ostream& w) {
     get_ballots(r, candidates, numNames);
     assert(numVotes <= 1000);
     bool win = winner(candidates, w);
-    bool draw = tie(candidates, w);
+    bool draw = is_tie(candidates, w);
     vector<Candidate> losers;
     int i = 1;
     while(!win && !draw && i < numNames) {
