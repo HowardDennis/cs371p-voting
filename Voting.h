@@ -30,6 +30,8 @@ struct Candidate
     Candidate():name(""), elim(false){}
 };
 
+void case_eval (istream& r, ostream& w);
+
 void eliminate (vector<Candidate>& can);
 
 bool tie (vector<Candidate>& cans);
