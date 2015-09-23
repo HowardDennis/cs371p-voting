@@ -50,7 +50,7 @@ void voting_solve (istream& r, ostream& w) {
         vector<Candidate> candidates;
         get_candidates(r, numNames, candidates);
         assert(candidates.size() == (unsigned)numNames);
-        get_ballots(r, candidates);
+        get_ballots(r, candidates, numNames);
         assert(numVotes <= 1000);
         bool win = winner(candidates);
         bool draw = tie(candidates);
@@ -83,7 +83,7 @@ void get_candidates (istream& r, int numNames, vector<Candidate>& cans) {
 // makes the string of numbers into vectors
 // --------
 
-void get_ballots (istream& r, vector<Candidate>& candidates) {
+void get_ballots (istream& r, vector<Candidate>& candidates, int numNames) {
     string s;
     while(getline(r, s) && !s.empty()) {
         stringstream stream(s);
@@ -93,6 +93,7 @@ void get_ballots (istream& r, vector<Candidate>& candidates) {
             stream>>n;
             temp.push_back(n);
         }
+        assert (numNames == temp.size());
         assign_ballot (candidates, 0, temp);
         ++numVotes;
     }
