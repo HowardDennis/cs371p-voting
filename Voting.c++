@@ -28,7 +28,7 @@ void voting_solve (istream& r, ostream& w) {
     istringstream (s) >> numCases;
     assert(numCases > 0);
     getline(r, s); //skips line
-    case_eval (r, w, s);
+    case_eval (r, w);
     while(numCases > 0) {
         w << "" << endl;
         case_eval (r, w);
