@@ -34,9 +34,9 @@ void case_eval (istream& r, ostream& w);
 
 void eliminate (vector<Candidate>& can);
 
-bool tie (vector<Candidate>& cans);
+bool tie (vector<Candidate>& cans, ostream& w);
 
-bool winner (vector<Candidate>& cans);
+bool winner (vector<Candidate>& cans, ostream& w);
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans);
 
