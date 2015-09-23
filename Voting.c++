@@ -20,13 +20,14 @@ using namespace std;
 
 int numVotes = 0;
 
-void eliminate (vector<Candidate> can) {
+void eliminate (vector<Candidate>& can) {
     unsigned int min = 1001;
     for (unsigned int i = 0; i < can.size(); ++i) {
         if (!can[i].elim && min > can[i].votes.size()) {
             min = can[i].votes.size();
         }
     }
+    
     for (unsigned int i = 0; i < can.size(); ++i) {
         if (min == can[i].votes.size()) {
             can[i].elim = true;
@@ -101,7 +102,7 @@ void get_ballots (istream& r, vector<Candidate>& candidates) {
 // assigns ballot to the candidate
 // --------
 
-void assign_ballot (vector<Candidate>& candidates, int column, vector<int> ballot) {
+void assign_ballot (vector<Candidate>& candidates, int column, vector<int>& ballot) {
     candidates[ballot[column] -1].votes.push_back(ballot);
 }
 
