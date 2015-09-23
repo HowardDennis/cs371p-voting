@@ -20,21 +20,6 @@ using namespace std;
 
 int numVotes = 0;
 
-void eliminate (vector<Candidate>& can) {
-    unsigned int min = 1001;
-    for (unsigned int i = 0; i < can.size(); ++i) {
-        if (!can[i].elim && min > can[i].votes.size()) {
-            min = can[i].votes.size();
-        }
-    }
-    
-    for (unsigned int i = 0; i < can.size(); ++i) {
-        if (min == can[i].votes.size()) {
-            can[i].elim = true;
-        }
-    }
-}
-
 void voting_solve (istream& r, ostream& w) {
     int numCases;
     int numNames;
@@ -42,8 +27,9 @@ void voting_solve (istream& r, ostream& w) {
     getline(r, s);
     istringstream (s) >> numCases;
     assert(numCases > 0);
-    getline(r, s);
+    
     while(numCases > 0) {
+        getline(r, s); //avoids blank line
         getline(r, s);
         istringstream (s) >> numNames;
         assert(numNames >= 0 && numNames < 21);
@@ -105,6 +91,25 @@ void get_ballots (istream& r, vector<Candidate>& candidates, int numNames) {
 
 void assign_ballot (vector<Candidate>& candidates, int column, vector<int>& ballot) {
     candidates[ballot[column] -1].votes.push_back(ballot);
+}
+
+// --------
+// eliminates candidates
+// --------
+
+void eliminate (vector<Candidate>& can) {
+    unsigned int min = 1001;
+    for (unsigned int i = 0; i < can.size(); ++i) {
+        if (!can[i].elim && min > can[i].votes.size()) {
+            min = can[i].votes.size();
+        }
+    }
+    
+    for (unsigned int i = 0; i < can.size(); ++i) {
+        if (min == can[i].votes.size()) {
+            can[i].elim = true;
+        }
+    }
 }
 
 // --------
