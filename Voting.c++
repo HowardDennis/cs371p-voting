@@ -22,7 +22,6 @@ int numVotes = 0;
 
 void voting_solve (istream& r, ostream& w) {
     int numCases;
-    int numNames;
     string s;
     getline(r, s);
     istringstream (s) >> numCases;
