@@ -21,7 +21,7 @@ using namespace std;
 int numVotes = 0;
 
 bool tie (vector<Candidate>& cans) {
-    int n = cans[0].votes.size();
+    unsigned int n = cans[0].votes.size();
     for (unsigned int i = 1; i < cans.size(); ++i) {
         if (n != cans[i].votes.size()) {
             return false;
