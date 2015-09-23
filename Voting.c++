@@ -126,6 +126,16 @@ void eliminate (vector<Candidate>& can) {
 // --------
 
 bool winner (vector<Candidate>& cans, ostream& w) {
+    if (cans.size() == 0) {
+        w << "no candidates" << endl;
+        return true;
+    }
+    
+    if (cans.size() == 1) {
+        return true;
+        w << cans[0].name << endl;
+    }
+    
     for (unsigned int i = 0; i < cans.size(); ++i) {
         if (double(cans[i].votes.size()) > numVotes/2.0) {
             w << cans[i].name << endl;
