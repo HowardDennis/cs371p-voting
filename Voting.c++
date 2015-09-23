@@ -46,8 +46,8 @@ void case_eval (istream& r, ostream& w) {
     assert(candidates.size() == (unsigned)numNames);
     get_ballots(r, candidates, numNames);
     assert(numVotes <= 1000);
-    bool win = winner(candidates);
-    bool draw = tie(candidates);
+    bool win = winner(candidates, w);
+    bool draw = tie(candidates, w);
     vector<Candidate> losers;
     int i = 1;
     while(!win && !draw && i < numNames) {
@@ -123,17 +123,17 @@ void eliminate (vector<Candidate>& can) {
 // determines if there is a winner
 // --------
 
-bool winner (vector<Candidate>& cans) {
+bool winner (vector<Candidate>& cans, ostream& w) {
     for (unsigned int i = 0; i < cans.size(); ++i) {
         if (double(cans[i].votes.size()) > numVotes/2.0) {
-            cout << cans[i].name << endl;
+            w << cans[i].name << endl;
             return true;
         }
     }
     return false;
 }
 
-bool tie (vector<Candidate>& cans) {
+bool tie (vector<Candidate>& cans, ostream& w) {
     unsigned int n = cans[0].votes.size();
     for (unsigned int i = 1; i < cans.size(); ++i) {
         if (!cans[i].elim && n != cans[i].votes.size()) {
@@ -143,7 +143,7 @@ bool tie (vector<Candidate>& cans) {
     
     for (unsigned int i = 0; i < cans.size(); ++i) {
         if (!cans[i].elim) {
-            cout << cans[i].name << endl;
+            w << cans[i].name << endl;
         }
     }
     
