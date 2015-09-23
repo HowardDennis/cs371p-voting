@@ -47,6 +47,24 @@ void voting_solve (istream& r, ostream& w) {
         }
         --numCases;}
     }
+    
+void case_eval (istream& r, ostream& w) {
+    istringstream (s) >> numNames;
+    assert(numNames >= 0 && numNames < 21);
+    vector<Candidate> candidates;
+    get_candidates(r, numNames, candidates);
+    assert(candidates.size() == (unsigned)numNames);
+    get_ballots(r, candidates, numNames);
+    assert(numVotes <= 1000);
+    bool win = winner(candidates);
+    bool draw = tie(candidates);
+    vector<Candidate> losers;
+    int i = 1;
+    while(!win && !draw && i < numNames) {
+            
+        ++i;
+    }
+}
 
 // --------
 // Gets names from input and makes them into Candidate objects
