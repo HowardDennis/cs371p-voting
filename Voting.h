@@ -30,6 +30,8 @@ struct Candidate
     Candidate():name(""), eliminated(false){}
 };
 
+bool tie (vector<Candidate>& cans);
+
 bool winner (vector<Candidate>& cans);
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans);
