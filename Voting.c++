@@ -25,7 +25,7 @@ int numVotes = 0;
 // --------
 
 bool winner (vector<Candidate>& cans) {
-    for (int i = 0; i < cans.size(); ++i) {
+    for (unsigned int i = 0; i < cans.size(); ++i) {
         if (double(cans[i].votes.size()) > numVotes/2.0) {
             cout << cans[i].name << endl;
             return true;
