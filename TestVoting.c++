@@ -161,7 +161,7 @@ TEST(VotingFixture, eliminate_1) {
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates);
     eliminate(candidates);
-    cout << candidates[0].elim << endl;
-    cout << candidates[1].elim << endl;
-    cout << candidates[2].elim << endl;
+    ASSERT_TRUE(candidates[0].elim);
+    ASSERT_TRUE(candidates[1].elim);
+    ASSERT_TRUE(candidates[2].elim);
 }
