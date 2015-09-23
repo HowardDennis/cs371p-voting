@@ -20,9 +20,15 @@ using namespace std;
 
 int numVotes = 0;
 
-// -------------
-// voting_solve
-// -------------
+bool tie (vector<Candidate>& cans) {
+    int n = cans[0].votes.size();
+    for (unsigned int i = 1; i < cans.size(); ++i) {
+        if (n != cans[i].votes.size()) {
+            return false;
+        }
+    }
+    return true;
+}
 
 void voting_solve (istream& r, ostream& w) {
     int numCases;
@@ -37,6 +43,7 @@ void voting_solve (istream& r, ostream& w) {
         vector<Candidate> candidates;
         get_candidates(r, numNames, candidates);
         get_ballots(r, candidates);
+        vector<Candidate> losers;
         bool win = winner(candidates);
         --numCases;}
     }
