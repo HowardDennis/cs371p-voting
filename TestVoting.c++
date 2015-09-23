@@ -95,7 +95,8 @@ TEST(VotingFixture, winner_1) {
     assign_ballot(candidates, 0, ballot_2);
     assign_ballot(candidates, 0, ballot_3);
     assign_ballot(candidates, 0, ballot_4);
-    ASSERT_TRUE(winner(candidates));
+    ostringstream w;
+    ASSERT_TRUE(winner(candidates, w));
 }
 
 TEST(VotingFixture, winner_2) {
@@ -108,7 +109,8 @@ TEST(VotingFixture, winner_2) {
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates, numNames);
-    ASSERT_FALSE(winner(candidates));
+    ostringstream w;
+    ASSERT_FALSE(winner(candidates, w));
 }
 
 TEST(VotingFixture, tie_1) {
@@ -121,7 +123,8 @@ TEST(VotingFixture, tie_1) {
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates, numNames);
-    ASSERT_TRUE(tie(candidates));
+    ostringstream w;
+    ASSERT_TRUE(tie(candidates, w));
 }
 
 TEST(VotingFixture, tie_2) {
@@ -134,7 +137,8 @@ TEST(VotingFixture, tie_2) {
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates, numNames);
-    ASSERT_FALSE(tie(candidates));
+    ostringstream w;
+    ASSERT_FALSE(tie(candidates, w));
 }
 
 TEST(VotingFixture, tie_3) {
@@ -147,7 +151,8 @@ TEST(VotingFixture, tie_3) {
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates, numNames);
-    ASSERT_TRUE(tie(candidates));
+    ostringstream w;
+    ASSERT_FALSE(tie(candidates, w));
 }
 
 TEST(VotingFixture, eliminate_1) {
