@@ -133,7 +133,7 @@ bool winner (vector<Candidate>& cans, ostream& w) {
     return false;
 }
 
-bool tie (vector<Candidate>& cans, ostream& w) {
+bool is_tie (vector<Candidate>& cans, ostream& w) {
     unsigned int n = cans[0].votes.size();
     for (unsigned int i = 1; i < cans.size(); ++i) {
         if (!cans[i].elim && n != cans[i].votes.size()) {
