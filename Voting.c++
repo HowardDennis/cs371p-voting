@@ -29,7 +29,7 @@ void voting_solve (istream& r, ostream& w) {
     getline(r, s); //skips line
     case_eval (r, w);
     while(numCases > 0) {
-        w << "" << endl;
+        endl(cout);
         case_eval (r, w);
         numVotes = 0;
         --numCases;}
