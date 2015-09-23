@@ -122,7 +122,7 @@ bool winner (vector<Candidate>& cans) {
 bool tie (vector<Candidate>& cans) {
     unsigned int n = cans[0].votes.size();
     for (unsigned int i = 1; i < cans.size(); ++i) {
-        if (!cans[i].eliminated && n != cans[i].votes.size()) {
+        if (!cans[i].elim && n != cans[i].votes.size()) {
             return false;
         }
     }
