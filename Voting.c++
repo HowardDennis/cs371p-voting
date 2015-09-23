@@ -43,10 +43,6 @@ void case_eval (istream& r, ostream& w) {
     int numNames;
     istringstream (s) >> numNames;
     assert(numNames >= 0 && numNames < 21);
-    if (numNames == 0) {
-        w << "no candidates" << endl;
-        getline(r, s);
-    }
     vector<Candidate> candidates;
     get_candidates(r, numNames, candidates);
     assert(candidates.size() == (unsigned)numNames);
