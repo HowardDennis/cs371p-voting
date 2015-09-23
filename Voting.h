@@ -38,7 +38,7 @@ bool winner (vector<Candidate>& cans);
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans);
 
-void get_ballots (istream& r, vector<Candidate>& candidates);
+void get_ballots (istream& r, vector<Candidate>& candidates, int numNames);
 
 void assign_ballot (vector<Candidate>& candidates, int column, vector<int>& ballots);
 
