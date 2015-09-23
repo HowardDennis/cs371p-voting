@@ -29,6 +29,7 @@ void voting_solve (istream& r, ostream& w) {
     assert(numCases > 0);
     
     while(numCases > 0) {
+        cout << numCases << endl;
         getline(r, s); //avoids blank line
         getline(r, s);
         istringstream (s) >> numNames;
@@ -42,7 +43,6 @@ void voting_solve (istream& r, ostream& w) {
         bool draw = tie(candidates);
         vector<Candidate> losers;
         int i = 1;
-        cout << "here" << endl;
         while(!win && !draw && i < numNames) {
             
             ++i;
