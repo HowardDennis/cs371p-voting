@@ -20,8 +20,23 @@ using namespace std;
 
 int numVotes = 0;
 
+<<<<<<< HEAD
 void winner (vector<Candidate> can) {
     
+=======
+// --------
+// determines if there is a winner
+// --------
+
+bool winner (vector<Candidate>& cans) {
+    for (int i = 0; i < cans.size(); ++i) {
+        if (double(cans[i].votes.size()) > numVotes/2.0) {
+            cout << cans[i].name << endl;
+            return true;
+        }
+    }
+    return false;
+>>>>>>> how
 }
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans) {
@@ -66,6 +81,33 @@ void get_ballots (istream& r, vector< vector<int> >& ballots) {
     }
 }
 
+// --------
+// makes the string of numbers into vectors
+// --------
+
+void get_ballots2 (istream& r, vector<Candidate>& candidates) {
+    string s;
+    while(getline(r, s) && !s.empty()) {
+        stringstream stream(s);
+        vector<int> temp;
+        while(!stream.eof()) {
+            int n;
+            stream>>n;
+            temp.push_back(n);
+        }
+        assign_ballot (candidates, 0, temp);
+        ++numVotes;
+    }
+}
+
+// --------
+// assigns ballot to the candidate
+// --------
+
+void assign_ballot (vector<Candidate>& candidates, int column, vector<int> ballot) {
+    candidates[ballot[column] -1].votes.push_back(ballot);
+}
+
 void count_votes (vector< vector<int> >& ballots, vector< vector<int> >& votes, int column) {
     
 }
@@ -84,21 +126,24 @@ void voting_solve (istream& r, ostream& w) {
     while(numCases > 0) {
         getline(r, s);
         istringstream (s) >> numNames;
-
-        // Names on the ballot
-        vector<string> names;
-        voting_read_names(r, numNames, names);
-        vector< vector<int> > votes;
-
-        // All of the ballot rankings.
-        vector< vector<int> > ballots;
-        get_ballots(r, ballots);
-        for (int i = 0; i < numNames; i++) {
-            vector<int> temp;
-            votes.push_back(temp);
-        }
-
+        vector<Candidate> candidates;
+        get_candidates(r, numNames, candidates);
+        get_ballots2(r, candidates);
+        bool win = winner(candidates);
+        cout << win << endl;
         --numCases;}
     }
+    
+void print_all (vector<Candidate>& v) {
+    for(int i = 0; i < v.size(); ++i) {
+        cout << v[i].name << endl;
+        for(int j = 0; j < v[i].votes.size(); ++j) {
+            for(int q = 0; q < v[i].votes[j].size(); ++q) {
+                cout << v[i].votes[j][q] << " ";
+            }
+            endl (cout);
+        }
+    }
+}
 
 

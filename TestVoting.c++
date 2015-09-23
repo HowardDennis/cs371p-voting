@@ -85,6 +85,29 @@ TEST(VotingFixture, get_ballots_2) {
     ASSERT_EQ(1, ballots[2][2]);
 }
 
+TEST(VotingFixture, get_candidates_proper) {
+    string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n1 2 3\n2 1 3\n3 2 1");
+    istringstream test_stream(s);
+    vector<Candidate> candidates;
+    int numNames;
+    string str;
+    getline(test_stream, str);
+    istringstream (str) >> numNames;
+    get_candidates(test_stream, numNames, candidates);
+    get_ballots2(test_stream, candidates);
+    ASSERT_EQ(1, candidates[0].votes[0][0]);
+    ASSERT_EQ(2, candidates[0].votes[0][1]);
+    ASSERT_EQ(3, candidates[0].votes[0][2]);
+    ASSERT_EQ(2, candidates[1].votes[0][0]);
+    ASSERT_EQ(1, candidates[1].votes[0][1]);
+    ASSERT_EQ(3, candidates[1].votes[0][2]);
+    ASSERT_EQ(3, candidates[2].votes[0][0]);
+    ASSERT_EQ(2, candidates[2].votes[0][1]);
+    ASSERT_EQ(1, candidates[2].votes[0][2]);
+}
+
+
+
 TEST(VotingFixture, get_candidates_1) {
     string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n");
     istringstream test_stream(s);
@@ -115,3 +138,40 @@ TEST(VotingFixture, assign_ballot_1) {
     ASSERT_EQ(candidates[2].votes[1][1], 3);
     ASSERT_EQ(candidates[2].votes[1][2], 1);
 }
+<<<<<<< HEAD
+=======
+
+TEST(VotingFixture, determine_winner_1) {
+    Candidate can_1;
+    can_1.name = "John Doe";
+    Candidate can_2;
+    can_2.name = "Jane Smith";
+    Candidate can_3;
+    can_3.name = "Sihran Sihran";
+    vector<Candidate> candidates = {can_1, can_2, can_3};
+    vector<int> ballot_1 = {3, 1, 2};
+    vector<int> ballot_2 = {3, 2, 1};
+    vector<int> ballot_3 = {1, 2, 3};
+    vector<int> ballot_4 = {3, 1, 2};
+    assign_ballot(candidates, 0, ballot_1);
+    assign_ballot(candidates, 0, ballot_2);
+    assign_ballot(candidates, 0, ballot_3);
+    assign_ballot(candidates, 0, ballot_4);
+    string winner = determine_winner(candidates);
+    ASSERT_EQ(winner.compare("Sihran Sihran"), 0);
+}
+
+TEST(VotingFixture, determine_winner_2) {
+    string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n1 2 3\n2 1 3\n3 2 1");
+    istringstream test_stream(s);
+    vector<Candidate> candidates;
+    int numNames;
+    string str;
+    getline(test_stream, str);
+    istringstream (str) >> numNames;
+    get_candidates(test_stream, numNames, candidates);
+    get_ballots2(test_stream, candidates);
+    string winner = determine_winner(candidates);
+    ASSERT_EQ(winner.compare(""), 0);
+}
+>>>>>>> how
