@@ -20,28 +20,21 @@ using namespace std;
 
 int numVotes = 0;
 
-bool tie (vector<Candidate>& cans) {
-    unsigned int n = cans[0].votes.size();
-    for (unsigned int i = 1; i < cans.size(); ++i) {
-        if (n != cans[i].votes.size()) {
-            return false;
-        }
-    }
-    return true;
-}
-
 void voting_solve (istream& r, ostream& w) {
     int numCases;
     int numNames;
     string s;
     getline(r, s);
     istringstream (s) >> numCases;
+    assert(numCases > 0);
     getline(r, s);
     while(numCases > 0) {
         getline(r, s);
         istringstream (s) >> numNames;
+        assert(numNames >= 0 && numNames < 21);
         vector<Candidate> candidates;
         get_candidates(r, numNames, candidates);
+        assert(candidates.size() == numNames);
         get_ballots(r, candidates);
         vector<Candidate> losers;
         bool win = winner(candidates);
@@ -98,9 +91,18 @@ void assign_ballot (vector<Candidate>& candidates, int column, vector<int> ballo
 bool winner (vector<Candidate>& cans) {
     for (unsigned int i = 0; i < cans.size(); ++i) {
         if (double(cans[i].votes.size()) > numVotes/2.0) {
-            cout << cans[i].name << endl;
             return true;
         }
     }
     return false;
+}
+
+bool tie (vector<Candidate>& cans) {
+    unsigned int n = cans[0].votes.size();
+    for (unsigned int i = 1; i < cans.size(); ++i) {
+        if (n != cans[i].votes.size()) {
+            return false;
+        }
+    }
+    return true;
 }
