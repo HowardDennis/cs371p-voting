@@ -29,9 +29,8 @@ void voting_solve (istream& r, ostream& w) {
     assert(numCases > 0);
     
     while(numCases > 0) {
-        cout << numCases << endl;
-        getline(r, s); //avoids blank line
         getline(r, s);
+        cout << s << endl;
         istringstream (s) >> numNames;
         assert(numNames >= 0 && numNames < 21);
         vector<Candidate> candidates;
