@@ -36,7 +36,15 @@ void voting_solve (istream& r, ostream& w) {
         get_candidates(r, numNames, candidates);
         assert(candidates.size() == (unsigned)numNames);
         get_ballots(r, candidates);
+        assert(numVotes <= 1000);
+        bool win = false;
+        bool tie = false;
         vector<Candidate> losers;
+        int i = 1;
+        while(!win && !tie && i < numNames) {
+            
+            ++i;
+        }
         --numCases;}
     }
 
