@@ -20,19 +20,30 @@ using namespace std;
 
 int numVotes = 0;
 
-// --------
-// determines if there is a winner
-// --------
+// -------------
+// voting_solve
+// -------------
 
-bool winner (vector<Candidate>& cans) {
-    for (unsigned int i = 0; i < cans.size(); ++i) {
-        if (double(cans[i].votes.size()) > numVotes/2.0) {
-            cout << cans[i].name << endl;
-            return true;
-        }
+void voting_solve (istream& r, ostream& w) {
+    int numCases;
+    int numNames;
+    string s;
+    getline(r, s);
+    istringstream (s) >> numCases;
+    getline(r, s);
+    while(numCases > 0) {
+        getline(r, s);
+        istringstream (s) >> numNames;
+        vector<Candidate> candidates;
+        get_candidates(r, numNames, candidates);
+        get_ballots(r, candidates);
+        bool win = winner(candidates);
+        --numCases;}
     }
-    return false;
-}
+
+// --------
+// Gets names from input and makes them into Candidate objects
+// --------
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans) {
     int i = 0;
@@ -73,24 +84,16 @@ void assign_ballot (vector<Candidate>& candidates, int column, vector<int> ballo
     candidates[ballot[column] -1].votes.push_back(ballot);
 }
 
-// -------------
-// voting_solve
-// -------------
+// --------
+// determines if there is a winner
+// --------
 
-void voting_solve (istream& r, ostream& w) {
-    int numCases;
-    int numNames;
-    string s;
-    getline(r, s);
-    istringstream (s) >> numCases;
-    getline(r, s);
-    while(numCases > 0) {
-        getline(r, s);
-        istringstream (s) >> numNames;
-        vector<Candidate> candidates;
-        get_candidates(r, numNames, candidates);
-        get_ballots(r, candidates);
-        bool win = winner(candidates);
-        cout << win << endl;
-        --numCases;}
+bool winner (vector<Candidate>& cans) {
+    for (unsigned int i = 0; i < cans.size(); ++i) {
+        if (double(cans[i].votes.size()) > numVotes/2.0) {
+            cout << cans[i].name << endl;
+            return true;
+        }
     }
+    return false;
+}
