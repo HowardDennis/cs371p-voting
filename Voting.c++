@@ -128,7 +128,7 @@ bool tie (vector<Candidate>& cans) {
         }
     }
     
-    for (unsigned int i = 1; i < cans.size(); ++i) {
+    for (unsigned int i = 0; i < cans.size(); ++i) {
         if (!cans[i].elim) {
             cout << cans[i].name << endl;
         }
