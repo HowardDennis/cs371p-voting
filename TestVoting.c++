@@ -79,7 +79,7 @@ TEST(VotingFixture, assign_ballot_1) {
     ASSERT_EQ(candidates[2].votes[1][2], 1);
 }
 
-TEST(VotingFixture, determine_winner_1) {
+TEST(VotingFixture, winner_1) {
     Candidate can_1;
     can_1.name = "John Doe";
     Candidate can_2;
@@ -95,11 +95,11 @@ TEST(VotingFixture, determine_winner_1) {
     assign_ballot(candidates, 0, ballot_2);
     assign_ballot(candidates, 0, ballot_3);
     assign_ballot(candidates, 0, ballot_4);
-    bool winner = determine_winner(candidates);
+    bool winner = winner(candidates);
     ASSERT_TRUE(winner);
 }
 
-TEST(VotingFixture, determine_winner_2) {
+TEST(VotingFixture, winner_2) {
     string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n1 2 3\n2 1 3\n3 2 1");
     istringstream test_stream(s);
     vector<Candidate> candidates;
@@ -109,6 +109,6 @@ TEST(VotingFixture, determine_winner_2) {
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
     get_ballots2(test_stream, candidates);
-    bool winner = determine_winner(candidates);
+    bool winner = winner(candidates);
     ASSERT_TRUE(winner);
 }
