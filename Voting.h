@@ -34,7 +34,7 @@ void case_eval (istream& r, ostream& w);
 
 void eliminate (vector<Candidate>& can);
 
-bool tie (vector<Candidate>& cans, ostream& w);
+bool is_tie (vector<Candidate>& cans, ostream& w);
 
 bool winner (vector<Candidate>& cans, ostream& w);
 
