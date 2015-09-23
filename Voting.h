@@ -30,7 +30,7 @@ struct Candidate
     Candidate():name(""), elim(false){}
 };
 
-void eliminate (vector<Candidate> can);
+void eliminate (vector<Candidate>& can);
 
 bool tie (vector<Candidate>& cans);
 
