@@ -108,5 +108,5 @@ TEST(VotingFixture, winner_2) {
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates);
-    ASSERT_TRUE(winner(candidates));
+    ASSERT_FALSE(winner(candidates));
 }
