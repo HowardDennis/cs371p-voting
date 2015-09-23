@@ -113,7 +113,7 @@ TEST(VotingFixture, winner_2) {
     ASSERT_FALSE(winner(candidates, w));
 }
 
-TEST(VotingFixture, tie_1) {
+TEST(VotingFixture, is_tie_1) {
     string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n1 2 3\n2 1 3\n3 2 1");
     istringstream test_stream(s);
     vector<Candidate> candidates;
@@ -128,7 +128,7 @@ TEST(VotingFixture, tie_1) {
     ASSERT_TRUE(c);
 }
 
-TEST(VotingFixture, tie_2) {
+TEST(VotingFixture, is_tie_2) {
     string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n2 3 1\n2 1 3\n3 2 1");
     istringstream test_stream(s);
     vector<Candidate> candidates;
@@ -143,7 +143,7 @@ TEST(VotingFixture, tie_2) {
     ASSERT_FALSE(c);
 }
 
-TEST(VotingFixture, tie_3) {
+TEST(VotingFixture, is_tie_3) {
     string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan");
     istringstream test_stream(s);
     vector<Candidate> candidates;
@@ -155,7 +155,7 @@ TEST(VotingFixture, tie_3) {
     get_ballots(test_stream, candidates, numNames);
     ostringstream w;
     bool c = is_tie(candidates, w);
-    ASSERT_FALSE(c);
+    ASSERT_TRUE(c);
 }
 
 TEST(VotingFixture, eliminate_1) {
