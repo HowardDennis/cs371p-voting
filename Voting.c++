@@ -31,7 +31,9 @@ void voting_solve (istream& r, ostream& w) {
     while(numCases > 0) {
         w << "\n";
         case_eval (r, w);
+        w << numVotes << endl;
         numVotes = 0;
+        w << numCases << endl;
         --numCases;}
     }
     
