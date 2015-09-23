@@ -27,7 +27,7 @@ struct Candidate
     vector< vector<int> > votes;
     bool elim;
 
-    Candidate():name(""), eliminated(false){}
+    Candidate():name(""), elim(false){}
 };
 
 void eliminate (vector<Candidate> can);
