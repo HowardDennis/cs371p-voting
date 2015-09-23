@@ -56,7 +56,7 @@ void voting_solve (istream& r, ostream& w) {
         bool draw = tie(candidates);
         vector<Candidate> losers;
         int i = 1;
-        while(!win && !tie && i < numNames) {
+        while(!win && !draw && i < numNames) {
             
             ++i;
         }
