@@ -34,7 +34,7 @@ TEST(VotingFixture, get_candidates_1) {
     getline(test_stream, str);
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
-    get_ballots(test_stream, candidates);
+    get_ballots(test_stream, candidates, numNames);
     ASSERT_EQ(1, candidates[0].votes[0][0]);
     ASSERT_EQ(2, candidates[0].votes[0][1]);
     ASSERT_EQ(3, candidates[0].votes[0][2]);
@@ -107,7 +107,7 @@ TEST(VotingFixture, winner_2) {
     getline(test_stream, str);
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
-    get_ballots(test_stream, candidates);
+    get_ballots(test_stream, candidates, numNames);
     ASSERT_FALSE(winner(candidates));
 }
 
@@ -120,7 +120,7 @@ TEST(VotingFixture, tie_1) {
     getline(test_stream, str);
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
-    get_ballots(test_stream, candidates);
+    get_ballots(test_stream, candidates, numNames);
     ASSERT_TRUE(tie(candidates));
 }
 
@@ -133,7 +133,7 @@ TEST(VotingFixture, tie_2) {
     getline(test_stream, str);
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
-    get_ballots(test_stream, candidates);
+    get_ballots(test_stream, candidates, numNames);
     ASSERT_FALSE(tie(candidates));
 }
 
@@ -146,7 +146,7 @@ TEST(VotingFixture, tie_3) {
     getline(test_stream, str);
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
-    get_ballots(test_stream, candidates);
+    get_ballots(test_stream, candidates, numNames);
     ASSERT_TRUE(tie(candidates));
 }
 
@@ -159,7 +159,7 @@ TEST(VotingFixture, eliminate_1) {
     getline(test_stream, str);
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
-    get_ballots(test_stream, candidates);
+    get_ballots(test_stream, candidates, numNames);
     eliminate(candidates);
     ASSERT_TRUE(candidates[0].elim);
     ASSERT_FALSE(candidates[1].elim);
