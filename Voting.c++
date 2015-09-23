@@ -36,13 +36,17 @@ void voting_solve (istream& r, ostream& w) {
         numVotes = 0;
         --numCases;}
     }
-    
+
 void case_eval (istream& r, ostream& w) {
     string s;
     getline(r, s);
     int numNames;
     istringstream (s) >> numNames;
     assert(numNames >= 0 && numNames < 21);
+    if (numNames == 0) {
+        w << "no candidates" << endl;
+        getline(r, s);
+    }
     vector<Candidate> candidates;
     get_candidates(r, numNames, candidates);
     assert(candidates.size() == (unsigned)numNames);
@@ -126,16 +130,6 @@ void eliminate (vector<Candidate>& can) {
 // --------
 
 bool winner (vector<Candidate>& cans, ostream& w) {
-    if (cans.size() == 0) {
-        w << "no candidates" << endl;
-        return true;
-    }
-    
-    if (cans.size() == 1) {
-        w << cans[0].name << endl;
-        return true;
-    }
-    
     for (unsigned int i = 0; i < cans.size(); ++i) {
         if (double(cans[i].votes.size()) > numVotes/2.0) {
             w << cans[i].name << endl;
