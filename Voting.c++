@@ -132,8 +132,8 @@ bool winner (vector<Candidate>& cans, ostream& w) {
     }
     
     if (cans.size() == 1) {
-        return true;
         w << cans[0].name << endl;
+        return true;
     }
     
     for (unsigned int i = 0; i < cans.size(); ++i) {
