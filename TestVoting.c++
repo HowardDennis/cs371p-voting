@@ -124,7 +124,7 @@ TEST(VotingFixture, tie_1) {
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates, numNames);
     ostringstream w;
-    ASSERT_TRUE(tie(candidates, w));
+    tie(candidates, w);
 }
 
 TEST(VotingFixture, tie_2) {
