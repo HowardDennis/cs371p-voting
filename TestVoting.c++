@@ -95,8 +95,7 @@ TEST(VotingFixture, winner_1) {
     assign_ballot(candidates, 0, ballot_2);
     assign_ballot(candidates, 0, ballot_3);
     assign_ballot(candidates, 0, ballot_4);
-    bool winner = winner(candidates);
-    ASSERT_TRUE(winner);
+    ASSERT_TRUE(winner(candidates));
 }
 
 TEST(VotingFixture, winner_2) {
@@ -109,6 +108,5 @@ TEST(VotingFixture, winner_2) {
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates);
-    bool winner = winner(candidates);
-    ASSERT_TRUE(winner);
+    ASSERT_TRUE(winner(candidates));
 }
