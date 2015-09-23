@@ -42,8 +42,9 @@ void voting_solve (istream& r, ostream& w) {
         bool draw = tie(candidates);
         vector<Candidate> losers;
         int i = 1;
+        cout << "here" << endl;
         while(!win && !draw && i < numNames) {
-            cout << "here" << endl;
+            
             ++i;
         }
         --numCases;}
