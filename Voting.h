@@ -30,6 +30,8 @@ struct Candidate
     Candidate():name(""), eliminated(false){}
 };
 
+void eliminate (vector<Candidate> can);
+
 bool tie (vector<Candidate>& cans);
 
 bool winner (vector<Candidate>& cans);
