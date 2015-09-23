@@ -21,7 +21,6 @@ using namespace std;
 int numVotes = 0;
 
 void voting_solve (istream& r, ostream& w) {
-    int numCases;
     int numNames;
     string s;
     getline(r, s);
@@ -49,6 +48,8 @@ void voting_solve (istream& r, ostream& w) {
     }
     
 void case_eval (istream& r, ostream& w) {
+    string s;
+    int numCases;
     istringstream (s) >> numNames;
     assert(numNames >= 0 && numNames < 21);
     vector<Candidate> candidates;
