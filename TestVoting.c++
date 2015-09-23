@@ -34,7 +34,7 @@ TEST(VotingFixture, get_candidates_1) {
     getline(test_stream, str);
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
-    get_ballots2(test_stream, candidates);
+    get_ballots(test_stream, candidates);
     ASSERT_EQ(1, candidates[0].votes[0][0]);
     ASSERT_EQ(2, candidates[0].votes[0][1]);
     ASSERT_EQ(3, candidates[0].votes[0][2]);
@@ -108,7 +108,7 @@ TEST(VotingFixture, winner_2) {
     getline(test_stream, str);
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
-    get_ballots2(test_stream, candidates);
+    get_ballots(test_stream, candidates);
     bool winner = winner(candidates);
     ASSERT_TRUE(winner);
 }
