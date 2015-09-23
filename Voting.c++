@@ -52,8 +52,8 @@ void voting_solve (istream& r, ostream& w) {
         assert(candidates.size() == (unsigned)numNames);
         get_ballots(r, candidates);
         assert(numVotes <= 1000);
-        bool win = false;
-        bool tie = false;
+        bool win = winner(candidates);
+        bool draw = tie(candidates);
         vector<Candidate> losers;
         int i = 1;
         while(!win && !tie && i < numNames) {
@@ -125,6 +125,12 @@ bool tie (vector<Candidate>& cans) {
     for (unsigned int i = 1; i < cans.size(); ++i) {
         if (!cans[i].elim && n != cans[i].votes.size()) {
             return false;
+        }
+    }
+    
+    for (unsigned int i = 1; i < cans.size(); ++i) {
+        if (!cans[i].elim) {
+            cout << cans[i].name << endl;
         }
     }
     
