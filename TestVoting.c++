@@ -162,6 +162,6 @@ TEST(VotingFixture, eliminate_1) {
     get_ballots(test_stream, candidates);
     eliminate(candidates);
     ASSERT_TRUE(candidates[0].elim);
-    ASSERT_TRUE(candidates[1].elim);
-    ASSERT_TRUE(candidates[2].elim);
+    ASSERT_FALSE(candidates[1].elim);
+    ASSERT_FALSE(candidates[2].elim);
 }
