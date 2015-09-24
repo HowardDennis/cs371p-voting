@@ -138,6 +138,15 @@ void eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
     }
 }
 
+void eliminate_zero (vector<Candidate>& can, vector<Candidate>& losers) {
+    for (unsigned int i = 0; i < can.size(); ++i) {
+        if (can[i].votes.size() == 0) {
+            can[i].elim = true;
+            losers.push_back(can[i]);
+        }
+    }
+}
+
 // --------
 // determines if there is a winner
 // --------
@@ -155,7 +164,7 @@ bool winner (vector<Candidate>& cans, ostream& w) {
 bool is_tie (vector<Candidate>& cans, ostream& w) {
     unsigned int n = cans[0].votes.size();
     for (unsigned int i = 1; i < cans.size(); ++i) {
-        if (!cans[i].elim && n != cans[i].votes.size() && cans[i].votes.size() != 0) {
+        if (!cans[i].elim && n != cans[i].votes.size()) {
             return false;
         }
     }
