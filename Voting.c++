@@ -55,9 +55,9 @@ void case_eval (istream& r, ostream& w) {
     bool win = winner(candidates, w);
     int i = 1;
     while(!win && i < numNames) {
-        bool b = false;
-        while (!b && !win) {
-            eliminate(candidates, losers);
+        bool b = true;
+        while (b && !win) {
+            b = eliminate(candidates, losers);
             reassign(candidates, i, losers);
             win = winner(candidates, w);
         }
