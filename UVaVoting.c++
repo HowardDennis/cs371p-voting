@@ -6,6 +6,8 @@
 
 using namespace std;
 
+int numVotes = 0;
+
 struct Candidate
 {
     string name;
