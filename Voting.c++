@@ -172,10 +172,11 @@ bool eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
     return ret;
 }
 
-void eliminate_zero (vector<Candidate>& can) {
+void eliminate_zero (vector<Candidate>& can, vector<Candidate>& losers) {
     for (unsigned int i = 0; i < can.size(); ++i) {
         if (can[i].votes.size() == 0) {
             can[i].elim = true;
+            losers.push_back(can[i]);
         }
     }
 }
