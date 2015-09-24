@@ -132,6 +132,7 @@ void eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
     for (unsigned int i = 0; i < can.size(); ++i) {
         if (min == can[i].votes.size()) {
             can[i].elim = true;
+            cout << "Eliminated " << can[i].name << endl;
             losers.push_back(can[i]);
         }
     }
