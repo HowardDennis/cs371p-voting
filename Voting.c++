@@ -134,7 +134,6 @@ void get_ballots (istream& r, vector<Candidate>& candidates, int numNames) {
             stream>>n;
             temp.push_back(n);
         }
-        //assert ((unsigned)numNames == temp.size());
         assign_ballot (candidates, 0, temp);
         ++numVotes;
     }
