@@ -192,8 +192,6 @@ bool winner (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
         }
     } */
     
-    w << losers.size() << endl;
-    
     for (unsigned int i = 0; i < cans.size(); ++i) {
         if (!cans[i].elim && double(cans[i].votes.size()) > numVotes/2.0) {
             w << cans[i].name << endl;
