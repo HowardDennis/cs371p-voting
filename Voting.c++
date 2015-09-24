@@ -55,11 +55,12 @@ void case_eval (istream& r, ostream& w) {
     bool win = winner(candidates, w, losers);
     int i = 1;
     while(!win && i < numNames) {
+        bool a = true
         bool b = true;
         int j = 0;
-        while (b && !win && j < numNames) {
-            b = eliminate(candidates, losers);
-            reassign(candidates, i, losers);
+        while (a && b && !win && j < numNames) {
+            a = eliminate(candidates, losers);
+            b = reassign(candidates, i, losers);
             win = winner(candidates, w, losers);
             ++j;
         }
@@ -67,15 +68,18 @@ void case_eval (istream& r, ostream& w) {
     }
 }
 
-void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers) {
+bool reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers) {
+    bool ret = false
     for (unsigned int i = 0; i < losers.size(); ++i) {
         for (unsigned int j = 0; j < losers[i].votes.size(); ++j) {
             if (!candidates[losers[i].votes[j][column]-1].elim) {
                 assign_ballot(candidates, column, losers[i].votes[j]);
                 losers[i].votes.erase(losers[i].votes.begin() + j);
+                ret = true;
             }
         }
     }
+    return ret;
 }
 
 // --------
