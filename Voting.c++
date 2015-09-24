@@ -59,7 +59,7 @@ void case_eval (istream& r, ostream& w) {
         bool b = true;
         int j = 0;
         while (a && b && !win && j < numNames) {
-            a = reassign(candidates, i, losers);
+            a = reassign2(candidates, losers);
             b = eliminate(candidates, losers);
             win = winner(candidates, w, losers);
             ++j;
@@ -83,6 +83,7 @@ bool reassign2 (vector<Candidate>& candidates, vector<Candidate>& losers) {
         }
         --c;
     }
+    return ret;
 }
 
 bool reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers) {
