@@ -51,7 +51,7 @@ void case_eval (istream& r, ostream& w) {
     get_ballots(r, candidates, numNames);
     assert(numVotes <= 1000);
     vector<Candidate> losers;
-    eliminate_zero(candidates, losers);
+    eliminate_zero(candidates);
     bool win = winner(candidates, w, losers);
     int i = 1;
     while(!win && i < numNames) {
@@ -83,6 +83,7 @@ bool reassign2 (vector<Candidate>& candidates, vector<Candidate>& losers) {
         }
         ++c;
     }
+    cout << losers[0].votes.size() << end
     return ret;
 }
 
@@ -171,11 +172,10 @@ bool eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
     return ret;
 }
 
-void eliminate_zero (vector<Candidate>& can, vector<Candidate>& losers) {
+void eliminate_zero (vector<Candidate>& can) {
     for (unsigned int i = 0; i < can.size(); ++i) {
         if (can[i].votes.size() == 0) {
             can[i].elim = true;
-            losers.push_back(can[i]);
         }
     }
 }
