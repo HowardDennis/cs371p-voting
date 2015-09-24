@@ -48,10 +48,10 @@ void case_eval (istream& r, ostream& w) {
     assert(candidates.size() == (unsigned)numNames);
     get_ballots(r, candidates, numNames);
     assert(numVotes <= 1000);
+    vector<Candidate> losers;
     eliminate(candidates, losers);
     bool win = winner(candidates, w);
     bool draw = is_tie(candidates, w);
-    vector<Candidate> losers;
     int i = 1;
     while(!win && !draw && i < numNames) {
         eliminate(candidates, losers);
