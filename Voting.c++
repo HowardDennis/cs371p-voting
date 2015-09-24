@@ -129,15 +129,19 @@ void assign_ballot (vector<Candidate>& candidates, int column, vector<int>& ball
 
 bool eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
     unsigned int min = 1001;
+    unsigned int max = 0;
     bool ret = false;
     for (unsigned int i = 0; i < can.size(); ++i) {
         if (!can[i].elim && min > can[i].votes.size() && can[i].votes.size() != 0) {
             min = can[i].votes.size();
         }
+        if (!can[i].elim && max < can[i].votes.size() && can[i].votes.size() != 0) {
+            max = can[i].votes.size();
+        }
     }
     
     for (unsigned int i = 0; i < can.size(); ++i) {
-        if (min == can[i].votes.size() || can[i].votes.size() == 0) {
+        if ((min == can[i].votes.size() || can[i].votes.size() == 0) && can[i].votes.size() != max) {
             can[i].elim = true;
             losers.push_back(can[i]);
             ret = true;
