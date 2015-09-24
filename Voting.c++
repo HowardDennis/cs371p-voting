@@ -214,6 +214,7 @@ bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
             cout << cans[i].name << cans[i].votes.size() << endl;
         }
     } 
+    endl(cout);
     
     if (c == 2) {
         for (unsigned int i = 0; i < cans.size(); ++i) {
