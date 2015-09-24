@@ -55,7 +55,6 @@ void case_eval (istream& r, ostream& w) {
     while(!win && !draw && i < numNames) {
         eliminate(candidates, losers);
         reassign(candidates, i, losers);
-        cout << losers.size() << endl;
         win = winner(candidates, w);
         draw = is_tie(candidates, w);
         ++i;
@@ -128,7 +127,7 @@ void eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
             min = can[i].votes.size();
         }
     }
-    
+    cout << min << endl;
     for (unsigned int i = 0; i < can.size(); ++i) {
         if (min == can[i].votes.size()) {
             can[i].elim = true;
