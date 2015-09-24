@@ -27,7 +27,7 @@ void voting_solve (istream& r, ostream& w) {
     istringstream (s) >> numCases;
     assert(numCases > 0);
     getline(r, s); //skips line
-    w << numCases << endl;
+    w << 101 - numCases << endl;
     case_eval (r, w);
     numVotes = 0;
     --numCases;
@@ -55,9 +55,12 @@ void case_eval (istream& r, ostream& w) {
     bool win = winner(candidates, w);
     int i = 1;
     while(!win && i < numNames) {
-        eliminate(candidates, losers);
-        reassign(candidates, i, losers);
-        win = winner(candidates, w);
+        bool b = false;
+        while (!b && !win) {
+            eliminate(candidates, losers);
+            reassign(candidates, i, losers);
+            win = winner(candidates, w);
+        }
         ++i;
     }
 }
@@ -121,8 +124,9 @@ void assign_ballot (vector<Candidate>& candidates, int column, vector<int>& ball
 // eliminates candidates
 // --------
 
-void eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
+bool eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
     unsigned int min = 1001;
+    bool ret = false;
     for (unsigned int i = 0; i < can.size(); ++i) {
         if (!can[i].elim && min > can[i].votes.size() && can[i].votes.size() != 0) {
             min = can[i].votes.size();
@@ -133,8 +137,10 @@ void eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
         if (min == can[i].votes.size() || can[i].votes.size() == 0) {
             can[i].elim = true;
             losers.push_back(can[i]);
+            ret = true;
         }
     }
+    return ret;
 }
 
 void eliminate_zero (vector<Candidate>& can, vector<Candidate>& losers) {
@@ -152,7 +158,7 @@ void eliminate_zero (vector<Candidate>& can, vector<Candidate>& losers) {
 
 bool winner (vector<Candidate>& cans, ostream& w) {
     for (unsigned int i = 0; i < cans.size(); ++i) {
-        if (double(cans[i].votes.size()) > numVotes/2.0) {
+        if (!cans[i].elim && double(cans[i].votes.size()) > numVotes/2.0) {
             w << cans[i].name << endl;
             return true;
         }
