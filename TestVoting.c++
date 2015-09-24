@@ -78,8 +78,6 @@ TEST(VotingFixture, assign_ballot_1) {
     ASSERT_EQ(candidates[2].votes[1][1], 3);
     ASSERT_EQ(candidates[2].votes[1][2], 1);
 }
-<<<<<<< HEAD
-=======
 
 TEST(VotingFixture, winner_1) {
     Candidate can_1;
@@ -176,4 +174,3 @@ TEST(VotingFixture, eliminate_1) {
     ASSERT_FALSE(candidates[1].elim);
     ASSERT_FALSE(candidates[2].elim);
 }
->>>>>>> how

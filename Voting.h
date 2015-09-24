@@ -30,15 +30,7 @@ struct Candidate
     Candidate():name(""), elim(false){}
 };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-void winner (vector<Candidate> can);
-=======
-bool winner (vector<Candidate>& cans);
->>>>>>> how
-=======
 void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers);
->>>>>>> how
 
 void case_eval (istream& r, ostream& w);
 
@@ -57,5 +49,3 @@ void assign_ballot (vector<Candidate>& candidates, int column, vector<int>& ball
 void voting_solve (istream& r, ostream& w);
 
 #endif // Voting_h
-
-

@@ -20,15 +20,6 @@ using namespace std;
 
 int numVotes = 0;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-void winner (vector<Candidate> can) {
-    
-=======
-// --------
-// determines if there is a winner
-// --------
-=======
 void voting_solve (istream& r, ostream& w) {
     int numCases;
     string s;
@@ -45,7 +36,6 @@ void voting_solve (istream& r, ostream& w) {
         numVotes = 0;
         --numCases;}
     }
->>>>>>> how
 
 void case_eval (istream& r, ostream& w) {
     string s;
@@ -80,11 +70,6 @@ void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& los
             }
         }
     }
-<<<<<<< HEAD
-    return false;
->>>>>>> how
-=======
->>>>>>> how
 }
 
 // --------
