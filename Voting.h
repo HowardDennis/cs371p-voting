@@ -40,7 +40,7 @@ bool eliminate (vector<Candidate>& can, vector<Candidate>& losers);
 
 bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers);
 
-bool winner (vector<Candidate>& cans, ostream& w vector<Candidate>& losers);
+bool winner (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers);
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans);
 
