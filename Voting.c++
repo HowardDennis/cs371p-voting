@@ -68,6 +68,23 @@ void case_eval (istream& r, ostream& w) {
     }
 }
 
+bool reassign2 (vector<Candidate>& candidates, vector<Candidate>& losers) {
+    bool ret = false;
+    int c = candidates.size();
+    while (!ret && c > 0) {
+        for (unsigned int i = 0; i < losers.size(); ++i) {
+            for (unsigned int j = 0; j < losers[i].votes.size(); ++j) {
+                if (!candidates[losers[i].votes[j][column]-1].elim) {
+                    assign_ballot(candidates, column, losers[i].votes[j]);
+                    losers[i].votes.erase(losers[i].votes.begin() + j);
+                    ret = true;
+                }
+            }
+        }
+        --c;
+    }
+}
+
 bool reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers) {
     bool ret = false;
     for (unsigned int i = 0; i < losers.size(); ++i) {
