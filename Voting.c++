@@ -55,6 +55,7 @@ void case_eval (istream& r, ostream& w) {
     while(!win && !draw && i < numNames) {
         eliminate(candidates, losers);
         reassign(candidates, i, losers);
+        cout << losers.size() << endl;
         win = winner(candidates, w);
         draw = is_tie(candidates, w);
         ++i;
