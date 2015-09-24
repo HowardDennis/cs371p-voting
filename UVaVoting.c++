@@ -110,16 +110,6 @@ bool reassign2 (vector<Candidate>& candidates, vector<Candidate>& losers) {
 // determines if there is a winner
 // --------
 
-bool winner (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
-    for (unsigned int i = 0; i < cans.size(); ++i) {
-        if (!cans[i].elim && double(cans[i].votes.size()) > numVotes/2.0) {
-            w << cans[i].name << endl;
-            return true;
-        }
-    }
-    return is_tie(cans, w, losers);
-}
-
 bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
     unsigned int n;
     bool go = true;
@@ -148,6 +138,25 @@ bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
     }
     
     return true;
+}
+
+bool winner (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
+    for (unsigned int i = 0; i < cans.size(); ++i) {
+        if (!cans[i].elim && double(cans[i].votes.size()) > numVotes/2.0) {
+            w << cans[i].name << endl;
+            return true;
+        }
+    }
+    return is_tie(cans, w, losers);
+}
+
+void eliminate_zero (vector<Candidate>& can, vector<Candidate>& losers) {
+    for (unsigned int i = 0; i < can.size(); ++i) {
+        if (can[i].votes.size() == 0) {
+            can[i].elim = true;
+            losers.push_back(can[i]);
+        }
+    }
 }
 
 void case_eval (istream& r, ostream& w) {
