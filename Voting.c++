@@ -55,7 +55,6 @@ void case_eval (istream& r, ostream& w) {
     bool draw = is_tie(candidates, w);
     int i = 1;
     while(!win && !draw && i < numNames) {
-        eliminate_zero(candidates, losers);
         eliminate(candidates, losers);
         reassign(candidates, i, losers);
         win = winner(candidates, w);
@@ -163,7 +162,14 @@ bool winner (vector<Candidate>& cans, ostream& w) {
 }
 
 bool is_tie (vector<Candidate>& cans, ostream& w) {
-    unsigned int n = cans[0].votes.size();
+    unsigned int n;
+    bool go = true;
+    for (unsigned int i = 0; i < cans.size() && go; ++i) {
+        if (!cans[i].elim) {
+            n = cans[i].votes.size();
+            go = false;
+        }
+    }
     for (unsigned int i = 1; i < cans.size(); ++i) {
         if (!cans[i].elim && n != cans[i].votes.size()) {
             return false;
