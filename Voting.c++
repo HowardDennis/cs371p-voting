@@ -59,12 +59,12 @@ void case_eval (istream& r, ostream& w) {
         while (b && !win) {
             b = eliminate(candidates, losers);
             reassign(candidates, i, losers);
+            if (losers.size() == 2) {
+                losers[1].votes.size();
+            }
             win = winner(candidates, w, losers);
         }
         ++i;
-    }
-    if (i == numNames) {
-        is_tie;
     }
 }
 
