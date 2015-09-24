@@ -36,7 +36,7 @@ void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& los
 
 void case_eval (istream& r, ostream& w);
 
-void eliminate (vector<Candidate>& can, vector<Candidate>& losers);
+bool eliminate (vector<Candidate>& can, vector<Candidate>& losers);
 
 bool is_tie (vector<Candidate>& cans, ostream& w);
 
