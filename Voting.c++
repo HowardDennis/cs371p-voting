@@ -195,6 +195,9 @@ bool winner (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
             return true;
         }
     }
+    if (cans.size() - losers.size() == 2) {
+        return true;
+    }
     return is_tie(cans, w, losers);
 }
 
