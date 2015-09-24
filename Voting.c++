@@ -83,12 +83,6 @@ bool reassign2 (vector<Candidate>& candidates, vector<Candidate>& losers) {
         }
     }
 
-    
-    for (unsigned int i = 0; i < candidates.size(); ++i) {
-        if (!candidates[i].elim) {
-            cout << candidates[i].name << candidates[i].votes.size() << endl;
-        }
-    }
     return ret;
 }
 
@@ -226,6 +220,13 @@ bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
             ++c;
         }
     }
+    
+    for (unsigned int i = 0; i < cans.size(); ++i) {
+        if (!cans[i].elim) {
+            cout << cans[i].name << cans[i].votes.size() << endl;
+        }
+    }
+    
     if (c == 2) {
         for (unsigned int i = 0; i < cans.size(); ++i) {
             if (!cans[i].elim) {
