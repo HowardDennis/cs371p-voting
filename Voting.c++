@@ -260,7 +260,6 @@ void elect (istream& r, ostream& w) {
     vector<string> candidates(numNames);
     vector<int> count(numNames, 0);
     int i = 0;
-    string s;
     while(numNames > i) {
         getline(r, s);
         candidates[i] = s;
@@ -276,11 +275,11 @@ void run_cases (istream& r, ostream& w) {
     getline(r, s); //skips line
     elect (r, w);
     numVotes = 0;
-    --numCases;
-    while(numCases > 0) {
+    --cases;
+    while(cases > 0) {
         w << "\n";
         elect (r, w);
         numVotes = 0;
-        --numCases;}
+        --cases;}
     }
 }
