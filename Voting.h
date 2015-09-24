@@ -30,6 +30,8 @@ struct Candidate
     Candidate():name(""), elim(false){}
 };
 
+void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers);
+
 void case_eval (istream& r, ostream& w);
 
 void eliminate (vector<Candidate>& can, vector<Candidate>& losers);
