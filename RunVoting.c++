@@ -18,7 +18,7 @@
 
 int main () {
     using namespace std;
-    elections(cin, cout);
+    run_cases(cin, cout);
     return 0;}
 
 /*
