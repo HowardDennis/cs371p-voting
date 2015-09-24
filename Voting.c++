@@ -52,7 +52,7 @@ void case_eval (istream& r, ostream& w) {
     eliminate_zero(candidates, losers);
     bool win = winner(candidates, w);
     int i = 1;
-    while(!win && !draw && i < numNames) {
+    while(!win && i < numNames) {
         eliminate(candidates, losers);
         reassign(candidates, i, losers);
         win = winner(candidates, w);
@@ -155,7 +155,7 @@ bool winner (vector<Candidate>& cans, ostream& w) {
             return true;
         }
     }
-    return is_tie;
+    return is_tie(cans, w);
 }
 
 bool is_tie (vector<Candidate>& cans, ostream& w) {
