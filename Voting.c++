@@ -70,18 +70,18 @@ void case_eval (istream& r, ostream& w) {
 
 bool reassign2 (vector<Candidate>& candidates, vector<Candidate>& losers) {
     bool ret = false;
-    int c = candidates.size();
-    while (!ret && c > 0) {
+    int c = 0;
+    while (!ret && c < candidates.size()) {
         for (unsigned int i = 0; i < losers.size(); ++i) {
             for (unsigned int j = 0; j < losers[i].votes.size(); ++j) {
-                if (!candidates[losers[i].votes[j][column]-1].elim) {
-                    assign_ballot(candidates, column, losers[i].votes[j]);
+                if (!candidates[losers[i].votes[j][c]-1].elim) {
+                    assign_ballot(candidates, c, losers[i].votes[j]);
                     losers[i].votes.erase(losers[i].votes.begin() + j);
                     ret = true;
                 }
             }
         }
-        --c;
+        ++c;
     }
     return ret;
 }
