@@ -32,7 +32,7 @@ struct Candidate
 
 void case_eval (istream& r, ostream& w);
 
-void eliminate (vector<Candidate>& can);
+void eliminate (vector<Candidate>& can, vector<Candidate>& losers);
 
 bool is_tie (vector<Candidate>& cans, ostream& w);
 
