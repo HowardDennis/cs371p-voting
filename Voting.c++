@@ -194,6 +194,11 @@ bool winner (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
 }
 
 bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
+    for (unsigned int i = 0; i < losers.size(); ++i) {
+        if (losers[i].votes.size() > 0) {
+            return false;
+        }
+    }
     unsigned int n;
     bool go = true;
     for (unsigned int i = 0; i < cans.size() && go; ++i) {
@@ -202,6 +207,7 @@ bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
             go = false;
         }
     }
+    int l;
     int c;
     
     for (unsigned int i = 0; i < cans.size(); ++i) {
@@ -227,12 +233,6 @@ bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
     
     for (unsigned int i = 0; i < cans.size(); ++i) {
         if (!cans[i].elim && n != cans[i].votes.size()) {
-            return false;
-        }
-    }
-    
-    for (unsigned int i = 0; i < losers.size(); ++i) {
-        if (losers[i].votes.size() > 0) {
             return false;
         }
     }
