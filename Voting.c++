@@ -53,7 +53,7 @@ void case_eval (istream& r, ostream& w) {
     vector<Candidate> losers;
     int i = 1;
     while(!win && !draw && i < numNames) {
-        eliminate(candidate, losers);
+        eliminate(candidates, losers);
         w << losers[0].name << endl;
         ++i;
     }
