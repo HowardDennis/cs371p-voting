@@ -51,7 +51,7 @@ void case_eval (istream& r, ostream& w) {
     get_ballots(r, candidates, numNames);
     assert(numVotes <= 1000);
     vector<Candidate> losers;
-    eliminate_zero(candidates);
+    eliminate_zero(candidates, losers);
     bool win = winner(candidates, w, losers);
     int i = 1;
     while(!win && i < numNames) {
