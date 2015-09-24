@@ -71,18 +71,31 @@ void case_eval (istream& r, ostream& w) {
 bool reassign2 (vector<Candidate>& candidates, vector<Candidate>& losers) {
     bool ret = false;
     unsigned int c = 0;
-    while (!ret && c < candidates.size()) {
-        for (unsigned int i = 0; i < losers.size(); ++i) {
-            for (unsigned int j = 0; j < losers[i].votes.size(); ++j) {
-                if (!candidates[losers[i].votes[j][c]-1].elim) {
-                    assign_ballot(candidates, c, losers[i].votes[j]);
+
+    for (unsigned int i = 0; i < losers.size(); ++i) {
+        for (unsigned int j = 0; j < losers[i].votes.size(); ++j) {
+            bool a = true;
+            for (unsigned int p = 0; a && p < losers[i].votes[j].size(); ++p) {
+                if (!candidates[losers[i].votes[j][p]-1].elim) {
+                    assign_ballot(candidates, p, losers[i].votes[j]);
                     losers[i].votes.erase(losers[i].votes.begin() + j);
+                    a = false;
                     ret = true;
                 }
             }
         }
-        ++c;
     }
+
+    
+ /*   for (unsigned int i = 0; i < losers.size(); ++i) {
+        for (unsigned int j = 0; j < losers[i].votes.size(); ++j) {
+            if (!candidates[losers[i].votes[j][c]-1].elim) {
+                assign_ballot(candidates, c, losers[i].votes[j]);
+                losers[i].votes.erase(losers[i].votes.begin() + j);
+                ret = true;
+            }
+        }
+    } */
     for (unsigned int i = 0; i < losers.size(); ++i) {
         cout << losers[i].name << losers[i].votes.size() << endl;
     }
