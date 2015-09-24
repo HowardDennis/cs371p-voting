@@ -65,7 +65,7 @@ void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& los
     for (unsigned int i = 0; i < losers.size(); ++i) {
         for (unsigned int j = 0; j < losers[i].votes.size(); ++j) {
             if (!candidates[losers[i].votes[j][column]-1].elim) {
-                cout << losers[i].votes[j][column] << endl;
+                cout << losers.size() << endl;
                 assign_ballot(candidates, column, losers[i].votes[j]);
             }
         }
