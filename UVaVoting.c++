@@ -68,13 +68,13 @@ void get_ballots (istream& r, vector<Candidate>& candidates, int numNames) {
 void eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
     unsigned int min = 1001;
     for (unsigned int i = 0; i < can.size(); ++i) {
-        if (!can[i].elim && min > can[i].votes.size()) {
+        if (!can[i].elim && min > can[i].votes.size() && can[i].votes.size() != 0) {
             min = can[i].votes.size();
         }
     }
     
     for (unsigned int i = 0; i < can.size(); ++i) {
-        if (min == can[i].votes.size()) {
+        if (min == can[i].votes.size() || can[i].votes.size() == 0) {
             can[i].elim = true;
             losers.push_back(can[i]);
         }
