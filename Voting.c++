@@ -182,7 +182,7 @@ bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
     }
     
     for (unsigned int i = 1; i < losers.size(); ++i) {
-        if ([i].votes.size() > 0) {
+        if (losers[i].votes.size() > 0) {
             return false;
         }
     }
