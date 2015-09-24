@@ -54,7 +54,9 @@ void case_eval (istream& r, ostream& w) {
     int i = 1;
     while(!win && !draw && i < numNames) {
         eliminate(candidates, losers);
-        
+        reassign(candidates, i, losers);
+        win = winner(candidates, w);
+        draw = is_tie(candidates, w);
         ++i;
     }
 }
@@ -63,7 +65,7 @@ void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& los
     for (unsigned int i = 0; i < losers.size(); ++i) {
         for (unsigned int j = 0; j < losers[i].votes.size(); ++j) {
             if (!candidates[losers[i].votes[j][column-1]-1].elim) {
-                w << losers[i].votes[j][column-1] << endl;
+                cout << losers[i].votes[j][column-1] << endl;
                 assign_ballot(candidates, column, losers[i].votes[j]);
             }
         }
