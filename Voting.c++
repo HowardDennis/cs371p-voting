@@ -51,6 +51,7 @@ void case_eval (istream& r, ostream& w) {
     bool win = winner(candidates, w);
     bool draw = is_tie(candidates, w);
     vector<Candidate> losers;
+    
     int i = 1;
     while(!win && !draw && i < numNames) {
             
@@ -106,7 +107,7 @@ void assign_ballot (vector<Candidate>& candidates, int column, vector<int>& ball
 // eliminates candidates
 // --------
 
-void eliminate (vector<Candidate>& can) {
+void eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
     unsigned int min = 1001;
     for (unsigned int i = 0; i < can.size(); ++i) {
         if (!can[i].elim && min > can[i].votes.size()) {
@@ -117,6 +118,7 @@ void eliminate (vector<Candidate>& can) {
     for (unsigned int i = 0; i < can.size(); ++i) {
         if (min == can[i].votes.size()) {
             can[i].elim = true;
+            losers.push_back(can[i]);
         }
     }
 }
