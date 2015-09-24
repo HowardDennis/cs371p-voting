@@ -32,6 +32,7 @@ struct Candidate
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 void winner (vector<Candidate> can);
 =======
 bool winner (vector<Candidate>& cans);
@@ -55,7 +56,24 @@ void get_ballots (istream& r, vector<Candidate>& candidates, int numNames);
 void assign_ballot (vector<Candidate>& candidates, int column, vector<int>& ballots);
 
 void voting_solve (istream& r, ostream& w);
+=======
+void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers);
+
+void case_eval (istream& r, ostream& w);
+
+void eliminate (vector<Candidate>& can, vector<Candidate>& losers);
+
+bool is_tie (vector<Candidate>& cans, ostream& w);
+
+bool winner (vector<Candidate>& cans, ostream& w);
+
+void get_candidates (istream& r, int numNames, vector<Candidate>& cans);
+
+void get_ballots (istream& r, vector<Candidate>& candidates, int numNames);
+>>>>>>> fc345f8780a41c894ef847b7ce8fc9029fe29308
+
+void assign_ballot (vector<Candidate>& candidates, int column, vector<int>& ballots);
+
+void voting_solve (istream& r, ostream& w);
 
 #endif // Voting_h
-
-

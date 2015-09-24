@@ -22,6 +22,7 @@ int numVotes = 0;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 void winner (vector<Candidate> can) {
     
 =======
@@ -29,6 +30,8 @@ void winner (vector<Candidate> can) {
 // determines if there is a winner
 // --------
 =======
+=======
+>>>>>>> fc345f8780a41c894ef847b7ce8fc9029fe29308
 void voting_solve (istream& r, ostream& w) {
     int numCases;
     string s;
@@ -45,7 +48,10 @@ void voting_solve (istream& r, ostream& w) {
         numVotes = 0;
         --numCases;}
     }
+<<<<<<< HEAD
 >>>>>>> how
+=======
+>>>>>>> fc345f8780a41c894ef847b7ce8fc9029fe29308
 
 void case_eval (istream& r, ostream& w) {
     string s;
@@ -81,10 +87,13 @@ void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& los
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     return false;
 >>>>>>> how
 =======
 >>>>>>> how
+=======
+>>>>>>> fc345f8780a41c894ef847b7ce8fc9029fe29308
 }
 
 // --------
@@ -157,6 +166,7 @@ void eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
 
 bool winner (vector<Candidate>& cans, ostream& w) {
     for (unsigned int i = 0; i < cans.size(); ++i) {
+<<<<<<< HEAD
         if (double(cans[i].votes.size()) > numVotes/2.0) {
             w << cans[i].name << endl;
             return true;
@@ -181,3 +191,35 @@ bool is_tie (vector<Candidate>& cans, ostream& w) {
     
     return true;
 }
+=======
+        if (!cans[i].elim) {
+            w << cans[i].name << " " << cans[i].votes.size() << endl;
+        }
+    }
+    for (unsigned int i = 0; i < cans.size(); ++i) {
+        
+        if (double(cans[i].votes.size()) > numVotes/2.0) {
+            w << cans[i].name << endl;
+            return true;
+        }
+    }
+    return false;
+}
+
+bool is_tie (vector<Candidate>& cans, ostream& w) {
+    unsigned int n = cans[0].votes.size();
+    for (unsigned int i = 1; i < cans.size(); ++i) {
+        if (!cans[i].elim && n != cans[i].votes.size()) {
+            return false;
+        }
+    }
+    
+    for (unsigned int i = 0; i < cans.size(); ++i) {
+        if (!cans[i].elim) {
+            w << cans[i].name << endl;
+        }
+    }
+    
+    return true;
+}
+>>>>>>> fc345f8780a41c894ef847b7ce8fc9029fe29308

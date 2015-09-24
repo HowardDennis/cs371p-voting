@@ -78,8 +78,6 @@ TEST(VotingFixture, assign_ballot_1) {
     ASSERT_EQ(candidates[2].votes[1][1], 3);
     ASSERT_EQ(candidates[2].votes[1][2], 1);
 }
-<<<<<<< HEAD
-=======
 
 TEST(VotingFixture, winner_1) {
     Candidate can_1;
@@ -99,6 +97,11 @@ TEST(VotingFixture, winner_1) {
     assign_ballot(candidates, 0, ballot_4);
     ostringstream w;
     ASSERT_TRUE(winner(candidates, w));
+<<<<<<< HEAD
+}
+
+TEST(VotingFixture, winner_2) {
+=======
 }
 
 TEST(VotingFixture, winner_2) {
@@ -116,6 +119,7 @@ TEST(VotingFixture, winner_2) {
 }
 
 TEST(VotingFixture, is_tie_1) {
+>>>>>>> fc345f8780a41c894ef847b7ce8fc9029fe29308
     string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n1 2 3\n2 1 3\n3 2 1");
     istringstream test_stream(s);
     vector<Candidate> candidates;
@@ -126,6 +130,23 @@ TEST(VotingFixture, is_tie_1) {
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates, numNames);
     ostringstream w;
+<<<<<<< HEAD
+    ASSERT_FALSE(winner(candidates, w));
+}
+
+TEST(VotingFixture, is_tie_1) {
+    string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n1 2 3\n2 1 3\n3 2 1");
+    istringstream test_stream(s);
+    vector<Candidate> candidates;
+    int numNames;
+    string str;
+    getline(test_stream, str);
+    istringstream (str) >> numNames;
+    get_candidates(test_stream, numNames, candidates);
+    get_ballots(test_stream, candidates, numNames);
+    ostringstream w;
+=======
+>>>>>>> fc345f8780a41c894ef847b7ce8fc9029fe29308
     bool c = is_tie(candidates, w);
     ASSERT_TRUE(c);
 }
@@ -158,6 +179,26 @@ TEST(VotingFixture, is_tie_3) {
     ostringstream w;
     bool c = is_tie(candidates, w);
     ASSERT_TRUE(c);
+<<<<<<< HEAD
+}
+
+TEST(VotingFixture, eliminate_1) {
+    string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n2 3 1\n2 1 3\n3 2 1");
+    istringstream test_stream(s);
+    vector<Candidate> candidates;
+    vector<Candidate> losers;
+    int numNames;
+    string str;
+    getline(test_stream, str);
+    istringstream (str) >> numNames;
+    get_candidates(test_stream, numNames, candidates);
+    get_ballots(test_stream, candidates, numNames);
+    eliminate(candidates, losers);
+    ASSERT_TRUE(candidates[0].elim);
+    ASSERT_FALSE(candidates[1].elim);
+    ASSERT_FALSE(candidates[2].elim);
+=======
+>>>>>>> fc345f8780a41c894ef847b7ce8fc9029fe29308
 }
 
 TEST(VotingFixture, eliminate_1) {
@@ -176,4 +217,3 @@ TEST(VotingFixture, eliminate_1) {
     ASSERT_FALSE(candidates[1].elim);
     ASSERT_FALSE(candidates[2].elim);
 }
->>>>>>> how
