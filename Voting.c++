@@ -55,7 +55,7 @@ void case_eval (istream& r, ostream& w) {
     bool win = winner(candidates, w, losers);
     int i = 1;
     while(!win && i < numNames) {
-        bool a = true
+        bool a = true;
         bool b = true;
         int j = 0;
         while (a && b && !win && j < numNames) {
@@ -69,7 +69,7 @@ void case_eval (istream& r, ostream& w) {
 }
 
 bool reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers) {
-    bool ret = false
+    bool ret = false;
     for (unsigned int i = 0; i < losers.size(); ++i) {
         for (unsigned int j = 0; j < losers[i].votes.size(); ++j) {
             if (!candidates[losers[i].votes[j][column]-1].elim) {
