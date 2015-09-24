@@ -32,7 +32,7 @@ struct Candidate
 
 bool reassign2 (vector<Candidate>& candidates, vector<Candidate>& losers);
 
-void eliminate_zero (vector<Candidate>& can);
+void eliminate_zero (vector<Candidate>& can, vector<Candidate>& losers);
 
 bool reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers);
 
