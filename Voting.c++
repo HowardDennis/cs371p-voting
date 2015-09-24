@@ -39,11 +39,13 @@ void voting_solve (istream& r, ostream& w) {
     istringstream (s) >> numCases;
     assert(numCases > 0);
     getline(r, s); //skips line
+    w << 101 - numCases << endl;
     case_eval (r, w);
     numVotes = 0;
     --numCases;
     while(numCases > 0) {
         w << "\n";
+        w << 101 - numCases << endl;
         case_eval (r, w);
         numVotes = 0;
         --numCases;}
@@ -64,15 +66,19 @@ void case_eval (istream& r, ostream& w) {
     assert(candidates.size() == (unsigned)numNames);
     get_ballots(r, candidates, numNames);
     assert(numVotes <= 1000);
-    bool win = winner(candidates, w);
-    bool draw = is_tie(candidates, w);
     vector<Candidate> losers;
+    eliminate_zero(candidates, losers);
+    bool win = winner(candidates, w, losers);
     int i = 1;
-    while(!win && !draw && i < numNames) {
-        eliminate(candidates, losers);
-        reassign(candidates, i, losers);
-        win = winner(candidates, w);
-        draw = is_tie(candidates, w);
+    while(!win && i < numNames) {
+        bool b = true;
+        int j = 0;
+        while (b && !win && j < numNames) {
+            b = eliminate(candidates, losers);
+            reassign(candidates, i, losers);
+            win = winner(candidates, w, losers);
+            ++j;
+        }
         ++i;
     }
 }
@@ -144,16 +150,32 @@ void assign_ballot (vector<Candidate>& candidates, int column, vector<int>& ball
 // eliminates candidates
 // --------
 
-void eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
+bool eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
     unsigned int min = 1001;
+    unsigned int max = 0;
+    bool ret = false;
     for (unsigned int i = 0; i < can.size(); ++i) {
-        if (!can[i].elim && min > can[i].votes.size()) {
+        if (!can[i].elim && min > can[i].votes.size() && can[i].votes.size() != 0) {
             min = can[i].votes.size();
+        }
+        if (!can[i].elim && max < can[i].votes.size() && can[i].votes.size() != 0) {
+            max = can[i].votes.size();
         }
     }
     
     for (unsigned int i = 0; i < can.size(); ++i) {
-        if (min == can[i].votes.size()) {
+        if ((min == can[i].votes.size() || can[i].votes.size() == 0) && can[i].votes.size() != max) {
+            can[i].elim = true;
+            losers.push_back(can[i]);
+            ret = true;
+        }
+    }
+    return ret;
+}
+
+void eliminate_zero (vector<Candidate>& can, vector<Candidate>& losers) {
+    for (unsigned int i = 0; i < can.size(); ++i) {
+        if (can[i].votes.size() == 0) {
             can[i].elim = true;
             losers.push_back(can[i]);
         }
@@ -164,8 +186,9 @@ void eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
 // determines if there is a winner
 // --------
 
-bool winner (vector<Candidate>& cans, ostream& w) {
+bool winner (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
     for (unsigned int i = 0; i < cans.size(); ++i) {
+<<<<<<< HEAD
 <<<<<<< HEAD
         if (double(cans[i].votes.size()) > numVotes/2.0) {
             w << cans[i].name << endl;
@@ -199,17 +222,33 @@ bool is_tie (vector<Candidate>& cans, ostream& w) {
     for (unsigned int i = 0; i < cans.size(); ++i) {
         
         if (double(cans[i].votes.size()) > numVotes/2.0) {
+=======
+        if (!cans[i].elim && double(cans[i].votes.size()) > numVotes/2.0) {
+>>>>>>> how
             w << cans[i].name << endl;
             return true;
         }
     }
-    return false;
+    return is_tie(cans, w, losers);
 }
 
-bool is_tie (vector<Candidate>& cans, ostream& w) {
-    unsigned int n = cans[0].votes.size();
+bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
+    unsigned int n;
+    bool go = true;
+    for (unsigned int i = 0; i < cans.size() && go; ++i) {
+        if (!cans[i].elim) {
+            n = cans[i].votes.size();
+            go = false;
+        }
+    }
     for (unsigned int i = 1; i < cans.size(); ++i) {
         if (!cans[i].elim && n != cans[i].votes.size()) {
+            return false;
+        }
+    }
+    
+    for (unsigned int i = 1; i < losers.size(); ++i) {
+        if (losers[i].votes.size() > 0) {
             return false;
         }
     }

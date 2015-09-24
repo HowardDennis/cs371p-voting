@@ -33,21 +33,26 @@ struct Candidate
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 void winner (vector<Candidate> can);
 =======
 bool winner (vector<Candidate>& cans);
 >>>>>>> how
 =======
+=======
+void eliminate_zero (vector<Candidate>& can, vector<Candidate>& losers);
+
+>>>>>>> how
 void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers);
 >>>>>>> how
 
 void case_eval (istream& r, ostream& w);
 
-void eliminate (vector<Candidate>& can, vector<Candidate>& losers);
+bool eliminate (vector<Candidate>& can, vector<Candidate>& losers);
 
-bool is_tie (vector<Candidate>& cans, ostream& w);
+bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers);
 
-bool winner (vector<Candidate>& cans, ostream& w);
+bool winner (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers);
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans);
 
