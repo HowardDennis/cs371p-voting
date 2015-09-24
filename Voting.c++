@@ -63,6 +63,9 @@ void case_eval (istream& r, ostream& w) {
         }
         ++i;
     }
+    if (i == numNames) {
+        is_tie;
+    }
 }
 
 void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers) {
@@ -166,6 +169,7 @@ bool winner (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
             return true;
         }
     }
+    w << "\n";
     return is_tie(cans, w, losers);
 }
 
