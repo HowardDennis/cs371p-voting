@@ -162,13 +162,14 @@ TEST(VotingFixture, eliminate_1) {
     string s("3\nJohn Doe\nJane Smith\nSirhan Sirhan\n2 3 1\n2 1 3\n3 2 1");
     istringstream test_stream(s);
     vector<Candidate> candidates;
+    vector<Candidate> losers;
     int numNames;
     string str;
     getline(test_stream, str);
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates, numNames);
-    eliminate(candidates);
+    eliminate(candidates, losers);
     ASSERT_TRUE(candidates[0].elim);
     ASSERT_FALSE(candidates[1].elim);
     ASSERT_FALSE(candidates[2].elim);
