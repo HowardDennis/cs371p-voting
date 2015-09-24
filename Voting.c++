@@ -59,6 +59,7 @@ void case_eval (istream& r, ostream& w) {
         while (b && !win) {
             b = eliminate(candidates, losers);
             reassign(candidates, i, losers);
+            w << losers.size() << endl;
             win = winner(candidates, w);
         }
         ++i;
