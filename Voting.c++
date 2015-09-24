@@ -83,7 +83,9 @@ bool reassign2 (vector<Candidate>& candidates, vector<Candidate>& losers) {
         }
         ++c;
     }
-    cout << losers.size() << endl;
+    for (unsigned int i = 0; i < losers.size(); ++i) {
+        w << losers[i].name << losers[i].votes.size() << endl;
+    }
     return ret;
 }
 
