@@ -258,7 +258,7 @@ void elect (istream& r, ostream& w) {
     istringstream (s) >> numNames;
     assert(numNames >= 0 && numNames < 21);
     vector<string> candidates(numNames);
-    vector<int> count(numNames, 0)
+    vector<int> count(numNames, 0);
     int i = 0;
     string s;
     while(numNames > i) {
