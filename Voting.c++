@@ -190,6 +190,7 @@ bool winner (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
     for (unsigned int i = 0; i < cans.size(); ++i) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (double(cans[i].votes.size()) > numVotes/2.0) {
             w << cans[i].name << endl;
             return true;
@@ -223,6 +224,14 @@ bool is_tie (vector<Candidate>& cans, ostream& w) {
         
         if (double(cans[i].votes.size()) > numVotes/2.0) {
 =======
+=======
+        if (!cans[i].elim) {
+            w << cans[i].name << cans[i].votes.size() << endl;
+        }
+    }
+    
+    for (unsigned int i = 0; i < cans.size(); ++i) {
+>>>>>>> how
         if (!cans[i].elim && double(cans[i].votes.size()) > numVotes/2.0) {
 >>>>>>> how
             w << cans[i].name << endl;
