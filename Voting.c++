@@ -202,6 +202,28 @@ bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
             go = false;
         }
     }
+    int c;
+    for (unsigned int i = 0; i < cans.size(); ++i) {
+        if (!cans[i].elim) {
+            ++c;
+        }
+    }
+    
+   /* for (unsigned int i = 0; i < cans.size(); ++i) {
+        if (!cans[i].elim) {
+            cout << cans[i].name << cans[i].votes.size() << endl;
+        }
+    } */
+    
+    if (c == 2) {
+        for (unsigned int i = 0; i < cans.size(); ++i) {
+            if (!cans[i].elim) {
+                w << cans[i].name << endl;
+            }
+        }
+        return true;
+    }
+    
     for (unsigned int i = 0; i < cans.size(); ++i) {
         if (!cans[i].elim && n != cans[i].votes.size()) {
             return false;
@@ -212,28 +234,6 @@ bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
         if (losers[i].votes.size() > 0) {
             return false;
         }
-    }
-    
-    int c;
-    for (unsigned int i = 0; i < cans.size(); ++i) {
-        if (!cans[i].elim) {
-            ++c;
-        }
-    }
-    
-    for (unsigned int i = 0; i < cans.size(); ++i) {
-        if (!cans[i].elim) {
-            cout << cans[i].name << cans[i].votes.size() << endl;
-        }
-    }
-    
-    if (c == 2) {
-        for (unsigned int i = 0; i < cans.size(); ++i) {
-            if (!cans[i].elim) {
-                w << cans[i].name << endl;
-            }
-        }
-        return true;
     }
     
     for (unsigned int i = 0; i < cans.size(); ++i) {
