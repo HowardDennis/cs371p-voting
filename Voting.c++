@@ -219,7 +219,6 @@ bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
     if (c == 2) {
         for (unsigned int i = 0; i < cans.size(); ++i) {
             if (!cans[i].elim) {
-                w << "here" << endl;
                 w << cans[i].name << endl;
             }
         }
