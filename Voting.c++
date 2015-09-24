@@ -251,3 +251,36 @@ bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
         }
     } 
 */
+void elect (istream& r, ostream& w) {
+    string s;
+    getline(r, s);
+    int numNames;
+    istringstream (s) >> numNames;
+    assert(numNames >= 0 && numNames < 21);
+    vector<string> candidates(numNames);
+    vector<int> count(numNames, 0)
+    int i = 0;
+    string s;
+    while(numNames > i) {
+        getline(r, s);
+        candidates[i] = s;
+        ++i;
+    }
+}
+void run_cases (istream& r, ostream& w) {
+    int cases;
+    string s;
+    getline(r, s);
+    istringstream (s) >> cases;
+    assert(cases > 0);
+    getline(r, s); //skips line
+    elect (r, w);
+    numVotes = 0;
+    --numCases;
+    while(numCases > 0) {
+        w << "\n";
+        elect (r, w);
+        numVotes = 0;
+        --numCases;}
+    }
+}
