@@ -163,11 +163,13 @@ void eliminate_zero (vector<Candidate>& can, vector<Candidate>& losers) {
 // --------
 
 bool winner (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
-    for (unsigned int i = 0; i < cans.size(); ++i) {
+/*    for (unsigned int i = 0; i < cans.size(); ++i) {
         if (!cans[i].elim) {
             w << cans[i].name << cans[i].votes.size() << endl;
         }
-    }
+    } */
+    
+    w << losers.size() << endl;
     
     for (unsigned int i = 0; i < cans.size(); ++i) {
         if (!cans[i].elim && double(cans[i].votes.size()) > numVotes/2.0) {
