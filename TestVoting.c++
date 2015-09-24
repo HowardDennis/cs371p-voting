@@ -169,7 +169,7 @@ TEST(VotingFixture, eliminate_1) {
     istringstream (str) >> numNames;
     get_candidates(test_stream, numNames, candidates);
     get_ballots(test_stream, candidates, numNames);
-    eliminate(candidates, losers);
+    bool b = eliminate(candidates, losers);
     ASSERT_TRUE(candidates[0].elim);
     ASSERT_FALSE(candidates[1].elim);
     ASSERT_FALSE(candidates[2].elim);
