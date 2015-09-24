@@ -104,6 +104,7 @@ bool reassign2 (vector<Candidate>& candidates, vector<Candidate>& losers) {
             }
         }
     }
+}
 
 // --------
 // determines if there is a winner
