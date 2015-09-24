@@ -33,7 +33,7 @@ void voting_solve (istream& r, ostream& w) {
     --numCases;
     while(numCases > 0) {
         w << "\n";
-        w << numCases << endl;
+        w << 101 - numCases << endl;
         case_eval (r, w);
         numVotes = 0;
         --numCases;}
