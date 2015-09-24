@@ -84,8 +84,8 @@ bool reassign2 (vector<Candidate>& candidates, vector<Candidate>& losers) {
     }
 
     
-    for (unsigned int i = 0; i < losers.size(); ++i) {
-        cout << losers[i].name << losers[i].votes.size() << endl;
+//    for (unsigned int i = 0; i < losers.size(); ++i) {
+  //      cout << losers[i].name << losers[i].votes.size() << endl;
     }
     return ret;
 }
@@ -137,6 +137,7 @@ void get_ballots (istream& r, vector<Candidate>& candidates, int numNames) {
         assign_ballot (candidates, 0, temp);
         ++numVotes;
     }
+    cout << numVotes << endl;
 }
 
 // --------
