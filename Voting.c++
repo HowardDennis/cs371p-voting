@@ -280,6 +280,7 @@ void run_cases (istream& r, ostream& w) {
         w << "\n";
         elect (r, w);
         numVotes = 0;
-        --cases;}
+        --cases;
     }
 }
+
