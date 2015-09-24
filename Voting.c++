@@ -58,7 +58,7 @@ void case_eval (istream& r, ostream& w) {
         win = winner(candidates, w);
         draw = is_tie(candidates, w);
         ++i;
-        w << losers.size() << endl;
+        w << candidates[15].votes.size() << endl;
     }
 }
 
