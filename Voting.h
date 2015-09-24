@@ -25,32 +25,36 @@ struct Candidate
 {
     string name;
     vector< vector<int> > votes;
-    bool eliminated;
+    bool elim;
 
-    Candidate():name(""), eliminated(false){}
+    Candidate():name(""), elim(false){}
 };
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 void winner (vector<Candidate> can);
 =======
 bool winner (vector<Candidate>& cans);
 >>>>>>> how
+=======
+void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers);
+>>>>>>> how
+
+void case_eval (istream& r, ostream& w);
+
+void eliminate (vector<Candidate>& can, vector<Candidate>& losers);
+
+bool is_tie (vector<Candidate>& cans, ostream& w);
+
+bool winner (vector<Candidate>& cans, ostream& w);
 
 void get_candidates (istream& r, int numNames, vector<Candidate>& cans);
 
-void voting_read_names (istream& r, int numNames, vector<string>& names);
+void get_ballots (istream& r, vector<Candidate>& candidates, int numNames);
 
-void get_ballots (istream& r, vector< vector<int> >& ballots);
-
-void get_ballots2 (istream& r, vector<Candidate>& candidates);
-
-void assign_ballot (vector<Candidate>& candidates, int column, vector<int> ballots);
-
-void count_votes (vector< vector<int> >& ballots, vector< vector<int> >& votes, int column);
+void assign_ballot (vector<Candidate>& candidates, int column, vector<int>& ballots);
 
 void voting_solve (istream& r, ostream& w);
-
-void print_all (vector<Candidate>& v);
 
 #endif // Voting_h
 
