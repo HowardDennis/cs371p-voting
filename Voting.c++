@@ -54,8 +54,18 @@ void case_eval (istream& r, ostream& w) {
     int i = 1;
     while(!win && !draw && i < numNames) {
         eliminate(candidates, losers);
-        w << losers[0].name << endl;
+        
         ++i;
+    }
+}
+
+void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers) {
+    for (unsigned int i = 0; i < losers.size(); ++i) {
+        for (unsigned int j = 0; j < losers[i].votes.size(); ++j) {
+            if (!candidates[losers[i].votes[j][column-1]-1].elim) {
+                assign_ballot(candidates, column, losers[i].votes[j][column-1]);
+            }
+        }
     }
 }
 
