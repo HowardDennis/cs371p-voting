@@ -191,11 +191,6 @@ void eliminate_zero (vector<Candidate>& can, vector<Candidate>& losers) {
 // --------
 
 bool winner (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
-/*    for (unsigned int i = 0; i < cans.size(); ++i) {
-        if (!cans[i].elim) {
-            w << cans[i].name << cans[i].votes.size() << endl;
-        }
-    } */
     w << losers.size() << endl;
     for (unsigned int i = 0; i < cans.size(); ++i) {
         if (!cans[i].elim && double(cans[i].votes.size()) > numVotes/2.0) {
@@ -232,10 +227,6 @@ bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
             w << cans[i].name << endl;
         }
     }
-    
-/*   for (unsigned int i = 0; i < losers.size(); ++i) {
-        cout << losers[i].name << losers[i].votes.size() << endl;
-    } */
     
     return true;
 }
