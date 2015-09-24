@@ -225,13 +225,13 @@ bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
             go = false;
         }
     }
-    for (unsigned int i = 1; i < cans.size(); ++i) {
+    for (unsigned int i = 0; i < cans.size(); ++i) {
         if (!cans[i].elim && n != cans[i].votes.size()) {
             return false;
         }
     }
     
-    for (unsigned int i = 1; i < losers.size(); ++i) {
+    for (unsigned int i = 0; i < losers.size(); ++i) {
         if (losers[i].votes.size() > 0) {
             return false;
         }
