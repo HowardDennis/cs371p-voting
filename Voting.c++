@@ -55,12 +55,13 @@ void case_eval (istream& r, ostream& w) {
     bool win = winner(candidates, w, losers);
     int i = 1;
     while(!win && i < numNames) {
-        w << losers[0].name << endl;
         bool b = true;
-        while (b && !win) {
+        int j = 0;
+        while (b && !win && j < 1000) {
             b = eliminate(candidates, losers);
             reassign(candidates, i, losers);
             win = winner(candidates, w, losers);
+            ++j;
         }
         ++i;
     }
