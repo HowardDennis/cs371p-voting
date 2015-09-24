@@ -70,7 +70,6 @@ void case_eval (istream& r, ostream& w) {
 
 bool reassign2 (vector<Candidate>& candidates, vector<Candidate>& losers) {
     bool ret = false;
-    unsigned int c = 0;
 
     for (unsigned int i = 0; i < losers.size(); ++i) {
         for (unsigned int j = 0; j < losers[i].votes.size(); ++j) {
