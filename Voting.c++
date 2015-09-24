@@ -50,15 +50,15 @@ void case_eval (istream& r, ostream& w) {
     assert(numVotes <= 1000);
     vector<Candidate> losers;
     eliminate_zero(candidates, losers);
-    bool win = winner(candidates, w, losers);
+    bool win = false;
     int i = 1;
     while(!win && i < numNames) {
         bool a = true;
         bool b = true;
         int j = 0;
         while (a && b && !win && j < numNames) {
-            a = reassign2(candidates, losers);
-            b = eliminate(candidates, losers);
+            a = eliminate(candidates, losers);
+            b = reassign2(candidates, losers);
             win = winner(candidates, w, losers);
             ++j;
         }
@@ -218,6 +218,21 @@ bool is_tie (vector<Candidate>& cans, ostream& w, vector<Candidate>& losers) {
         if (losers[i].votes.size() > 0) {
             return false;
         }
+    }
+    
+    int c;
+    for (unsigned int i = 0; i < cans.size(); ++i) {
+        if (!cans[i].elim) {
+            ++c;
+        }
+    }
+    if (c == 2) {
+        for (unsigned int i = 0; i < cans.size(); ++i) {
+            if (!cans[i].elim) {
+                w << cans[i].name << endl;
+            }
+        }
+        return true;
     }
     
     for (unsigned int i = 0; i < cans.size(); ++i) {
