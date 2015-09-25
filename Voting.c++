@@ -12,10 +12,11 @@ using namespace std;
 
 bool check(int& v, vector<int>& losers_total) {
   bool bad = false;
-  for(unsigned int = 0; i < losers_total.size(); ++i) {
+  for (unsigned int i = 0; i < losers_total.size(); ++i) {
     if(losers_total[i] == (v - 1)) {
       bad = true;
-      break;}
+      break;
+    }
   }
   return bad;
 }
