@@ -48,7 +48,7 @@ bool winner(vector<int>& count, vector<string>& electees, vector<int>& losers, v
   bool no_win = true;
   electees.clear();
   losers.clear();
-  for(unsigned int i = 0; i < voteCount.size(); ++i) {
+  for(unsigned int i = 0; i < count.size(); ++i) {
     t += count[i];
     if(count[i] > max) {
       max = count[i];}
@@ -59,7 +59,7 @@ bool winner(vector<int>& count, vector<string>& electees, vector<int>& losers, v
   if(max == min) {
     no_win = false;}
 
-  for(unsigned int i = 0; i < voteCount.size(); ++i) {
+  for(unsigned int i = 0; i < count.size(); ++i) {
     if(count[i] > (total / 2)) {
       no_win = false;
       electees.push_back(candidates[i]);}
@@ -90,7 +90,7 @@ void sortVotes(istream& r, vector< vector<string> >& ballots, vector<int>& count
   for(unsigned int j = a-1; j < a; ++j) {
     ballots[j].push_back(v);
   }
-    sortVotes(r, allVotes, voteCount, v);
+    sortVotes(r, ballots, count, v);
 }
 
 void print(ostream& w, vector<string>&  electees) {
@@ -127,8 +127,8 @@ void elect (istream& r, ostream& w) {
   }
   print(w, electees);
 
-  allVotes.clear();
-  voteCount.clear();
+  ballots.clear();
+  count.clear();
   candidates.clear();
   allLosers.clear();
   losers.clear();
