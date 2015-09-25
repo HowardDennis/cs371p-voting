@@ -138,11 +138,11 @@ void elect (istream& r, ostream& w) {
 void run_cases(istream& r, ostream& w) {
   int cases;
   r >> cases;
-  assert(x > 0);
+  assert(cases > 0);
   r.ignore();
   for(int y = 0; y < x; ++y) {
     r.ignore();
-    solve(r, cout);
+    elect(r, cout);
     if(y < cases - 1){w << '\n';}
   }
 }
