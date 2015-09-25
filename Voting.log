@@ -1,0 +1,3069 @@
+commit 67924b5778adc3fc41b0d027d199f3609947f861
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 21:53:38 2015 -0500
+
+    d
+
+commit 93ae79f8542e4d1688b9eb2f4987e0abe82a1f9a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 21:53:07 2015 -0500
+
+    Delete test.in
+
+commit be451d0ac38db85a6a338cb1fa049e3e16f4b5ce
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 21:51:06 2015 -0500
+
+    Update Voting.h
+
+commit cc912cf60f9b6191c6a3cd56b3851c52c2ba4d75
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 21:50:41 2015 -0500
+
+    Update Voting.c++
+
+commit a9cfcdd14ef7280bc1b3c5a4035b218ff19ef277
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 21:49:31 2015 -0500
+
+    Update TestVoting.out
+
+commit e8fd5907b8b74e4cbbc5b26342757fc2486bfcf2
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 21:49:03 2015 -0500
+
+    Update TestVoting.c++
+
+commit 881cdd1557951aebc6875f4c8e18ac436d8f5798
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 21:47:47 2015 -0500
+
+    Update RunVoting.in
+
+commit 630d2390057c431039e0091208a1fba55d596488
+Merge: c062a8a 29d24df
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 21:45:06 2015 -0500
+
+    k
+
+commit c062a8aeae9b91211be1510dfcf47fb7d11ccc97
+Merge: dc9a331 a20dfa4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 21:44:44 2015 -0500
+
+    j
+
+commit 29d24dffbd6f0f7de307109c54e7baef7942d932
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 21:43:50 2015 -0500
+
+    Update TestVoting.out
+
+commit a20dfa4c3b563ae4bc24f840bd09213c1889aaa0
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Thu Sep 24 21:30:07 2015 -0500
+
+    Removed empty folder.
+
+commit 07c089822a41445f725d38e24f0cdd867ff0c5f6
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Thu Sep 24 21:22:56 2015 -0500
+
+    Added empty voting-tests files.
+
+commit 911821dec448343255286a6df98467148e8bbbf7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 21:15:01 2015 -0500
+
+    Update TestVoting.c++
+
+commit cc1d562bd6654ba3dc8172e6b4484f1962ce6eac
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 21:12:57 2015 -0500
+
+    Update TestVoting.c++
+
+commit e76e09d3a19f59dae2509ec02b2cb3415485965a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 21:05:39 2015 -0500
+
+    Update TestVoting.c++
+
+commit dd552d760ccb552a99897063d95331612fa06ec7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:46:41 2015 -0500
+
+    made test and output
+
+commit f475fdf362f47a5186e3e5ec4bf3476e99e43196
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:45:20 2015 -0500
+
+    Update RunVoting.in
+
+commit f73dc4ea08730245ea7d7e094981e2b4c4e534af
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:43:54 2015 -0500
+
+    Update UVaVoting.c++
+
+commit 93b718d44485b8b4dc94be3b3194d91b452d7094
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:39:32 2015 -0500
+
+    Update Voting.c++
+
+commit 150a1b856a7bd5b522f1105e0c9da74648fca6ac
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:39:06 2015 -0500
+
+    Update Voting.c++
+
+commit b187b57cda214429d6155b571e5c4b39665ee251
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:38:29 2015 -0500
+
+    Update Voting.c++
+
+commit 572feccaf7d1a8b9fe6b15f7a401ed29a90d1080
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:35:27 2015 -0500
+
+    Update Voting.c++
+
+commit 4ed56bbe011a6ff879ac00cd75c7670a28923c9a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:34:56 2015 -0500
+
+    Update Voting.c++
+
+commit 2173ab4a41cd4e013530dff252a2389bebf512f4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:32:55 2015 -0500
+
+    Update Voting.c++
+
+commit 5af16df7e925886d655eebdd87113ef4314b24ce
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:32:00 2015 -0500
+
+    Update Voting.h
+
+commit e2ce1969cc72b1099e8b318b04b839c3b20f5957
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:30:40 2015 -0500
+
+    Update Voting.c++
+
+commit 2b1bbd1df2de5d14007f97b8269368d9f5924fe7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:28:15 2015 -0500
+
+    Update Voting.c++
+
+commit d5901778767c2a662a33b104d325a386294732b1
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:27:25 2015 -0500
+
+    Update Voting.h
+
+commit e644069ebcf228b9d259ac9343751465565487b2
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:26:57 2015 -0500
+
+    Update Voting.c++
+
+commit daf6802ff0f1ca1884604d99a59c16b6df0d3a6d
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:26:10 2015 -0500
+
+    Update Voting.c++
+
+commit 4ed0bcb9ea489a48b779be728711a07ae3b26512
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:24:29 2015 -0500
+
+    Update Voting.c++
+
+commit 41bb1ebbe667c08a114c7e5dd3ec1b020c4451d9
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 20:20:11 2015 -0500
+
+    Update Voting.c++
+
+commit 17c8daca1c885a3aa6c5f7c30da1be5f3c9bffa0
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 19:58:51 2015 -0500
+
+    Update Voting.c++
+
+commit be0f6f9cb7d3c98eefae2fecd03db01c98b212e3
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 19:36:38 2015 -0500
+
+    Update Voting.c++
+
+commit 433987ab99c5f4fc60bddbd38a13bcb6c27ea875
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 19:34:06 2015 -0500
+
+    Update Voting.h
+
+commit bd5317ee9d57c72bec2f92936c0178beffa2c4ab
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 19:30:06 2015 -0500
+
+    Update Voting.c++
+
+commit c259bc07cbe4e67649e4474bafb6490a117986ba
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 19:28:11 2015 -0500
+
+    Update Voting.c++
+
+commit 0d426eb0c77b6d42fe48052e472546c869f2ba8b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 18:20:58 2015 -0500
+
+    Update Voting.c++
+
+commit b03e7b6df47ab8d3229c73ecadbf2173a1824179
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 18:19:56 2015 -0500
+
+    Update Voting.c++
+
+commit 7b4844a5a232d255572ea8003e2f9e18fbbcbc35
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 18:17:37 2015 -0500
+
+    Update Voting.c++
+
+commit 2bbf2f16c33ed7beeb62e332fdbf7ce8eaf5a688
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 18:15:52 2015 -0500
+
+    Update Voting.c++
+
+commit 75ec30c687aba6ba17f0e6376a1080a576385578
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 18:03:18 2015 -0500
+
+    Update RunVoting.c++
+
+commit 30a2a18a8d3c8bc50b65f09c2544aae094ac6e14
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 17:53:52 2015 -0500
+
+    Update RunVoting.c++
+
+commit 02eb452fa675b987dd6d224b268926f7b7b8db83
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:50:09 2015 -0500
+
+    Update Voting.c++
+
+commit 02d86895996cc2eb5c00bda3fcd4ab3fb3e2269b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:49:44 2015 -0500
+
+    Update Voting.c++
+
+commit 03f803295b528ba6583c7ca3efc006c0d7bc6677
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:47:56 2015 -0500
+
+    Update Voting.c++
+
+commit 854b854077360d81c7a619dc63c8ee70c3de48cb
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:45:48 2015 -0500
+
+    Update Voting.c++
+
+commit 7b816455445a342c062a1d686f0a5ac2e43321f8
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:45:09 2015 -0500
+
+    Update Voting.c++
+
+commit c06ed17e9ece6e9ac65229aa28238f9503fb8ec9
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:44:21 2015 -0500
+
+    Update Voting.c++
+
+commit c918e33da7d632fc3b05264b79498f59669e63cf
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:43:51 2015 -0500
+
+    Update Voting.c++
+
+commit 27744c8aabdcc0c3b72d92ad0cca1d6740c6bdf9
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:42:54 2015 -0500
+
+    Update Voting.c++
+
+commit 1cd7205846700fad08d0c5c1a57ae592fbe97454
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:42:29 2015 -0500
+
+    Update Voting.c++
+
+commit c3dc3de68c0234abc5422d1926892c68a29e2dde
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:40:57 2015 -0500
+
+    Update Voting.c++
+
+commit c87f96503066549f7ee3ba5f3017a1ed2a58d26c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:40:19 2015 -0500
+
+    Update Voting.c++
+
+commit 28af0e50b203debc5dece7349d43e49617617760
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:37:33 2015 -0500
+
+    Update Voting.c++
+
+commit 25349746c4bb98a2cb153b2c233477585cb76e09
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:36:44 2015 -0500
+
+    Update Voting.c++
+
+commit c7c8da1c326c48022fa30040304ec0803f415f65
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:36:09 2015 -0500
+
+    Update Voting.c++
+
+commit 549bfdc9da82191d079ace628f50b40c1313bc67
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:34:53 2015 -0500
+
+    Update Voting.c++
+
+commit 4098db798ecfdc7da88ed326a1b691eefab42730
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:32:44 2015 -0500
+
+    Update Voting.c++
+
+commit 7f9765682b241635fb9b5b590149c5074bf0ca0b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:30:52 2015 -0500
+
+    Update Voting.c++
+
+commit 1cdf539f6386de057a1b1ff213c15d2eab7397ca
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:29:59 2015 -0500
+
+    Update Voting.c++
+
+commit 3fa29eed9513663e591c0409e8064417e271cc97
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:29:17 2015 -0500
+
+    Update Voting.c++
+
+commit b2a12b0394120f3c12d4a862c7b73908dfdb4a69
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:25:56 2015 -0500
+
+    Update Voting.c++
+
+commit a6126dcff241a4be95c2762cc1992bda29de4fcc
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:24:09 2015 -0500
+
+    Update Voting.c++
+
+commit aa5dbc7c5cc6877e16d8f6b71430352a0a1d67bf
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:13:58 2015 -0500
+
+    Update Voting.c++
+
+commit ddfa8ecf4137a0a96c1fa3ec2f0095de718791a5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:10:15 2015 -0500
+
+    Update Voting.c++
+
+commit c10e2c62adcb825685f4e99441725bd484873dd6
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:05:00 2015 -0500
+
+    Update Voting.c++
+
+commit 698a8115e111515c9572117b2a700c58bca559d0
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 16:04:11 2015 -0500
+
+    Update Voting.c++
+
+commit 60b83e543e02e5ef9e8750ea9c2d61a16b734dbb
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:58:45 2015 -0500
+
+    Update Voting.c++
+
+commit 761da86c953e921c28371c10550b9e85a0f751d0
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:52:44 2015 -0500
+
+    Update Voting.c++
+
+commit 694dce0c715f538d71efe21aae878a5fe0b3425a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:50:12 2015 -0500
+
+    Update test.in
+
+commit 176987766c5ef37a47eb788763ec454b955433e7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:49:54 2015 -0500
+
+    Update test.in
+
+commit fdebb0d3678ce7070c0ebffd56557fe778265510
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:40:51 2015 -0500
+
+    Update Voting.c++
+
+commit 260729b8deaa114de3114514c22edd65752a8b50
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:37:35 2015 -0500
+
+    Update Voting.c++
+
+commit 917200c1f90749b6aee088dd05195568b30cc2d7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:21:06 2015 -0500
+
+    Update RunVoting.in
+
+commit fd91bd86ca6480399470e33768316c4e7f388d1e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:18:41 2015 -0500
+
+    Update RunVoting.in
+
+commit c49cbe829401a94ae3e0f3562c65e52cdeb445ab
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:15:24 2015 -0500
+
+    Update UVaVoting.c++
+
+commit 9f6f8c904c6a6703c6d2587f8f5829c2b367ab57
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:12:56 2015 -0500
+
+    Update UVaVoting.c++
+
+commit 523cc14bd990ab291b9106bd56144994c051de88
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:11:06 2015 -0500
+
+    Update UVaVoting.c++
+
+commit 1ef3d315d36b3941d591dcaa26be39adde93e9e5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:05:25 2015 -0500
+
+    Update Voting.c++
+
+commit 4db70934503ab7e09d8d684b479ab7028556db89
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:01:30 2015 -0500
+
+    l
+
+commit eda6eac916c3c29e5cb0236f4490686b3daea380
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:01:04 2015 -0500
+
+    Update Voting.c++
+
+commit 59268714420423e0ed962a7aa2a884da86d4dc6a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 15:00:11 2015 -0500
+
+    Update Voting.c++
+
+commit ea8a13ddc1517c9a4b4fdde343bf2715aeb5eaf3
+Merge: 2e9b6c4 8a71d2b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:58:28 2015 -0500
+
+    Merge branch 'how' of https://github.com/HowardDennis/cs371p-voting into how
+
+commit 2e9b6c42013fc1d790eda8b69ada34190973f987
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:58:03 2015 -0500
+
+    d
+
+commit 8a71d2b4061d750be7e5939da7cc9e528a04a846
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:57:32 2015 -0500
+
+    Update Voting.c++
+
+commit 67cc94aff7a3c04c67bd79dc589c0bec100adef7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:56:35 2015 -0500
+
+    Update Voting.c++
+
+commit 8754dd55867ec57352dde7bb4260a794bc54fa03
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:54:47 2015 -0500
+
+    Update Voting.c++
+
+commit 082ebcc86644461d3a42cb603f05aaf33955d0e9
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:51:59 2015 -0500
+
+    Update Voting.c++
+
+commit 918593beedfc5e91c9308a794739123c51558f15
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:44:45 2015 -0500
+
+    Update Voting.c++
+
+commit c964f4f6ca6aeccb59637b04055bf6de7f05675c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:43:29 2015 -0500
+
+    Update test.in
+
+commit 82b36b41f4e615b032fa38e45c1232712f0ea4e1
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:37:27 2015 -0500
+
+    j
+
+commit 0f4c0a968f4f5a66b65ec9556f89123b23251b71
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:36:35 2015 -0500
+
+    Update Voting.c++
+
+commit e80d6b7276d8a4c31e29a4dad2db62686ba0687d
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:35:23 2015 -0500
+
+    a
+
+commit 241d33dfb28fdc4e85417a9ae13cf99339202470
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:33:43 2015 -0500
+
+    Update Voting.c++
+
+commit 68fff5e3d921e22bd06720f537a4dcb88e739bd4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:33:04 2015 -0500
+
+    Update Voting.c++
+
+commit 29ce779179667b6cad4005d5d3c03cd4998f1b03
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:12:56 2015 -0500
+
+    Update Voting.c++
+
+commit ed106a107056867a91399e265d2dbf7b6bb2930a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:12:29 2015 -0500
+
+    Update Voting.c++
+
+commit 5059f62aac6e75fe34a1e0d1daaf43d9bb7b392a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:09:13 2015 -0500
+
+    Update Voting.c++
+
+commit ee69c83e39c2ded0a4f4554a73f691effb91511f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:08:02 2015 -0500
+
+    Update Voting.c++
+
+commit 57b2240dc6985eec551583db246d5f05bab557a4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:07:12 2015 -0500
+
+    Update Voting.c++
+
+commit 09309d7cc840e3b7c20bb53e5021bd1da4983b23
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:06:45 2015 -0500
+
+    Update Voting.h
+
+commit 4d059d09f3a62a997250bab8f7b6893428be34a7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:06:25 2015 -0500
+
+    Update Voting.c++
+
+commit 50a0d39144e31b7d918b5b29329419080f3541e1
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:04:07 2015 -0500
+
+    Update Voting.c++
+
+commit 82f597864a51b8d79e6aaed59153bfe5a3cdbc7c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:03:34 2015 -0500
+
+    Update Voting.c++
+
+commit ff62f4cffa09888bc190c0a66d9bc79fc4f753c5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 14:02:26 2015 -0500
+
+    Update Voting.c++
+
+commit 706d74ef364b409a9756d95547c0ade1f06c202f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:59:33 2015 -0500
+
+    Update Voting.h
+
+commit 6c30b57c7d7aaab5a01565dffea897c3ff5c921e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:54:51 2015 -0500
+
+    Update Voting.c++
+
+commit d2dd1defe695c8ca8a54b43c76c87da3c3bedc9e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:52:53 2015 -0500
+
+    Update Voting.c++
+
+commit 449c2b251dc3ed2139e210d5996ff9a6f987432b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:52:41 2015 -0500
+
+    Update Voting.h
+
+commit 0bc352f30c939eee6ebea6bfb62be091b64bfb25
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:51:12 2015 -0500
+
+    Update Voting.c++
+
+commit 391b3576827c9a622959ddb4dd455345968ccbcc
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:35:14 2015 -0500
+
+    Update Voting.c++
+
+commit e83735e6a6dd3108ebd788be4b2cd869d8ebbf1b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:33:56 2015 -0500
+
+    Update Voting.c++
+
+commit 730b082893ba097b71bb58ef3d45c4df5cda9943
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:32:42 2015 -0500
+
+    Update Voting.c++
+
+commit e74df1ebd9c2bc2e0e3c45ff25d6acb3f97fb4e9
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:31:23 2015 -0500
+
+    Update Voting.h
+
+commit 8193263c06a7c75d225feecea2a16a49c5357710
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:27:54 2015 -0500
+
+    Update Voting.c++
+
+commit dc9a331247e5e058699a9e8b837bd5528d8ffe81
+Merge: 33c5769 72386f1
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:20:57 2015 -0500
+
+    a
+
+commit 72386f1706851d7d6730060d503fb1bf2104ca4e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:19:47 2015 -0500
+
+    Update Voting.c++
+
+commit 33c5769e4743753c684072efb27448db9a2564d9
+Merge: 2508cb9 0cadf82
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:14:58 2015 -0500
+
+    a
+
+commit 2508cb92acb9b5f6db775a0abba83054c6705751
+Merge: c7659b6 fc345f8
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:13:09 2015 -0500
+
+    h
+
+commit c7659b6aee992bd5c4ec9fe53ce213078b3464cd
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:12:42 2015 -0500
+
+    a
+
+commit fc345f8780a41c894ef847b7ce8fc9029fe29308
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 13:07:22 2015 -0500
+
+    Update Voting.c++
+
+commit 0cadf82675511abb33a53e53542b953e7ec78be5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 11:22:17 2015 -0500
+
+    Update Voting.c++
+
+commit a652c77404fca71dfc05928163ff37a10a959d1f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 11:21:47 2015 -0500
+
+    Update Voting.c++
+
+commit 64801623433692e8c5a89350ac331312cbda4d9b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 11:18:03 2015 -0500
+
+    Update test.in
+
+commit 561c706fe512a41f2f4ade616454b9e3ee031788
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 11:12:27 2015 -0500
+
+    fixed infinite loop
+
+commit 34ec2082f0947792f02430dab52265e1e21c6609
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 11:11:36 2015 -0500
+
+    Update Voting.c++
+
+commit db2802617d616a870ebe6927189bd14743c780b5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 11:09:37 2015 -0500
+
+    Update Voting.c++
+
+commit ca1ff548e3b4f34fb3abe93e18f7f6c170453223
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 11:05:28 2015 -0500
+
+    Update Voting.c++
+
+commit 4b5e7f515120868aaa262048d7493716637ec43f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 11:03:52 2015 -0500
+
+    Update Voting.c++
+
+commit d83ad5d60f9413153286d2e9a0dc75a11930336e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 11:01:54 2015 -0500
+
+    Update test.in
+
+commit ceb9ea1b00227a5840b02847007086ac43a35c62
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:46:38 2015 -0500
+
+    Update Voting.c++
+
+commit 6604a509ec681e8c94a7f1faf7735fdf7f714308
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:44:19 2015 -0500
+
+    Update Voting.c++
+
+commit 106194102cb656527a72c06429efec4d7bb9ebcb
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:40:06 2015 -0500
+
+    Update Voting.c++
+
+commit b2155586fca86331c621dec8b1a68bd52431bc6c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:39:36 2015 -0500
+
+    Update Voting.c++
+
+commit a7e82fb65db3bec13d20804dd7e899a9f909dfa9
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:37:39 2015 -0500
+
+    Update Voting.c++
+
+commit 95d16f218e4f5b2dd4f7a2f2428e49287460f73f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:33:40 2015 -0500
+
+    Update Voting.c++
+
+commit 4a998997db7ee7c780bc9f4e794a12a4125a2c1f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:28:41 2015 -0500
+
+    Update Voting.c++
+
+commit e3be9dcc44059c6d89c7fb451e6d5d45b759dc5f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:27:58 2015 -0500
+
+    Update Voting.c++
+
+commit d575e54add5b4db5aacde35d653622c6781e0b4e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:26:56 2015 -0500
+
+    Update Voting.c++
+
+commit 9d69ec776afff5b06e223811c26c2445b882380e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:24:38 2015 -0500
+
+    Update Voting.c++
+
+commit 8aa7743abc2413a5d0f1b1c3529027e5ead65373
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:24:01 2015 -0500
+
+    Update Voting.c++
+
+commit 70023ab737bc5294c912e8c3d9799591998e7ed1
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:22:20 2015 -0500
+
+    Update Voting.h
+
+commit 9bc5e6c08d9a134e609161994cfe47e96c4ffeaa
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:21:35 2015 -0500
+
+    Update TestVoting.c++
+
+commit a796338700dbc2361fec1ab5e76f12cda15f53de
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:19:21 2015 -0500
+
+    Update Voting.h
+
+commit f713a8594ac8158c38709647f4b4df28eaab3b49
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:11:28 2015 -0500
+
+    Update Voting.c++
+
+commit 5711becb76c0d5de41716a07b5a0681b8ebc76a5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:05:29 2015 -0500
+
+    Update Voting.c++
+
+commit 9619ca0d76b85b6bcfc4e781f9ead94d1aedf5ba
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 10:00:03 2015 -0500
+
+    Update TestVoting.c++
+
+commit 715f0ab9417bc09124dca6ae196e927d9df9d9dc
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 09:59:09 2015 -0500
+
+    Update TestVoting.c++
+
+commit 757880ea3af467e0fe5422dfa31c6495da28784b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 09:56:41 2015 -0500
+
+    Update Voting.h
+
+commit 028f972266a6851b6fe6edf0f9969deda7fb483e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 09:56:37 2015 -0500
+
+    Update Voting.c++
+
+commit b30a4a9f025172f7b4237be057db8c9fad58f85f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 09:10:23 2015 -0500
+
+    Update test.in
+
+commit 18d442c3b6025af6e754f3368836e524a1723282
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 09:03:25 2015 -0500
+
+    d
+
+commit 26291bd4828443c60d57358de7a897e11871117d
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 09:02:54 2015 -0500
+
+    Update Voting.c++
+
+commit c23750971a7fe74e3012d176b9dc7271ed96f58d
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 00:43:15 2015 -0500
+
+    a
+
+commit b1f325cc054e8e71661fcc426fb5f3b13d669f33
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 00:42:01 2015 -0500
+
+    Update Voting.c++
+
+commit e5614c1c297036e6cfabf09af19057c30ee3986e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 00:38:42 2015 -0500
+
+    a
+
+commit 01efb66b160e932e6026cc0da6a0a56ae92c9ebd
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 00:37:19 2015 -0500
+
+    Update Voting.c++
+
+commit 9325ae5e7a91c42e176aa1df76b54b2755d98fad
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 00:36:11 2015 -0500
+
+    Update Voting.c++
+
+commit ab03e4566bb74c843130f3d85e3ca4c68f58f0db
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 00:33:12 2015 -0500
+
+    Update Voting.c++
+
+commit 6fa0249b030c89494ef0e9904a4e4d872bfef4d8
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 24 00:25:43 2015 -0500
+
+    Update test.in
+
+commit 84c64e28e974aeaedc467376460f8a85c93e773a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 22:17:09 2015 -0500
+
+    a
+
+commit e898d2fbade328d646c177128d7539358d38527f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 22:16:04 2015 -0500
+
+    Update Voting.c++
+
+commit 1b1b5b506a92c3f5a9899fe787525ae04a4d9c6a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 22:15:19 2015 -0500
+
+    Update Voting.c++
+
+commit 6e647a323ffd139a741cc7305960358c5349122f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 22:08:24 2015 -0500
+
+    Update Voting.c++
+
+commit 892ea2967300f48352d766fd296d27e485733629
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 22:07:47 2015 -0500
+
+    Update Voting.h
+
+commit 4e1e985bcf9cd99349e5f45188f7e21c8ca4fb0f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 22:07:10 2015 -0500
+
+    Update Voting.c++
+
+commit 747acc8781c1e37c5d4240e3ed94617870e7c3f2
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:52:17 2015 -0500
+
+    Update Voting.c++
+
+commit c52e712855094a327b067e439edd4df375ff2aba
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:50:50 2015 -0500
+
+    Update Voting.c++
+
+commit bf053f02003b1ef87c2a22996d3e8fe423f1a4a6
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:48:52 2015 -0500
+
+    Update Voting.c++
+
+commit 035950df49563bf679bfaa41ee64278d61083c2b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:48:12 2015 -0500
+
+    Update Voting.c++
+
+commit 0dadb10c2547f9951143eae11ab4f844da031715
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:41:40 2015 -0500
+
+    Update test.in
+
+commit 72bc4ce2299ff863185e978ac01d6314e88437cc
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:40:06 2015 -0500
+
+    Create test.in
+
+commit 5dd80358022c5d48f0c83fd1229ed4bd1ebb27b6
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:33:27 2015 -0500
+
+    j
+
+commit 052164552024076d2d3e12b2fb6c58de8c2ecc53
+Merge: f55dc1f 4e86547
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:32:02 2015 -0500
+
+    Merge branch 'how' of https://github.com/HowardDennis/cs371p-voting into how
+    "h"
+
+commit 4e86547880a171549ec2b094dea1dfcdf09ef5a0
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:31:44 2015 -0500
+
+    Update RunVoting.in
+
+commit f55dc1f6b77fc12eff814336d1bda692c06b9fe4
+Merge: eecd8b4 43f1fb5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:29:39 2015 -0500
+
+    Merge branch 'how' of https://github.com/HowardDennis/cs371p-voting into how
+
+commit 43f1fb5c0eb10119e9a4b61e2916b4ddf687accf
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:29:19 2015 -0500
+
+    Update RunVoting.in
+
+commit eecd8b4459cf111ba6ffe639c250507de5783170
+Merge: ecf314a ec98435
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:26:29 2015 -0500
+
+    Merge branch 'how' of https://github.com/HowardDennis/cs371p-voting into how
+
+commit ecf314a9febec14c582acafb79115c9aeb821d40
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:26:12 2015 -0500
+
+    a
+
+commit ec98435b1627d7314379891b129dfd2afca5d81d
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:25:15 2015 -0500
+
+    Update RunVoting.in
+
+commit 733586b89281e787ead17ff1e5d0fda72da21d94
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:23:48 2015 -0500
+
+    Update RunVoting.in
+
+commit 1ed04149053bb38ccda043283f9f003cfbd93a90
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:21:13 2015 -0500
+
+    Update UVaVoting.c++
+
+commit 69a562904f71917ce34c0dc079d4513923942457
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:20:37 2015 -0500
+
+    Update Voting.c++
+
+commit 90be7b495bc4bc4ff4e4f548b72ad364db1ab379
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:19:40 2015 -0500
+
+    Update Voting.c++
+
+commit 12c4261f6da5dfeff283c4b99d0e57b6df3291e6
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:18:37 2015 -0500
+
+    Update Voting.c++
+
+commit e8a4fa86cc95987ae00d70fd4d3ff208c3a69357
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:15:36 2015 -0500
+
+    Update Voting.c++
+
+commit 73f7bf48a4b9c941f043fcc6db1e964ab1df0362
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:12:03 2015 -0500
+
+    Update Voting.c++
+
+commit 1a8cf0a4aa40b1a9541825f9f59c872123f8417f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:07:28 2015 -0500
+
+    Update RunVoting.in
+
+commit 84f4de1bbb1c46c2812910630b7287bedf6b3b6b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 21:03:29 2015 -0500
+
+    New acceptance test output
+
+commit cc03cab2a3ead092752669bab8a61d34c6789a19
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:48:13 2015 -0500
+
+    Update Voting.c++
+
+commit 3d0649e105d040bd90fc97791fea0f211062bdca
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:47:37 2015 -0500
+
+    Update RunVoting.in
+
+commit 8d3ab6f18c98fac9ef15be33c725efe522f2917b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:46:14 2015 -0500
+
+    Update RunVoting.in
+
+commit a4b168e82f4d41dc7b6d54cc5cbcb669b1c329f7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:45:53 2015 -0500
+
+    Update Voting.c++
+
+commit 5f3c6b27b53d88e088305dfaa086310898cb77c8
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:44:17 2015 -0500
+
+    Update Voting.c++
+
+commit 6b5c64847df79a8b7c4e3cf858c94bb1b6562871
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:42:06 2015 -0500
+
+    Update Voting.c++
+
+commit 10a8bcf053a2756e89c99c7f7fa19ab6e4aa8203
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:39:57 2015 -0500
+
+    Update Voting.c++
+
+commit cccb2dc123d0df3f8fc37c27161244a89b80a6c8
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:39:02 2015 -0500
+
+    Update Voting.c++
+
+commit 1076725236a2c0d68b732690c2f977054d5927ea
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:36:56 2015 -0500
+
+    Update Voting.c++
+
+commit 0513a77ae38bda17f493a3c63e76df59c6682f2d
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:34:52 2015 -0500
+
+    Update RunVoting.in
+
+commit 0571ef7dde4eb7dd02049682f823918f14f9b68e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:26:44 2015 -0500
+
+    Update UVaVoting.c++
+
+commit e37df8aa6b14e20e6703472984864cca7c632544
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:26:00 2015 -0500
+
+    Update UVaVoting.c++
+
+commit d671f9cd845aee5b764b436e9e4386c2ece33e82
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:22:07 2015 -0500
+
+    Update UVaVoting.c++
+
+commit 3e7102dab83eda888304f54631f984b563617c75
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 20:17:39 2015 -0500
+
+    Create UVaVoting.c++
+
+commit deb3f54542acaf9cdc778b4c0844cd78e7828f0a
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Wed Sep 23 20:16:16 2015 -0500
+
+    Deleting raw files.
+
+commit b47c2f4730fda3e2a3c917e7f6220c8111bf0d36
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Wed Sep 23 20:15:14 2015 -0500
+
+    Mergine how into master.
+
+commit 067067c0632613b2025e50c0d1fb1a1b8a28351d
+Merge: 1fcfd7f 7e7df73
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:57:19 2015 -0500
+
+    merging how to master
+
+commit 7e7df734ff004dffde375eb3e239dbf9a1b054c3
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:53:37 2015 -0500
+
+    Update RunVoting.in
+
+commit db35073be24ae54119f529d19dd28b957f047dfe
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:52:28 2015 -0500
+
+    Update Voting.c++
+
+commit 3ca5d648fa81ad2298f98f75ca9f4fd4f00728e4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:51:44 2015 -0500
+
+    Update Voting.c++
+
+commit dbfee326e36bfd2dbe5c074cea07c42f1cba798d
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:50:34 2015 -0500
+
+    Update Voting.c++
+
+commit 568d8ddb7193a7124606f036f9ddcb80e3c287c6
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:50:06 2015 -0500
+
+    Update Voting.c++
+
+commit a3609b7666cea2a5e178308dfcc17541bb0f03cc
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:48:28 2015 -0500
+
+    Update Voting.c++
+
+commit badfa915accf7661a0336d8c105a90b3f00cc04c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:47:24 2015 -0500
+
+    Update Voting.c++
+
+commit 7993db931196e73e7f309a104eebce4626cffa5b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:44:10 2015 -0500
+
+    Update Voting.c++
+
+commit cbca435fe51c2187308ae0e051137e0f70e43e68
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:43:28 2015 -0500
+
+    Update Voting.c++
+
+commit 4ca1af3ef3d86ac6d2316a72a73080baad9c4ca8
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:42:15 2015 -0500
+
+    Update Voting.c++
+
+commit 37d5b395b88328035003caeb1cb325703381150b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:41:47 2015 -0500
+
+    Update Voting.c++
+
+commit 675732fa535dfb0dd2f82e590321fb98a89ec16a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:40:22 2015 -0500
+
+    Update Voting.c++
+
+commit 9d643892468e988ca6b518fce4b313a496705aea
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:39:23 2015 -0500
+
+    Update Voting.c++
+
+commit eb4d8e6e8b69c4e3d5af69db3bfc6e661dbcdb52
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:37:47 2015 -0500
+
+    Update Voting.c++
+
+commit 5be2c1505cf13d21f1e89da85fda26bbf8060d27
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:36:08 2015 -0500
+
+    Update Voting.c++
+
+commit 9e48ce664c5993656dee2cb8a6aa509b9791bfd6
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:35:15 2015 -0500
+
+    Update Voting.c++
+
+commit fa0ff6e83c39bd04137db0d7b657b054286e491b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:33:52 2015 -0500
+
+    Update Voting.h
+
+commit 4d341260ce6c698cb4bd2771db7147793e227ee4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:33:29 2015 -0500
+
+    Update Voting.c++
+
+commit 95b8749514812e054664c529ac2df0e2b1226573
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:19:27 2015 -0500
+
+    Update Voting.c++
+
+commit 972439710dc11d0997b400c897ae1d17ed08cf76
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:19:02 2015 -0500
+
+    Update RunVoting.in
+
+commit 9811d7cd507ccb42a98d4ae7a0e34d2059d665e6
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:17:47 2015 -0500
+
+    Update Voting.c++
+
+commit c37888bba6d80bbe3cc78bdf6af58e00a2b08a69
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:14:38 2015 -0500
+
+    Update Voting.c++
+
+commit a67bca5da53764594eef1809d19700fbcee558ef
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:14:19 2015 -0500
+
+    Update TestVoting.c++
+
+commit 48a2f64433e21b5ddacdeafab93df34991f76e9b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 19:13:40 2015 -0500
+
+    Update Voting.h
+
+commit c7c5075b55ef594e1814f2894ceff1fcf2a2ae11
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 18:05:37 2015 -0500
+
+    Update Voting.c++
+
+commit 7ebe9cba2a8defb06684e32517332fe3708670f1
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 18:03:16 2015 -0500
+
+    Update RunVoting.in
+
+commit 430427ab3b4cdbd68eef51aadd3ff95fb9a7840f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 18:01:33 2015 -0500
+
+    Update RunVoting.in
+
+commit 32745d2acfe4eeaec47747301750c8ff4f486a2b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 17:50:27 2015 -0500
+
+    Update RunVoting.in
+
+commit e4613b5967a200e959deeaee505c35e86accbd3b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 17:48:40 2015 -0500
+
+    Update RunVoting.in
+
+commit 1fcfd7f7287fa299d26508e4c7cd068f6914e506
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 17:45:33 2015 -0500
+
+    Update RunVoting.in
+
+commit 0f4ba55281ff27b8e3e4368bb6f20070d5d430a0
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 17:14:46 2015 -0500
+
+    Update RunVoting.in
+
+commit 738cfe9c1cdc98fa0d9397ae9d7023740b0fb47a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 17:10:43 2015 -0500
+
+    Update RunVoting.in
+
+commit 5f1258c355c91164dd8c0ff898b72758d46b5831
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:49:22 2015 -0500
+
+    Update Voting.c++
+
+commit a8f8d151a2f45e459b152cb6e8821df22bbe95b6
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:37:07 2015 -0500
+
+    Update Voting.c++
+
+commit baf9e7bd0dac5f071e678e64c476abe5346e3eab
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:35:43 2015 -0500
+
+    Update Voting.c++
+
+commit c44ed72fa086d891288a4edc11f850fa30b5508b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:34:08 2015 -0500
+
+    Update RunVoting.in
+
+commit b73f9d5fbd8ee89d1b718ef1fe2b70a6d0f206ab
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:25:57 2015 -0500
+
+    Update RunVoting.in
+
+commit f48250267e8e49fbea2abcf46f14f744499d5937
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:24:32 2015 -0500
+
+    Update Voting.c++
+
+commit c347f776c651a99f24026fa28a36bfa874ffc4ac
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:21:14 2015 -0500
+
+    Update Voting.c++
+
+commit d19f2cbd9e9599960c118096b6adf6517cf20719
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:19:09 2015 -0500
+
+    Update Voting.c++
+
+commit 41cbcaaf1eeb27cc9b53eb340dad6a0860cc034a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:15:46 2015 -0500
+
+    Update RunVoting.in
+
+commit f06e4aaddad29ce7f6a5e01f77a9206a86bee268
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:14:18 2015 -0500
+
+    Update RunVoting.in
+
+commit 87a54406c76537cb482238c424dcd4e70de8fab1
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:13:46 2015 -0500
+
+    Update RunVoting.in
+
+commit 13afe5f338ab7825c0e9f6072feb3c556e7fca4b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:09:42 2015 -0500
+
+    Update TestVoting.c++
+
+commit 01d454e788d2cdb29161c4c01c520ce814b901e2
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:08:30 2015 -0500
+
+    Update Voting.c++
+
+commit 0e4a25068d36b7949db3ce95fbc23902c17cc81b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:07:49 2015 -0500
+
+    Update TestVoting.c++
+
+commit e917d285b87e4763f4efedf9beb414f6142564d9
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:07:11 2015 -0500
+
+    Update Voting.h
+
+commit d16da9afa03475ae036392a6ebdc26a6c100de60
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 16:07:08 2015 -0500
+
+    Update Voting.c++
+
+commit cc0f426afe110cdc730ec7e98123ca875faebae2
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:58:56 2015 -0500
+
+    Update TestVoting.c++
+
+commit b507783ab90ad7ee846844897e7667fe1de1f0eb
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:57:46 2015 -0500
+
+    Update Voting.c++
+
+commit f1fed34e9166e744a3104719cfaa8dd64e75e6fd
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:52:19 2015 -0500
+
+    Update TestVoting.c++
+
+commit 820f55e7259b76d1fb7acc958ed9f5cb9fc8b3ca
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:43:39 2015 -0500
+
+    Update TestVoting.c++
+
+commit 4e94fe0cf401daddd650a2ad7ad8b1d0a36649f7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:42:27 2015 -0500
+
+    Update Voting.c++
+
+commit 49c8d8fdfd043a17dfeb1587087d7631f11a041b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:40:31 2015 -0500
+
+    Update Voting.h
+
+commit c209047546fdcf216d590d0df758c670976101cf
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:36:50 2015 -0500
+
+    Update Voting.c++
+
+commit 06f67f94ed04589ccc3e0e677189fb06aacb8beb
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:36:29 2015 -0500
+
+    Update Voting.c++
+
+commit f6953a5ddbc201ae338d4947f6efa721c645b691
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:36:01 2015 -0500
+
+    Update Voting.h
+
+commit 30cdbe658f49748c13fde5a1789abe4d803d326c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:35:31 2015 -0500
+
+    Update Voting.c++
+
+commit 602bd6139e7638a946b5306c40a7d7ee1389f69c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:33:21 2015 -0500
+
+    Update Voting.h
+
+commit 0fa13fe5bf9bae7d4f5da1115c7ce1881b99ab85
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:24:56 2015 -0500
+
+    Update Voting.c++
+
+commit f9707d8a5108e30cfa051499a75fcc959bd4562b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:23:34 2015 -0500
+
+    Update Voting.c++
+
+commit 2450db086bc38f51d4cf670da8de4ae832e40874
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:22:28 2015 -0500
+
+    Update Voting.h
+
+commit 8ac45243d5a7745f742371734aca5fa10ae525d3
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:22:23 2015 -0500
+
+    Update Voting.c++
+
+commit 75d9f3cc8587ff8a06f11edb57d000bb8efad66b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:13:23 2015 -0500
+
+    Update Voting.c++
+
+commit f65082a50b5821947f305ae15b62acb7c31461ae
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:11:12 2015 -0500
+
+    Update Voting.c++
+
+commit 478c0720aec0155a3dda0a14bac3b1ecf66a9fc8
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:08:55 2015 -0500
+
+    Update Voting.c++
+
+commit 2a787f6cdbcaf024d701f9deaca0ee13e5a7e385
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:07:48 2015 -0500
+
+    Update Voting.c++
+
+commit 7b9a8bb0590adda01a1ad116d87bce14923fde30
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:06:09 2015 -0500
+
+    Update Voting.c++
+
+commit 1e61f3b289e1f492e4bd2491573a2c67699bb118
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:04:22 2015 -0500
+
+    Update Voting.c++
+
+commit aa605a22a7bacd8321c0ff847594fa39365387ee
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 15:01:45 2015 -0500
+
+    Update Voting.c++
+
+commit e9b860f9ef5c5655a348ab8a2cf97aa71652b1af
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 14:59:21 2015 -0500
+
+    Update RunVoting.in
+
+commit 147cce4456c401a82245821c211493f2010adc54
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Wed Sep 23 14:59:14 2015 -0500
+
+    Update Voting.c++
+
+commit 56642466e2a7e21b95b1030ad212a189c9ac3857
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 22:02:10 2015 -0500
+
+    Update Voting.c++
+
+commit a619d2e961fc7b6be556f1888bc11ed4bf82c631
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 22:01:02 2015 -0500
+
+    Update TestVoting.c++
+
+commit 87cba5a74abf319c7511233aeae7c9a9133ed4e9
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:58:01 2015 -0500
+
+    Update Voting.h
+
+commit dbe84ffe64051e3ceeeebafb5c0557594a95e6e0
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:57:20 2015 -0500
+
+    Update Voting.c++
+
+commit e25c81195e83d6163e9d2a379921a838cf6b9182
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:54:04 2015 -0500
+
+    Update Voting.c++
+
+commit bad52f5ef7d2db6bcc0519c100cc6dc570d69fe0
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:52:08 2015 -0500
+
+    Update Voting.c++
+
+commit 9fb1bc9b9ef02977a11f97c27a672d07c8233d93
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:49:38 2015 -0500
+
+    Update Voting.c++
+
+commit 2679065f57a7125296b8179b70fa22ed1a2bf69b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:43:37 2015 -0500
+
+    Update TestVoting.c++
+
+commit e943d543d077cdac11dc9f050f740c1dc379bab6
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:42:58 2015 -0500
+
+    Update TestVoting.c++
+
+commit bc7247a40afe62abbd2553910f6d8f21d0a49cf1
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:41:05 2015 -0500
+
+    Update Voting.h
+
+commit de4b588759da47a08275f64367df0f117ae20bb1
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:39:32 2015 -0500
+
+    Update Voting.h
+
+commit 57490eaef5c2854a15a47ad6630925bb78c4acef
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:39:09 2015 -0500
+
+    Update Voting.c++
+
+commit b7dc40e304abcd920c051b039d99ab41d291c7bc
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:37:12 2015 -0500
+
+    Update TestVoting.c++
+
+commit 36adf905752d1fb3d5368ff98bb4bc1dab317e86
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:35:29 2015 -0500
+
+    Update TestVoting.c++
+
+commit bf2f59b788ce284c7939727bdf50d3981dc872b4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:32:47 2015 -0500
+
+    Update TestVoting.c++
+
+commit 11510269974c0e719d914f680b97ed32d0133370
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:26:56 2015 -0500
+
+    Update Voting.c++
+
+commit 50795332c8d9d2462f50820768058424ce33b041
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:26:09 2015 -0500
+
+    Update Voting.h
+
+commit 2c68f89b6b3204eee69b1d63f59c8cc8390a2881
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:25:24 2015 -0500
+
+    Update Voting.c++
+
+commit 54de3a5dc69987d16ed45fa52483315ec56ca60f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:23:20 2015 -0500
+
+    Update Voting.h
+
+commit 0dba7aedfd86f145e7168916ed06575e0bc58ff5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:22:24 2015 -0500
+
+    Update Voting.c++
+
+commit 59d27af3cf0105d71ad2894abfcaac5427404872
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:18:29 2015 -0500
+
+    Update Voting.h
+
+commit ba863e5d704cdde986e6e36faed88a7a64efe5a3
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:10:23 2015 -0500
+
+    Update Voting.c++
+
+commit ef4e772e3093f60f1f3342079a434fc9089dc4fb
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 21:07:14 2015 -0500
+
+    Update Voting.c++
+
+commit 4c6b75a32e4a599aa64f1d46b3f46d263675e2d9
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 20:48:58 2015 -0500
+
+    Update Voting.c++
+
+commit e9134ed092f4bfaef6de1e56e84d90697fa8b6e8
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 20:40:44 2015 -0500
+
+    Update Voting.c++
+
+commit 97fbc958403cea9df2db3138a304579a4022eed8
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 20:39:58 2015 -0500
+
+    Update Voting.c++
+
+commit 7b0f94a80055d951a223164d73cfb74d1630c1c7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 20:37:48 2015 -0500
+
+    Update Voting.c++
+
+commit 46f0370607bc8eee9f1b83271dcd089ef42b6404
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 20:22:26 2015 -0500
+
+    Update TestVoting.c++
+
+commit efb5ddc201f997c1ea902c58bcb954cc9822e455
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 20:19:12 2015 -0500
+
+    Update TestVoting.c++
+
+commit f686159be98d72d12ed6d3cc4b732dfb61383aa4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 20:17:01 2015 -0500
+
+    Update Voting.h
+
+commit a2f5964100b2b7d184ce3e1eea9162c05ecbc433
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 20:15:24 2015 -0500
+
+    Update Voting.c++
+
+commit e53b852961475542cf199a996980421aa99d29b5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 20:14:22 2015 -0500
+
+    Update Voting.c++
+
+commit 6584c6f6e3b1cb702e0646f8f9bdb9cf25b2c687
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:50:35 2015 -0500
+
+    Update Voting.c++
+
+commit 2c19435b8b3272a8cefa1b3b3dac7fe67c353730
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:40:38 2015 -0500
+
+    Update RunVoting.in
+
+commit 1273b022108d3f9631e78c38c882cfa9981b2985
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:34:29 2015 -0500
+
+    Update Voting.c++
+
+commit 2e666d0d8c7db9628302b9d23e9d39fd9cee2881
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:33:07 2015 -0500
+
+    Update TestVoting.c++
+
+commit 881714947e22f613c11a7c3b4dfaa5668f6ce93b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:24:17 2015 -0500
+
+    Update Voting.c++
+
+commit dab1c1d16fd995844cf65169d0c6aae660227b08
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:23:43 2015 -0500
+
+    Update TestVoting.c++
+
+commit d41b4c6dc227dac7a3cccd67ede7d8b15dea61c0
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:22:06 2015 -0500
+
+    Update TestVoting.c++
+
+commit 93963fe37eef1be7f974931b5cb9bf563ebc4ec5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:21:05 2015 -0500
+
+    Update TestVoting.c++
+
+commit fa284f9a6a5b599bdfbdc12c11c50cebc759ffcd
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:19:24 2015 -0500
+
+    Update Voting.c++
+
+commit dcbe10b6440cc480059fb930d1540420174a427f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:19:17 2015 -0500
+
+    Update TestVoting.c++
+
+commit 6a68e2455dc520c8f2b4fbaba8c1e6cbdf24a53b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:14:29 2015 -0500
+
+    Update Voting.h
+
+commit 3870a80752e0eae3ef627cbc5ddd16e530f2f07c
+Merge: c723d73 fd8a55a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:08:09 2015 -0500
+
+    Merge branch 'how'
+
+commit fd8a55a03a33c616013750ae387206c35bfe7b98
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:07:27 2015 -0500
+
+    a
+
+commit c723d73e08d27495f08845247802adec7dd1427a
+Merge: 19332e3 9554191
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 19:05:38 2015 -0500
+
+    fix merge issues
+
+commit 95541912eaf2c98618cb6e12a5354d5b2d707315
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:58:32 2015 -0500
+
+    Update RunVoting.in
+
+commit 44b5cd7efaa3dbe0a79ce0a3284af3b4b250476b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:57:26 2015 -0500
+
+    Update RunVoting.in
+
+commit 19332e3e761fc42ef41ad77e8b0545140867c58b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:56:44 2015 -0500
+
+    Update RunVoting.in
+
+commit d32fbf89d0ecc6a4beff7fdad8a3aa89bd62f57e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:56:04 2015 -0500
+
+    Update RunVoting.in
+
+commit 06555bf04974928846a8d5cca8f1c314a5173471
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:50:46 2015 -0500
+
+    closes #4
+
+commit 30de1012b29bf324fc30331d2755ec1cd461ccfd
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:47:17 2015 -0500
+
+    This closes #4
+
+commit d65b64bfea9eba551b9ab16cdc6798f5decf9462
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:42:03 2015 -0500
+
+    Fixes #4
+
+commit 393ee61321f114893c491861236e80244bf79004
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:39:06 2015 -0500
+
+    This closes #4
+
+commit e1dc549d51c8f6f2f91e18ea83786ba524f4aae7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:37:11 2015 -0500
+
+    closes #4
+
+commit 1b75ae7654761351a4923715d23c3f536923f03b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:36:50 2015 -0500
+
+    Update Voting.h
+
+commit eb6be87aa55b03ed0d722135cf2a36706f8d6ae0
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:32:30 2015 -0500
+
+    close #4
+
+commit f8483f26d307d9e2acc56b763650e306fcd21132
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:24:04 2015 -0500
+
+    Update Voting.c++
+
+commit f07c2d435d5492055a5662517269e9a4b7f0385c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:14:08 2015 -0500
+
+    Update Voting.c++
+
+commit 8ae1c9603fc3dd0b2d9f1656b2ee44468aa718f5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:12:00 2015 -0500
+
+    Update Voting.c++
+
+commit 94bbe590a17e107f56def38ada20cf277ff7de33
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:10:51 2015 -0500
+
+    Update TestVoting.c++
+
+commit 5eae1d96b46039f71d77137b0b12ea0557c3249e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:07:43 2015 -0500
+
+    Update TestVoting.c++
+
+commit 67db0f5bd7a82ea42467acda99f0dcb8995bc2de
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:06:34 2015 -0500
+
+    Update TestVoting.c++
+
+commit c5a1ba3915f6de823d428a2a327d7c7a09525d40
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 18:03:32 2015 -0500
+
+    Update TestVoting.c++
+
+commit 62078e569a7813a35f54ee6e1546460195b147c3
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:59:03 2015 -0500
+
+    Update Voting.c++
+
+commit 5f3ed0e3a1f0589e1364243cc1e584d00aff1c6e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:56:43 2015 -0500
+
+    Update Voting.h
+
+commit 5525203c37731f13c83d8e810d18608ac500ad26
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:55:54 2015 -0500
+
+    Update Voting.h
+
+commit 440ff5f22bbe0330723ead26b1b4445d10e168ca
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:54:40 2015 -0500
+
+    Update Voting.h
+
+commit 2f48a4c80c042ce4782825741f44c6c3c36fad13
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:53:00 2015 -0500
+
+    Update Voting.c++
+
+commit 1f9c737b6772b240b63cc96461fbbc58259c557f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:52:20 2015 -0500
+
+    Update Voting.c++
+
+commit 3001cb91a325fd419f25fef7740cbd383f08619d
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:47:03 2015 -0500
+
+    Update Voting.c++
+
+commit 9eb21df5d45a287976c9040a4149ab56c7606960
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:39:37 2015 -0500
+
+    Update Voting.c++
+
+commit 6834b1cbcfe53ebcbb4eee124a66d57e7bd568c9
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:37:25 2015 -0500
+
+    Update Voting.c++
+
+commit 946759471898f17f707a0637dfc3e22fccb6a35d
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:36:52 2015 -0500
+
+    Update Voting.c++
+
+commit bd3e07490aaa5d1702cb015c9917db7f5ab98f46
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:35:26 2015 -0500
+
+    Update Voting.c++
+
+commit 0368f72c09f66fa4afd8e831375d5ea8fc4106f8
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:34:17 2015 -0500
+
+    Update Voting.c++
+
+commit 19df045e83921c097d1dfa6d650f85c1b30da321
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:33:31 2015 -0500
+
+    Update Voting.c++
+
+commit a8529ae91ac19d434b5beb4e9606555bc445c3e4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:33:00 2015 -0500
+
+    Update Voting.c++
+
+commit 4e866c6eba60a20adfde78b98db3b54e1ecf91d4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:30:33 2015 -0500
+
+    Update Voting.c++
+
+commit 1b2989c40119cf4283d186d7cf694ccf058b3c89
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:27:38 2015 -0500
+
+    Update Voting.h
+
+commit 368aa7b3d464f9482f7c7cfdcb9baec0c99c32e4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:26:05 2015 -0500
+
+    Update Voting.c++
+
+commit f98c8b5c0bd4182582ee7dc727e0cc70a631676e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:23:34 2015 -0500
+
+    Update Voting.c++
+
+commit a707cde9d234a95867bc1ca80a543b311c2fe788
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:23:00 2015 -0500
+
+    Update Voting.c++
+
+commit ae93ca81875f61c15a7ce22233a0fd916f37e03d
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:22:02 2015 -0500
+
+    Update Voting.c++
+
+commit 3216a45ddc9de486144feec9b239a7fb9ad0cb33
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:15:54 2015 -0500
+
+    Update Voting.c++
+
+commit 19bde08259a09f1b91a4e8c0b2ba032eeb62e886
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:15:50 2015 -0500
+
+    Update Voting.c++
+
+commit b0348e20424db86951bdca170b465be8386eab7c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:10:26 2015 -0500
+
+    Update Voting.h
+
+commit f5dfb629bfd70916050f5e7b738b630dcf3b2402
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:04:24 2015 -0500
+
+    Update Voting.c++
+
+commit 6dec24dc645cd1b633e9f40cfad3b2d2a1bc46a8
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:03:02 2015 -0500
+
+    Update Voting.c++
+
+commit 6326b91bbe6d04b2913dbf811f1d2ae2dfebd059
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 17:01:39 2015 -0500
+
+    Update Voting.c++
+
+commit 0663cbee5dfe0f5bb975c33bbdde0439874d311f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 16:39:49 2015 -0500
+
+    Update Voting.c++
+
+commit 015d200385c52a0996f44267ef7de8b690a5e664
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 16:32:44 2015 -0500
+
+    Update Voting.c++
+
+commit faf6d4365fcb5b6c7b7c72ca15057195a3656dc1
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 16:26:25 2015 -0500
+
+    Update Voting.c++
+
+commit ae466b16e71adbf0c67b2f41249e8c22a5257dc0
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 16:24:53 2015 -0500
+
+    Update TestVoting.c++
+
+commit f6eddbb375b05da32ed61277cad7c5a786f9dba5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 16:23:53 2015 -0500
+
+    Update TestVoting.c++
+
+commit cd007c415fad47a74fde9e8fceb647d8d33d4061
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 16:20:44 2015 -0500
+
+    Update TestVoting.c++
+
+commit 0ea39502c36bfd0d2b9bd456589e8ca1e4b21bf7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:54:45 2015 -0500
+
+    Update Voting.c++
+
+commit 27598a0857798104a1bc69428537f7a897f1f529
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:46:57 2015 -0500
+
+    Update TestVoting.c++
+
+commit cafca254c562542ebf3b13a577bbe2b56ad378e2
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:44:28 2015 -0500
+
+    Update TestVoting.c++
+
+commit dcb4342bd7f5da27055df20bcc7ff3aaa6759db6
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:42:50 2015 -0500
+
+    Update Voting.c++
+
+commit 75e1e7a0ab09a32ccc7926a8d992001fa0845a8d
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:41:18 2015 -0500
+
+    Update Voting.h
+
+commit c757fa5ed78eedeee920996f02e4270e50e0106b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:41:10 2015 -0500
+
+    Update Voting.h
+
+commit d21a7ca11c5330d9c98195a84df0a7bb532fb1df
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Tue Sep 22 15:36:40 2015 -0500
+
+    Added passing test for determine_winner.
+
+commit 4da684ec4d45db2546599045e92fadd00e40c6fc
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:31:47 2015 -0500
+
+    Update Voting.c++
+
+commit c5a3ab4dfe7b3f6a837c7e4faecd8e337a126177
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:30:05 2015 -0500
+
+    Update Voting.h
+
+commit da070a940ce286a6e44f40da929f150f5f8fab58
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Tue Sep 22 15:28:18 2015 -0500
+
+    Adding test for determine winner.
+
+commit b0dac2f715b7cf3352b0c5cb34f8c6a304db2fd7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:24:54 2015 -0500
+
+    Update Voting.c++
+
+commit cbf3222ff3707ab853d22c632db457068251ef3e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:18:31 2015 -0500
+
+    Update Voting.h
+
+commit 92f3321ee17387aad34af05f32f4b5438f577c2e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:16:41 2015 -0500
+
+    Update Voting.c++
+
+commit 53c7cd14b54cf30125b5e72f349537b15df14b7d
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:15:13 2015 -0500
+
+    Update Voting.c++
+
+commit bbde04802c988ebf02d9f24efd5bf68abc15a8af
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:15:11 2015 -0500
+
+    Update Voting.h
+
+commit b93cc2073c54317bd2f3d3995bf7af3d13cf061c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:12:20 2015 -0500
+
+    Update Voting.c++
+
+commit 54393e1b35ac6973bcc8c5c2b6a485e6bc7b6d8c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:12:18 2015 -0500
+
+    Update Voting.h
+
+commit 5b883bde5a12d621fbd568b9d6ac7a5ae5d8c695
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 15:06:40 2015 -0500
+
+    Update Voting.h
+
+commit 340fe9b5ccaa86d2ee381c173dec9c21832d05b0
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 14:54:25 2015 -0500
+
+    Update Voting.h
+
+commit af8589aa957ca71ae350aa1bbb3afde8991bb7b5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 14:54:17 2015 -0500
+
+    Update Voting.h
+
+commit 211d27d5270064c68cd0de615aed226da4ec98fe
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Tue Sep 22 14:52:14 2015 -0500
+
+    Updating raw testvoting file.
+
+commit f2edeb24e536200344ce8c11fb0e46a5b2e70c81
+Merge: a95c9cd 7ab6f46
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Tue Sep 22 14:51:28 2015 -0500
+
+    Merge branch 'how' of https://github.com/HowardDennis/cs371p-voting into how
+
+commit a95c9cd90a635e2701c77d8d05d63b0afaafa176
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Tue Sep 22 14:51:14 2015 -0500
+
+    Adding unit test for assign ballot.
+
+commit 320f609e26657fb9c734c688c242817129a2cf3d
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Tue Sep 22 14:50:32 2015 -0500
+
+    Update tests to include a unit test for assign_ballot.
+
+commit 7ab6f467b24ec2b16928f7a5750e0cc1396682f3
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 14:45:48 2015 -0500
+
+    Update TestVoting.c++
+
+commit 35cdf503647743f9a01d35458ab20009a0fb91b3
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 14:42:54 2015 -0500
+
+    Update TestVoting.c++
+
+commit bc3945eab41a092220c50f267388adaffb2ac429
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 14:40:46 2015 -0500
+
+    Update TestVoting.c++
+
+commit f9b2ee29b22268dc65ec1310144915181872dbf8
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 14:31:01 2015 -0500
+
+    Update TestVoting.c++
+
+commit 7bfa17e9dc58e238f51c9e2cca551f38a7e7be70
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 14:28:46 2015 -0500
+
+    Update Voting.c++
+
+commit 97c0ed6e9d3d011ad0e941db54f0899221cea5e7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 14:24:35 2015 -0500
+
+    Update Voting.c++
+
+commit 256e21c5a5e641887d1e552f8cf85baeb1689d7a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 14:23:54 2015 -0500
+
+    Update Voting.c++
+
+commit 646b0f1fd04f43128f2393b2d245e3e34cdabb53
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 14:23:53 2015 -0500
+
+    Update Voting.h
+
+commit 27ba458030c146fb5514be2089205f5a96a6f909
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Tue Sep 22 14:03:11 2015 -0500
+
+    Update Voting.c++
+
+commit 379e090d4f59b054fd18fc6df4fb89731a6ac5ac
+Merge: 661e258 4257db0
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:40:33 2015 -0500
+
+    Merge branch 'how'
+
+commit 4257db0d0f2c5dd445127dda1f00c0d26215c9a7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:39:03 2015 -0500
+
+    Update TestVoting.c++
+
+commit 5128768408107e17bcd1c42d7a0dfea20c36b817
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:36:08 2015 -0500
+
+    Update TestVoting.c++
+
+commit cce8affd16169bb76c8c0f5bf87ded616441cb2f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:35:03 2015 -0500
+
+    Update TestVoting.c++
+
+commit d93beb9a380f6261e6a971610d1e18c427432cd4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:29:03 2015 -0500
+
+    Update Voting.c++
+
+commit 807b536bbe02496ceefd8919b96e948ed918a954
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:25:38 2015 -0500
+
+    Update Voting.c++
+
+commit 7db31f6b1a19941ed3223fd54a7d48b146944b67
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:25:20 2015 -0500
+
+    Update Voting.h
+
+commit 546019c1b48cac3c2dd90466bab8c7af15454325
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:22:12 2015 -0500
+
+    Update Voting.h
+
+commit 1a6d8f8aeafc5d9f01ea2fe39281b7fa6318c490
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:21:40 2015 -0500
+
+    Update Voting.h
+
+commit 3fc17d66a105a82547ad6848cee2ee2eb852999f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:20:57 2015 -0500
+
+    Update Voting.h
+
+commit 181b0d396c2155649bfac7fd504e56c542d08543
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:20:23 2015 -0500
+
+    Update Voting.h
+
+commit 2b84fd3de47d0b163b7f21d135ea94727946efcc
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:18:15 2015 -0500
+
+    Update Voting.h
+
+commit 62bfff5e2d4a7f7f91902864e8b4075b04e2ba69
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:14:52 2015 -0500
+
+    Update Voting.h
+
+commit e296d80566fb43a6474d6cbb34740d2f6524909e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:11:05 2015 -0500
+
+    Update Voting.h
+
+commit 6f230c7dcbca53198e7682740999ccb22dca0702
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 18:02:45 2015 -0500
+
+    Update Voting.h
+
+commit cdf6dc23417789eed045e1a50cbf51538fc4e5f3
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 17:55:11 2015 -0500
+
+    Update Voting.c++
+
+commit 52ea792fc1c5fb201badef7dd94fef1b79846796
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 17:50:08 2015 -0500
+
+    Update Voting.c++
+
+commit eb5bd46bd1f42b80f55a6425374298284f676625
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 17:49:52 2015 -0500
+
+    Update Voting.h
+
+commit 9eb4bc183ab8085876920f60508eb49ca7332459
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 16:39:36 2015 -0500
+
+    Update Voting.c++
+
+commit a2064bf14b16ee7dbd9a6186146b94d8ad66a0fe
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 16:39:06 2015 -0500
+
+    Update TestVoting.c++
+
+commit 01030d0c1ebc889e572a2ea7c61cbb407e625044
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 16:36:58 2015 -0500
+
+    Update TestVoting.c++
+
+commit a0ed5425657efe8a2d4ad580243143306d9f68da
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 16:36:42 2015 -0500
+
+    Update Voting.c++
+
+commit daa4a269a337e0f81b09628e51e708aeec2136dd
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 16:36:28 2015 -0500
+
+    Update Voting.h
+
+commit 661e258b8c3a9af26569a7aa10738632f48767ed
+Merge: 5af8009 e238f2c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Mon Sep 21 15:21:11 2015 -0500
+
+    a
+
+commit e238f2cdb6e1f7132827f69d5419c1c68a9619f2
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 19:30:33 2015 -0500
+
+    Update Voting.c++
+
+commit 9653d0c86194ac53d42222cdf11b66460caf654b
+Merge: 58a4fc9 c6a56f4
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Sun Sep 20 15:08:44 2015 -0500
+
+    Merge branch 'how' of https://github.com/HowardDennis/cs371p-voting into how
+
+commit 58a4fc9cb037dd75f2c9f82cd49fd55322fc2c26
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Sun Sep 20 15:08:19 2015 -0500
+
+    Fixed h file.
+
+commit c6a56f4d8bf1661cba5882b831c9aff8ff1358ca
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 15:07:10 2015 -0500
+
+    Update Voting.c++
+
+commit 604203137a41402f84d11afce74233647ff85ebe
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Sun Sep 20 14:57:58 2015 -0500
+
+    Counting votes code.
+
+commit 003ae7c4f5fc1ba3927aed5bcecc047d5c9c810d
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Sun Sep 20 14:25:10 2015 -0500
+
+    Called get_ballots from the voting_solve method.
+
+commit e6190f2eec2635c442ba22dfceb2317f5663f9b0
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Sun Sep 20 14:22:38 2015 -0500
+
+    Added another test for get_ballots.
+
+commit 7f9c098944a289fb5b34193d1fe85c11a2f4167b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 14:19:14 2015 -0500
+
+    Update Voting.h
+
+commit 25000e3b3575aa17c8ee2be01309707df5407b04
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 14:18:40 2015 -0500
+
+    Update TestVoting.c++
+
+commit 51a33b1ad8f53adb85d9bab63ae175d0271d3251
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 14:18:11 2015 -0500
+
+    Update Voting.h
+
+commit 25c61a10a3778ce2b5931b842a48538bed966a26
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 14:17:59 2015 -0500
+
+    Update Voting.c++
+
+commit 4a3d26528ca8027d537d7b48a067c7236126e25a
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 14:17:07 2015 -0500
+
+    Update TestVoting.c++
+
+commit e1ef85919d2a0f4ca82630870fd112199f9955f0
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 14:15:54 2015 -0500
+
+    Update Voting.h
+
+commit 491a54b64e585c2515b2d213868e9df3fa8ef62c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 14:14:40 2015 -0500
+
+    Update Voting.h
+
+commit a1935c04a54f6a057ae6ff41bce64e4500672790
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 14:13:04 2015 -0500
+
+    Update TestVoting.c++
+
+commit 28512bc77c24851e4946e6f497897a98f9e8eae6
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 14:10:44 2015 -0500
+
+    Update Voting.c++
+
+commit f697921bd1e6b3b2913350e88bd1567d6a69f61c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 13:34:58 2015 -0500
+
+    Update TestVoting.c++
+
+commit 1142132ad204f61da8b06f1bb905baa2e86f7a4e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 13:34:29 2015 -0500
+
+    Update TestVoting.c++
+
+commit b32bcc9442bf0be9f7aa63f51a9a42ac4190055c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 20 13:33:04 2015 -0500
+
+    Update TestVoting.c++
+
+commit 9abb276aedfb5671908321ca120a6273ec8f23cb
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 21:26:59 2015 -0500
+
+    Update TestVoting.c++
+
+commit 11e3642500927f7235146381faa3d54cc1c8512d
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 21:21:41 2015 -0500
+
+    Update Voting.h
+
+commit 2a12e418282deb706f680734fadb820eb1cbe19f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 21:20:15 2015 -0500
+
+    Update Voting.c++
+
+commit f9d89b675e4998e00e40336280916af03801b960
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 21:19:49 2015 -0500
+
+    Update Voting.h
+
+commit cb14cc261b384a7e2f8eaaecf609c2a1cfd7c3d3
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 20:43:15 2015 -0500
+
+    Update Voting.h
+
+commit b3ba9909654b4102103a3dda78d48ebd40539ec5
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 20:41:12 2015 -0500
+
+    Update Voting.h
+
+commit 7e91edad4cafd86a6a9848ec0672add7fb9a83f9
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 20:39:08 2015 -0500
+
+    Update Voting.h
+
+commit 30b403edb4b4bdebf5526dae72e8cccbe7d6c04e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 20:36:47 2015 -0500
+
+    Update TestVoting.c++
+
+commit 2851ce98eedb7d564c8fcf1cd473084800b0c323
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 20:35:21 2015 -0500
+
+    Update TestVoting.c++
+
+commit 42129711ee5291da3beba0a2c82bc072e23cc7dd
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 20:33:56 2015 -0500
+
+    Update Voting.c++
+
+commit 5af8009bf6fca9f1a9227c27b008b837e970a896
+Merge: 380d28f dccf62b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 20:05:09 2015 -0500
+
+    Merge branch 'master' of https://github.com/HowardDennis/cs371p-voting
+
+commit dccf62bb31a19f6be68351e75dc1690126e2e8c7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 20:04:48 2015 -0500
+
+    Update Voting.h
+
+commit 380d28f63930a6d31f65980fc6893b164afe06f9
+Merge: 65da285 05478e8
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 19:59:07 2015 -0500
+
+    Merge branch 'master' of https://github.com/HowardDennis/cs371p-voting
+
+commit 65da2851076e4264cbf1419a75d80af1c798f912
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 19:58:54 2015 -0500
+
+    cancelled last commit
+
+commit 05478e81bfd8145a17d91be4e2d1e0f94909baef
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sat Sep 19 19:49:11 2015 -0500
+
+    Update Voting.h
+
+commit 05d942997afa7a7b0d475b69e238e0c8e68188bc
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Sat Sep 19 15:33:40 2015 -0500
+
+    Merged hannah-dev with master.
+
+commit c1342fe25145f1c7ceb4abe0bc9af1e6590a7143
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Sat Sep 19 15:30:24 2015 -0500
+
+    Have read names working and passing two unit tests.
+
+commit 9c84dc452d7fc62bdd2c85eb61b5d0a567ef60ff
+Author: Hannah Perry <hannah.perry5@gmail.com>
+Date:   Sat Sep 19 15:01:09 2015 -0500
+
+    Added test case. Now getting seg fault.
+
+commit a6c53ca47114eada077701e2c3b2a17be2eef7a7
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 15:34:55 2015 -0500
+
+    Update Voting.c++
+
+commit 2221766cfe6f8b62e76203693933be3ef7b6caec
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 15:28:26 2015 -0500
+
+    Update RunVoting.in
+
+commit 6727143ba8b4f4cd5d16b3b58d9b368d0251d398
+Author: Hannah Perry <hperry@cs.utexas.edu>
+Date:   Fri Sep 18 15:07:39 2015 -0500
+
+    Ran make test.
+
+commit e84c47b0faff1595b3ea5e9115397e464c62c4ac
+Author: Hannah Perry <hperry@cs.utexas.edu>
+Date:   Fri Sep 18 15:05:08 2015 -0500
+
+    Creating pair in voting read.
+
+commit 27b0880d9acda215252e5fbf969baf15777cf9d3
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:57:12 2015 -0500
+
+    Update TestVoting.c++
+    
+    close #11
+
+commit 08ced4cfda50a0912d6f9b0a37e06892a56a4422
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:56:43 2015 -0500
+
+    Update TestVoting.c++
+    
+    close#11
+
+commit 797fea3c05f8651e8d2a2b65ad3f251a3b9dcf9b
+Merge: 45fde9a 2365a76
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:55:36 2015 -0500
+
+    Merge branch 'master' of https://github.com/HowardDennis/cs371p-voting
+
+commit 45fde9aa1095c5374f4f12d65fb2b48359e88a19
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:55:23 2015 -0500
+
+    merged dev to master fix#11
+
+commit c2b633f7400fd520df56d3c30c4c32bb19fd1076
+Merge: e2190c6 91a2f49
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:53:48 2015 -0500
+
+    ng:q
+    ::gerge branch 'dev'
+
+commit 91a2f4941119a59b47483e9727e803df2ebda1b2
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:51:30 2015 -0500
+
+    Update TestVoting.c++
+
+commit 2365a76601c2b4e32228eabdac84eb53d0d9c967
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:45:14 2015 -0500
+
+    Update TestVoting.c++
+
+commit d1b64a2ff9dbb1e55d9caae0e3f534fb18cc2c05
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:44:30 2015 -0500
+
+    Update Voting.c++
+
+commit 8e8bade624ce2cf395e82015f6a3d070bfa3bc24
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:43:54 2015 -0500
+
+    Update TestVoting.c++
+
+commit c8a73e7cdf75e2f10336fe0e36debfdd78e82f73
+Author: Hannah Perry <hperry@cs.utexas.edu>
+Date:   Fri Sep 18 14:40:40 2015 -0500
+
+    Hannah testing pushing to repo.
+
+commit cf02ddae7c9c39b742f8386a1ce62d65db4e5713
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:31:35 2015 -0500
+
+    Update makefile
+
+commit 5e9b4cb62dfc42d511ea6f548a628c48a1c435c4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:25:51 2015 -0500
+
+    testing dev branch
+
+commit 0ed6331b4c34da04cd14e58121ddc66fcca0637f
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:23:37 2015 -0500
+
+    Delete v
+
+commit e2190c6d3a32e6dc45edb77c830cedc947b36b50
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:21:44 2015 -0500
+
+    testing branch
+
+commit a7baf39495a4de7b72a9386204162c54716e05fe
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Fri Sep 18 14:21:17 2015 -0500
+
+    testing dev branch
+
+commit 79c3eecb55e9dec069cdf01d0ff6ae421cb3de23
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 20:25:43 2015 -0500
+
+    Update RunVoting.out
+
+commit 144459ade9cf8bafcdc6e75f5c3bdb94b2295255
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 20:21:41 2015 -0500
+
+    Delete y
+
+commit 769c455da5ef764d3d68753881460e60a8f6c974
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 20:18:40 2015 -0500
+
+    Create y
+
+commit 412ce069794ae44903c55127e022f39952b1e7a4
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 20:17:49 2015 -0500
+
+    Delete t
+
+commit 0fe01cc07daa5c6271b58a601c16a5744e3a9e3e
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 20:16:34 2015 -0500
+
+    Create t
+    
+    Just a test for my remote repo
+
+commit 34e597bba3d80d6f63f6a31424c5da2c727365e9
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 20:15:33 2015 -0500
+
+    Update Voting.c++
+
+commit 34612dc0b6e4d569da5c4ec96b2619f574b44273
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 20:07:05 2015 -0500
+
+    Update and rename TestCollatz.out to TestVoting.out
+
+commit ff4dba19123b3033a7cc2826d6304bffacc18270
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 20:05:58 2015 -0500
+
+    Update and rename TestCollatz.c++ to TestVoting.c++
+
+commit 72e56f6ae414c8b69a8abd135300b043b4d6d720
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 20:03:56 2015 -0500
+
+    Rename RunCollatz.out to RunVoting.out
+
+commit 0f9ef5a1eddcb1af36c48a294413484e3bc30e8c
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 20:03:28 2015 -0500
+
+    Update RunCollatz.out
+
+commit 6870af54280ae8ad98910c30cca657bf90bb5ef9
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 20:02:27 2015 -0500
+
+    Update and rename RunCollatz.c++ to RunVoting.c++
+
+commit 879910f23b54f114ce9f1cbad511e60024786f31
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 20:01:07 2015 -0500
+
+    Update .travis.yml
+
+commit 32cca25722db9d7e75f6f7c007b7362031c00c92
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 20:00:23 2015 -0500
+
+    Update and rename Collatz.h to Voting.h
+
+commit cdaafa2dcafb07afe8fa35c5aebd5688cd408565
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 19:54:21 2015 -0500
+
+    Update and rename Collatz.c++ to Voting.c++
+
+commit 11195464b216f336f965c45c14f62327a9ca5621
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 19:51:54 2015 -0500
+
+    Update makefile
+
+commit 255c6ae5532a745c1cbe3ce42bf0cfd86a115745
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 19:43:44 2015 -0500
+
+    Update and rename RunCollatz.in to RunVoting.in
+
+commit 28fc8ede24f03786001b72e0f218e9a15c6e083b
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 19:34:10 2015 -0500
+
+    Delete t
+
+commit b7c8792356d346e77124fb31d8ae9257af461709
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Thu Sep 17 19:31:58 2015 -0500
+
+    added Collatz files for framework
+
+commit bc9844e19e513291f677c8e872d55bbb627bc964
+Author: HowardDennis <h2dennis@gmail.com>
+Date:   Sun Sep 13 15:32:36 2015 -0500
+
+    test
