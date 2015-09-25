@@ -1,6 +1,4 @@
 g++-4.8 -pedantic -std=c++11 -Wall -fprofile-arcs -ftest-coverage Voting.c++ TestVoting.c++ -o TestVoting -lgtest -lgtest_main -pthread
-<<<<<<< HEAD
-=======
 valgrind ./TestVoting                                       >  TestVoting.tmp 2>&1
 gcov-4.8 -b Voting.c++     | grep -A 5 "File 'Voting.c++'"     >> TestVoting.tmp
 gcov-4.8 -b TestVoting.c++ | grep -A 5 "File 'TestVoting.c++'" >> TestVoting.tmp
@@ -89,4 +87,3 @@ Branches executed:74.31% of 724
 Taken at least once:37.98% of 724
 Calls executed:56.50% of 931
 Creating 'TestVoting.c++.gcov'
->>>>>>> 29d24dffbd6f0f7de307109c54e7baef7942d932
