@@ -33,7 +33,7 @@ void reassign(vector<int>& count, vector<int>& losers, vector<vector<string> >& 
       bad = check(v, losers_total);
       while(bad) {
         a >> v;
-        bad = check(newVote, allLosers);
+        bad = check(v, allLosers);
       }
       getline(a, remaining_vote);
       ++count[v - 1];
