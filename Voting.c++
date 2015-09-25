@@ -140,7 +140,7 @@ void run_cases(istream& r, ostream& w) {
   r >> cases;
   assert(cases > 0);
   r.ignore();
-  for(int y = 0; y < x; ++y) {
+  for(int y = 0; y < cases; ++y) {
     r.ignore();
     elect(r, cout);
     if(y < cases - 1){w << '\n';}
