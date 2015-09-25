@@ -35,7 +35,7 @@ TEST(VotingFixture, check_2) {
       int x = 6;
       vector<int> losers = {4, 3, 2};
       bool bad = check(x, losers);
-      ASSERT_TRUE(bad);
+      ASSERT_FALSE(bad);
 }
 
 TEST(VotingFixture, check_3) {
