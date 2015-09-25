@@ -17,7 +17,7 @@ bool winner (vector<int>& count, vector<string>& electees, vector<int>& losers, 
     int min = 1001, max = 0;
     electees.clear();
     losers.clear();
-    for (int i = 0; i < count.size(); ++i) {
+    for (unsigned int i = 0; i < count.size(); ++i) {
         if (count[i] > max) {
             max = count[i];
         }
@@ -30,7 +30,7 @@ bool winner (vector<int>& count, vector<string>& electees, vector<int>& losers, 
         no_winner = false;
     }
     
-    for (int i = 0; i < count.size(); ++i) {
+    for (unsigned int i = 0; i < count.size(); ++i) {
         if (count[i] > (numVotes / 2)) {
             no_winner = false;
             electees.push_back(candidates[i]);
@@ -46,7 +46,7 @@ bool winner (vector<int>& count, vector<string>& electees, vector<int>& losers, 
     return no_winner;
 }
 void print (ostream w, vector<string>& electees) {
-    for (int i = 0; i < electees.size(); ++i) {
+    for (unsigned int i = 0; i < electees.size(); ++i) {
         w << electees[i];
         endl(w);
     }
