@@ -12,6 +12,30 @@ using namespace std;
 
 int numVotes = 0;
 
+void check (int& v, vector<int>& losers_total) {
+    bool yes = false;
+    for (unsigned int i = 0, i < losers_total.size(); ++i) {
+        if (losers_total[i] == (v - 1)) {
+            yes = true;
+            break;
+        }
+    }
+    return yes;
+}
+void reassign (vector<int>& count, vector<int>& losers, vector<vector<int> >& ballots, vector<int>& losers_total) {
+    int li;
+    bool bad;
+    for (unsigned int i = 0; i < losers.size(); ++i) {
+        li = losers[i];
+        for (unsigned int j = 0; j < ballots[li].size(); ++j) {
+            bad = check (ballots[li][j], losers_total);
+            
+            while (bad) {
+                bad = check (ballots[li][j], losers_total)
+            }
+        }
+    }
+}
 bool winner (vector<int>& count, vector<string>& electees, vector<int>& losers, vector<string>& candidates, vector<int>& losers_total) {
     bool no_winner = true;
     int min = 1001, max = 0;
@@ -81,6 +105,9 @@ void elect (istream& r, ostream& w) {
     vector<string> electees;
     vector<int> losers, losers_total;
     bool no_win = winner(count, electees, losers, candidates, losers_total);
+    while (no_win) {
+        reassign (count, electees, ballots, losers_total);
+    }
 }
 
 void run_cases (istream& r, ostream& w) {
