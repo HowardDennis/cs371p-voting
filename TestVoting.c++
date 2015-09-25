@@ -29,7 +29,6 @@ TEST(VotingFixture, check_1) {
       vector<int> losers = {4, 3, 2};
       bool bad = check(x, losers);
       ASSERT_TRUE(bad);
-    
 }
 
 TEST(VotingFixture, check_2) {
@@ -37,7 +36,6 @@ TEST(VotingFixture, check_2) {
       vector<int> losers = {4, 3, 2};
       bool bad = check(x, losers);
       ASSERT_TRUE(bad);
-    
 }
 
 TEST(VotingFixture, check_3) {
@@ -45,7 +43,6 @@ TEST(VotingFixture, check_3) {
       vector<int> losers = {4, 3, 2};
       bool bad = check(x, losers);
       ASSERT_FALSE(bad);
-    
 }
 
 TEST(VotingFixture, reassign_1) {
