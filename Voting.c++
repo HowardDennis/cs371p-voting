@@ -35,7 +35,7 @@ bool winner (vector<int>& count, vector<string>& electees, vector<int>& losers, 
             no_winner = false;
             electees.push_back(candidates[i]);
         }
-        else if (counts[i] == max) {
+        else if (count[i] == max) {
             electees.push_back(candidates[i]);
         }
         if (count[i] == min) {
@@ -73,7 +73,7 @@ void elect (istream& r, ostream& w) {
             int n;
             stream>>n;
             ++count[n - 1];
-            ++t;
+            ++numVotes;
             temp.push_back(n);
         }
         ballots.push_back(temp);
