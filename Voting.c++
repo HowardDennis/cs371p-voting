@@ -29,11 +29,11 @@ void reassign(vector<int>& count, vector<int>& losers, vector<vector<string> >& 
     li = losers[i];
     for(unsigned int j = 0; j < ballots[li].size(); ++j) {
       stringstream a (ballots[li][j]);
-      a >> newVote;
+      a >> v;
       bad = check(v, losers_total);
       while(bad) {
         a >> v;
-        bad = checkVote(newVote, allLosers);
+        bad = check(newVote, allLosers);
       }
       getline(a, remaining_vote);
       ++count[v - 1];
