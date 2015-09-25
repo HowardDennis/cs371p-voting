@@ -60,7 +60,7 @@ bool winner(vector<int>& count, vector<string>& electees, vector<int>& losers, v
     no_win = false;}
 
   for(unsigned int i = 0; i < count.size(); ++i) {
-    if(count[i] > (total / 2)) {
+    if(count[i] > (t / 2)) {
       no_win = false;
       electees.push_back(candidates[i]);}
     else if(count[i] == max) {
@@ -122,15 +122,15 @@ void elect (istream& r, ostream& w) {
     vector<int> losers, losers_total;
     bool no_win = winner(count, electees, losers, candidates, losers_total);
     while(no_win) {
-    reassignVotes(count, losers, ballots, losers_total);
-    noWinnerYet = winner(count, electees, losers, candidates, losers_total);
+    reassign(count, losers, ballots, losers_total);
+    no_win = winner(count, electees, losers, candidates, losers_total);
   }
   print(w, electees);
 
   ballots.clear();
   count.clear();
   candidates.clear();
-  allLosers.clear();
+  losers_total.clear();
   losers.clear();
   electees.clear();
 }
@@ -143,7 +143,6 @@ void run_cases (istream& r, ostream& w) {
     assert(cases > 0);
     getline(r, s); //skips line
     elect (r, w);
-    numVotes = 0;
     --cases;
     while(cases > 0) {
         w << "\n";
