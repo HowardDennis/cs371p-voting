@@ -135,18 +135,14 @@ void elect (istream& r, ostream& w) {
   electees.clear();
 }
 
-void run_cases (istream& r, ostream& w) {
-    int cases;
-    string s;
-    getline(r, s);
-    istringstream (s) >> cases;
-    assert(cases > 0);
-    getline(r, s); //skips line
-    elect (r, w);
-    --cases;
-    while(cases > 0) {
-        w << "\n";
-        elect (r, w);
-        --cases;
-    }
+void run_cases(istream& r, ostream& w) {
+  int cases;
+  r >> cases;
+  assert(x > 0);
+  r.ignore();
+  for(int y = 0; y < x; ++y) {
+    r.ignore();
+    solve(r, cout);
+    if(y < cases - 1){w << '\n';}
+  }
 }
