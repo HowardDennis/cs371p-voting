@@ -11,14 +11,17 @@
 // includes
 // --------
 
-#include <cassert>  // assert
-#include <iostream> // endl, istream, ostream
-#include <sstream>  // istringstream
-#include <string>   // getline, string
+#include <cassert>
+#include <iostream>
 #include <vector>
+#include <string>
+#include <sstream>
+#include <stdlib.h>
+#include <stdio.h>
 
 using namespace std;
 
+<<<<<<< HEAD
 extern int numVotes;
 
 struct Candidate
@@ -76,6 +79,16 @@ void get_candidates (istream& r, int numNames, vector<Candidate>& cans);
 
 void get_ballots (istream& r, vector<Candidate>& candidates, int numNames);
 >>>>>>> fc345f8780a41c894ef847b7ce8fc9029fe29308
+=======
+void reassign(vector<int>& count, vector<int>& losers, vector<vector<string> >& ballots, vector<int>& losers_total);
+bool check(int& v, vector<int>& losers_total);
+bool winner(vector<int>& count, vector<string>& electees, vector<int>& losers, vector<string>& candidates, vector<int>& losers_total);
+void sortVotes(istream& r, vector< vector<string> >& ballots, vector<int>& count, string& v);
+void elect (istream& r, ostream& w);
+void print(ostream& w, vector<string>&  winners);
+void run_cases (istream& r, ostream& w);
+#endif // Voting_h
+>>>>>>> a20dfa4c3b563ae4bc24f840bd09213c1889aaa0
 
 void assign_ballot (vector<Candidate>& candidates, int column, vector<int>& ballots);
 

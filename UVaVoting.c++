@@ -1,170 +1,152 @@
-#include <cassert>  // assert
-#include <iostream> // endl, istream, ostream
-#include <sstream>  // istringstream
-#include <string>   // getline, string
+#include <cassert>
+#include <iostream>
 #include <vector>
+#include <string>
+#include <sstream>
+#include <stdlib.h>
+#include <stdio.h>
 
 using namespace std;
 
-int numVotes = 0;
-
-struct Candidate
-{
-    string name;
-    vector< vector<int> > votes;
-    bool elim;
-
-    Candidate():name(""), elim(false){}
-};
-
-// --------
-// Gets names from input and makes them into Candidate objects
-// --------
-
-void get_candidates (istream& r, int numNames, vector<Candidate>& cans) {
-    int i = 0;
-    string s;
-    while(numNames > i) {
-        getline(r, s);
-        Candidate can;
-        can.name = s;
-        cans.push_back(can);
-        ++i;
+bool check(int& v, vector<int>& losers_total) {
+  bool bad = false;
+  for (unsigned int i = 0; i < losers_total.size(); ++i) {
+    if(losers_total[i] == (v - 1)) {
+      bad = true;
+      break;
     }
+  }
+  return bad;
 }
 
-// --------
-// assigns ballot to the candidate
-// --------
-
-void assign_ballot (vector<Candidate>& candidates, int column, vector<int>& ballot) {
-    candidates[ballot[column] -1].votes.push_back(ballot);
+void reassign(vector<int>& count, vector<int>& losers, vector<vector<string> >& ballots, vector<int>& losers_total) { 
+  int li, v;
+  bool bad;
+  string remaining_vote;
+  for(unsigned int i = 0; i < losers.size(); ++i) {
+    li = losers[i];
+    for(unsigned int j = 0; j < ballots[li].size(); ++j) {
+      stringstream a (ballots[li][j]);
+      a >> v;
+      bad = check(v, losers_total);
+      while(bad) {
+        a >> v;
+        bad = check(v, losers_total);
+      }
+      getline(a, remaining_vote);
+      ++count[v - 1];
+      ballots[v - 1].push_back(remaining_vote);
+    }
+    count[li] = 0;
+  }
 }
 
-// --------
-// makes the string of numbers into vectors
-// --------
+bool winner(vector<int>& count, vector<string>& electees, vector<int>& losers, vector<string>& candidates, vector<int>& losers_total) {
+  int min = 1000, max = 0, t = 0;
+  bool no_win = true;
+  electees.clear();
+  losers.clear();
+  for(unsigned int i = 0; i < count.size(); ++i) {
+    t += count[i];
+    if(count[i] > max) {
+      max = count[i];}
+    if(count[i] < min && count[i] > 0) {
+      min = count[i];}
+  }
+  
+  if(max == min) {
+    no_win = false;}
 
-void get_ballots (istream& r, vector<Candidate>& candidates, int numNames) {
-    string s;
-    while(getline(r, s) && !s.empty()) {
-        stringstream stream(s);
-        vector<int> temp;
-        while(!stream.eof()) {
-            int n;
-            stream>>n;
-            temp.push_back(n);
-        }
-        assert ((unsigned)numNames == temp.size());
-        assign_ballot (candidates, 0, temp);
-        ++numVotes;
-    }
+  for(unsigned int i = 0; i < count.size(); ++i) {
+    if(count[i] > (t / 2)) {
+      no_win = false;
+      electees.push_back(candidates[i]);}
+    else if(count[i] == max) {
+      electees.push_back(candidates[i]);}
+    if(count[i] == min) {
+      losers.push_back(i);
+      losers_total.push_back(i);}
+  }
+  return no_win;
 }
 
-// --------
-// eliminates candidates
-// --------
+void sortVotes(istream& r, vector< vector<string> >& ballots, vector<int>& count, string& v) {
+  char c = r.peek();
+  if(c == EOF || c == '\n' || !r) {
+   return;}
 
-void eliminate (vector<Candidate>& can, vector<Candidate>& losers) {
-    unsigned int min = 1001;
-    for (unsigned int i = 0; i < can.size(); ++i) {
-        if (!can[i].elim && min > can[i].votes.size() && can[i].votes.size() != 0) {
-            min = can[i].votes.size();
-        }
-    }
-    
-    for (unsigned int i = 0; i < can.size(); ++i) {
-        if (min == can[i].votes.size() || can[i].votes.size() == 0) {
-            can[i].elim = true;
-            losers.push_back(can[i]);
-        }
-    }
+  unsigned a;
+  r >> a;
+  assert(a > 0);
+  
+  for(unsigned int i = a-1; i < a; ++i) {
+    ++count[i];
+  }
+  if(a > 1) {
+  r.ignore(1);}
+  getline(r, v);
+  for(unsigned int j = a-1; j < a; ++j) {
+    ballots[j].push_back(v);
+  }
+    sortVotes(r, ballots, count, v);
 }
 
-void reassign (vector<Candidate>& candidates, int column, vector<Candidate>& losers) {
-    for (unsigned int i = 0; i < losers.size(); ++i) {
-        for (unsigned int j = 0; j < losers[i].votes.size(); ++j) {
-            if (!candidates[losers[i].votes[j][column]-1].elim) {
-                assign_ballot(candidates, column, losers[i].votes[j]);
-                losers[i].votes.erase(losers[i].votes.begin() + j);
-            }
-        }
-    }
+void print(ostream& w, vector<string>&  electees) {
+  assert(!electees.empty());
+  for(unsigned int i = 0; i < electees.size(); ++i) {
+    w << electees[i];
+    w << "\n";
+  }
 }
 
-// --------
-// determines if there is a winner
-// --------
-
-bool winner (vector<Candidate>& cans, ostream& w) {
-    for (unsigned int i = 0; i < cans.size(); ++i) {
-        if (double(cans[i].votes.size()) > numVotes/2.0) {
-            w << cans[i].name << endl;
-            return true;
-        }
-    }
-    return false;
-}
-
-bool is_tie (vector<Candidate>& cans, ostream& w) {
-    unsigned int n = cans[0].votes.size();
-    for (unsigned int i = 1; i < cans.size(); ++i) {
-        if (!cans[i].elim && n != cans[i].votes.size()) {
-            return false;
-        }
-    }
-    
-    for (unsigned int i = 0; i < cans.size(); ++i) {
-        if (!cans[i].elim) {
-            w << cans[i].name << endl;
-        }
-    }
-    
-    return true;
-}
-
-void case_eval (istream& r, ostream& w) {
+void elect (istream& r, ostream& w) {
     string s;
     getline(r, s);
     int numNames;
     istringstream (s) >> numNames;
     assert(numNames >= 0 && numNames < 21);
-    vector<Candidate> candidates;
-    get_candidates(r, numNames, candidates);
-    assert(candidates.size() == (unsigned)numNames);
-    get_ballots(r, candidates, numNames);
-    assert(numVotes <= 1000);
-    bool win = winner(candidates, w);
-    bool draw = is_tie(candidates, w);
-    vector<Candidate> losers;
-    int i = 1;
-    while(!win && !draw && i < numNames) {
-        eliminate(candidates, losers);
-        reassign(candidates, i, losers);
-        win = winner(candidates, w);
-        draw = is_tie(candidates, w);
+    vector<string> candidates(numNames);
+    vector<int> count(numNames, 0);
+    int i = 0;
+    while(numNames > i) {
+        getline(r, s);
+        candidates[i] = s;
         ++i;
     }
+    vector< vector<string> > ballots(numNames + 20);
+    string v;
+    sortVotes(r, ballots, count, v);
+    vector<string> electees;
+    vector<int> losers, losers_total;
+    bool no_win = winner(count, electees, losers, candidates, losers_total);
+    while(no_win) {
+    reassign(count, losers, ballots, losers_total);
+    no_win = winner(count, electees, losers, candidates, losers_total);
+  }
+  print(w, electees);
+
+  ballots.clear();
+  count.clear();
+  candidates.clear();
+  losers_total.clear();
+  losers.clear();
+  electees.clear();
 }
 
-void voting_solve (istream& r, ostream& w) {
-    int numCases;
-    string s;
-    getline(r, s);
-    istringstream (s) >> numCases;
-    assert(numCases > 0);
-    getline(r, s); //skips line
-    case_eval (r, w);
-    numVotes = 0;
-    --numCases;
-    while(numCases > 0) {
-        w << "\n";
-        case_eval (r, w);
-        numVotes = 0;
-        --numCases;}
-    }
+void run_cases(istream& r, ostream& w) {
+  int cases;
+  r >> cases;
+  assert(cases > 0);
+  r.ignore();
+  for(int y = 0; y < cases; ++y) {
+    r.ignore();
+    elect(r, cout);
+    if(y < cases - 1){w << '\n';}
+  }
+}
 
 int main () {
     using namespace std;
-    voting_solve(cin, cout);
-    return 0;}
+    run_cases(cin, cout);
+    return 0;
+}
