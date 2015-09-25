@@ -147,7 +147,6 @@ void run_cases (istream& r, ostream& w) {
     while(cases > 0) {
         w << "\n";
         elect (r, w);
-        numVotes = 0;
         --cases;
     }
 }
