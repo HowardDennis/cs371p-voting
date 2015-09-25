@@ -33,7 +33,7 @@ void reassign(vector<int>& count, vector<int>& losers, vector<vector<string> >& 
       bad = check(v, losers_total);
       while(bad) {
         a >> v;
-        bad = check(v, allLosers);
+        bad = check(v, losers_total);
       }
       getline(a, remaining_vote);
       ++count[v - 1];
@@ -46,7 +46,7 @@ void reassign(vector<int>& count, vector<int>& losers, vector<vector<string> >& 
 bool winner(vector<int>& count, vector<string>& electees, vector<int>& losers, vector<string>& candidates, vector<int>& losers_total) {
   int min = 1000, max = 0, t = 0;
   bool no_win = true;
-  winners.clear();
+  electees.clear();
   losers.clear();
   for(unsigned int i = 0; i < voteCount.size(); ++i) {
     t += count[i];
@@ -62,9 +62,9 @@ bool winner(vector<int>& count, vector<string>& electees, vector<int>& losers, v
   for(unsigned int i = 0; i < voteCount.size(); ++i) {
     if(count[i] > (total / 2)) {
       no_win = false;
-      winners.push_back(candidates[i]);}
+      electees.push_back(candidates[i]);}
     else if(count[i] == max) {
-      winners.push_back(candidates[i]);}
+      electees.push_back(candidates[i]);}
     if(count[i] == min) {
       losers.push_back(i);
       losers_total.push_back(i);}
@@ -93,10 +93,10 @@ void sortVotes(istream& r, vector< vector<string> >& ballots, vector<int>& count
     sortVotes(r, allVotes, voteCount, v);
 }
 
-void print(ostream& w, vector<string>&  winners) {
-  assert(!winners.empty());
-  for(unsigned int i = 0; i < winners.size(); ++i) {
-    w << winners[i];
+void print(ostream& w, vector<string>&  electees) {
+  assert(!electees.empty());
+  for(unsigned int i = 0; i < electees.size(); ++i) {
+    w << electees[i];
     w << "\n";
   }
 }
@@ -118,21 +118,21 @@ void elect (istream& r, ostream& w) {
     vector< vector<string> > ballots(numNames + 20);
     string v;
     sortVotes(r, ballots, count, v);
-    vector<string> winners;
+    vector<string> electees;
     vector<int> losers, losers_total;
-    bool no_win = winner(count, winners, losers, candidates, losers_total);
+    bool no_win = winner(count, electees, losers, candidates, losers_total);
     while(no_win) {
     reassignVotes(count, losers, ballots, losers_total);
-    noWinnerYet = winner(count, winners, losers, candidates, losers_total);
+    noWinnerYet = winner(count, electees, losers, candidates, losers_total);
   }
-  print(w, winners);
+  print(w, electees);
 
   allVotes.clear();
   voteCount.clear();
   candidates.clear();
   allLosers.clear();
   losers.clear();
-  winners.clear();
+  electees.clear();
 }
 
 void run_cases (istream& r, ostream& w) {
